@@ -283,8 +283,8 @@
                                 <input type="text" name="username" placeholder="Tên đăng nhập hoặc email" />
                                 <label>Mật khẩu *</label>
                                 <input type="password" name="password" placeholder="Mật khẩu" />
-                                <label>Nhập lại Mật khẩu *</label>
-                                <input type="password" name= "password2" placeholder="Mật khẩu" />
+                                <!-- <label>Nhập lại Mật khẩu *</label>
+                                <input type="password" name= "password2" placeholder="Mật khẩu" /> -->
                                 <div class="checkbox checkbox-primary">
                                     <input id="checkbox" type="checkbox" checked>
                                     <label for="checkbox">Nhớ tôi</label>
