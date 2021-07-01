@@ -42,7 +42,7 @@
                                 Cài đặt
                             </a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="login.html">
+                            <a class="dropdown-item" href="?controller=logoutAdmin">
                                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                 Đăng xuất
                             </a>

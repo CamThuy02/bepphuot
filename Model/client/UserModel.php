@@ -28,6 +28,7 @@ class UserModel extends Database{
 		
 		return $result;
 	}
+	
 	public function login($username, $password)
 	{
 		$sql = "SELECT * FROM users WHERE (username = '$username' AND password = '$password')";

@@ -14,10 +14,9 @@ class Header {
 	}
 
 	public function signUp($userModel) {
-		$username = $password = NULL;
+		$username = $password = NULL;	
 		$error = array();
 		$error['username'] = $error['password'] = $error['username_exist'] = NULL;
-
 		if (isset($_POST['signup'])) {
 			if (empty($_POST['username'])) {
 				$error['username'] = '* Cần điền tên đăng nhập';
@@ -37,7 +36,8 @@ class Header {
 					$error['username_exist'] = '* Tên đăng nhập đã bị trùng';
 				} else {
 					$result=$userModel->signup($username, $password);
-					// echo "<script>alert('đăng ký thành công')</script>";
+					echo "<script>alert('đăng ký thành công')</script>";
+				
 					$data=$result->fetch_array(MYSQLI_ASSOC);
 					$_SESSION['user'] = $data;
 					header('Location: ./');
