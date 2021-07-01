@@ -44,7 +44,7 @@
                                                             </div>
                                                         </div>
 														<button type="submit" name="login_admin" value="Login">Đăng nhập</button>
-                                                        <a href="index.html" class="btn btn-login btn-block">
+                                                        <a href="?controller" class="btn btn-login btn-block">
                                                             Đăng nhập
                                                         </a>
                                                     </form>

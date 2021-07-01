@@ -36,7 +36,7 @@ class Header {
 					$error['username_exist'] = '* Tên đăng nhập đã bị trùng';
 				} else {
 					$result=$userModel->signup($username, $password);
-					echo "<script>alert('đăng ký thành công')</script>";
+					echo "<script>alert('Đăng ký thành công')</script>";
 				
 					$data=$result->fetch_array(MYSQLI_ASSOC);
 					$_SESSION['user'] = $data;

@@ -114,7 +114,7 @@
                         <div class="row no-gutters d-flex align-items-center">
                             <div class="col-lg-2 col-md-2 d-none d-lg-block">
                                 <div class="logo-area">
-                                    <a href="bepphuot.html" class="img-fluid">
+                                    <a href="./" class="img-fluid">
                                         <img src="Public\client\img\logo.png" alt="logo" class="img-fluid">
                                     </a>
                                 </div>

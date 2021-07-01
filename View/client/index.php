@@ -1,5 +1,5 @@
 <?php
-	// require 'Model/Database.php';
+	// require '../../Model/Database.php';
 	// $db = new Database();
 
 	require('Controller/client/header.php'); /*giao diện header*/

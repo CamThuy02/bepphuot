@@ -51,14 +51,13 @@ class Login
             */
                 if ($check > 0) {
                     $data = $result->fetch_array(); /*lấy dữ liệu tương ứng với username và password nhập*/
-                    // $_SESSION['useradmin'] = $data; /*lưu session*/
                 /**
                 * Nếu level = 1 thì chuyển hướng đến trang quản trị viên
                 * Ngược lại thì thông báo đăng nhập lại
                 * @var array
                 */
                     if ($data['level'] == admin) {
-                        $_SESSION['useradmin'] = $data; 
+                        $_SESSION['useradmin'] = $data; /*lưu session*/
                         header('Location: View/admin');
                     } else {
                         echo "<script>alert('Vui lòng đăng nhập lại')</script>";
