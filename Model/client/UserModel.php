@@ -11,11 +11,11 @@ class UserModel extends Database{
 
 	public function signup($username, $password)
 	{	
-		$sql = "INSERT INTO users (username, password)
+		$sql = "INSERT INTO users (tendn, pass)
 							VALUES ('$username', '$password')";
 		$this->db->conn->query($sql);
 
-		$sql = "SELECT * FROM users WHERE (username = '$username' AND password = '$password')";
+		$sql = "SELECT * FROM users WHERE (tendn = '$username' AND pass = '$password')";
 		$result = $this->db->conn->query($sql);
 		
 		return $result;
@@ -23,7 +23,7 @@ class UserModel extends Database{
 
 	public function checkExists($username) 
 	{
-		$sql = "SELECT * FROM users WHERE username = '$username'";
+		$sql = "SELECT * FROM users WHERE tendn = '$username'";
 		$result = $this->db->conn->query($sql);
 		
 		return $result;
@@ -31,7 +31,7 @@ class UserModel extends Database{
 	
 	public function login($username, $password)
 	{
-		$sql = "SELECT * FROM users WHERE (username = '$username' AND password = '$password')";
+		$sql = "SELECT * FROM users WHERE (tendn = '$username' AND pass = '$password')";
 		$result = $this->db->conn->query($sql);
 		
 		return $result;

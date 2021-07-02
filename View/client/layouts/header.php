@@ -205,7 +205,7 @@
                                                 if (!empty($_SESSION['user'])) {?>
                                                     <li class="d-none d-sm-block d-md-block d-lg-inline-block">
                                                         <button type="button" class="login-btn" data-toggle="modal" data-target="#Logout">
-                                                            <i class="fa fa-user" aria-hidden="true"></i><?=$_SESSION['user']['username']?>
+                                                            <i class="fa fa-user" aria-hidden="true"></i><?=$_SESSION['user']['tendn']?>
                                                         </button>
                                                     </li>
                                                     <!-- <li class="d-none d-sm-block d-md-block d-lg-inline-block">
@@ -308,7 +308,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="login-form">
-                            <label>Tài khoản: <?=$_SESSION['user']['username']?></label>
+                            <label>Tài khoản: <?=$_SESSION['user']['tendn']?></label>
                             <label class="lost-password" style="text-align:center">
                                 <a href="?controller=logout">Đăng xuất</a>
                             </label>

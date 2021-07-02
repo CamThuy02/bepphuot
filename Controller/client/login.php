@@ -56,7 +56,7 @@ class Login
                 * Ngược lại thì thông báo đăng nhập lại
                 * @var array
                 */
-                    if ($data['level'] == admin) {
+                    if ($data['quyen'] == admin) {
                         $_SESSION['useradmin'] = $data; /*lưu session*/
                         header('Location: View/admin');
                     } else {
