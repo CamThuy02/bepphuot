@@ -5,7 +5,7 @@
 	require('Controller/client/header.php'); /*giao diện header*/
 
 	if (isset($_GET['controller'])) {
-		require 'Router\web.php'; /*xử lý các request trong Route/web.php*/
+		require 'Router/client/web.php'; /*xử lý các request trong Route/web.php*/
 	} else {
 		require 'View/client/pages/home.php'; /*require giao diện trang chủ*/
 	}
