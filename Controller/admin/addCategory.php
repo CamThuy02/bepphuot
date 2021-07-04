@@ -5,19 +5,19 @@ class AddCategory {
 	{
 		require('../../Model/admin/category.php');
 		$categoryModel = new CategoryModel();
-		$name = $slug = NULL;
-		$alert = array();
 
 		if (isset($_POST['addCategory'])) {
-			$name = $_POST['name'];
-			$slug = changeTitle($name);
+			$CategoryId = $_POST["CategoryId"];
+			$CategoryName = $_POST["CategoryName"];
+			$CategoryType = $_POST["CategoryType"];
+			$ParentId = $_POST["ParentId"];
+			$CountPosts = $_POST["CountPosts"];
 
-			if ($name) {
-				$categoryModel->addCategory($name, $slug);
-				$alert['success'] = 'Thêm thành công';
-				// echo "<script>alert('Thêm chuyên mục thành công')</script>";
+			if ($CategoryId) {
+				$categoryModel->addCategory($CategoryId, $CategoryName, $CategoryType, $ParentId, $CountPosts);
 			}
 		}
-		require('../../View\admin\pages\categogy\add.php');
+		require('../../View/admin/layouts/header.php');
+		require('../../View/admin/pages/categogy/add.php');
 	}
 }

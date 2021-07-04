@@ -54,47 +54,56 @@
             <div id="layoutSidenav_nav">
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
-                        <div class="nav">
-                            <a class="nav-link" href="./">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Trang Chủ
-                            </a>
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Chuyên Mục
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapse1" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="list-category.html">Danh Sách</a>
-                                    <a class="nav-link" href="?controller=addCategory">Thêm</a>
-                                </nav>
-                            </div>
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Bài Viết
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapse2" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="list-post.html">Danh Sách</a>
-                                    <a class="nav-link" href="add-post.html">Thêm</a>
-                                </nav>
-                            </div>
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Thành Viên
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapse3" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="list-member.html">Danh Sách</a>
-                                    <a class="nav-link" href="?controller=addMember">Thêm</a>
-                                </nav>
-                            </div>
-                            
-                        </div> 
+                    <div class="nav">
+                        <a class="nav-link" href="index.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Trang Chủ
+                        </a>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Chuyên Mục Cha
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapse1" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="list-parentcategory.html">Danh Sách</a>
+                                <a class="nav-link" href="add-parentcategory.html">Thêm</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Chuyên Mục Con
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapse2" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="?controller=listCategory">Danh Sách</a>
+                                <a class="nav-link" href="?controller=addCategory">Thêm</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Bài Viết
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapse3" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="list-post.html">Danh Sách</a>
+                                <a class="nav-link" href="add-post.html">Thêm</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Thành Viên
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapse4" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="list-member.html">Danh Sách</a>
+                            </nav>
+                        </div>
                     </div>
+                </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logged in as:</div>
                         Admin Bếp Phượt
