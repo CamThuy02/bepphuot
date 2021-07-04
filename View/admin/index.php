@@ -11,10 +11,10 @@
      * Ngược lại thì chuyển hướng về trang chủ
      * @var array
      */
-		// if (isset($_GET['controller'])) {
-		// 	require('../../Router/admin/web.php'); 
-		// 	die;}
-	if (!empty($_SESSION['useradmin']) && $_SESSION['useradmin']['level'] == admin) {
+		if (isset($_GET['controller'])) {
+			require('../../Router/admin/web.php'); 
+			die;}
+	if (!empty($_SESSION['useradmin']) && $_SESSION['useradmin']['quyen'] == admin) {
 		require('layouts/header.php');
 
 		if (isset($_GET['controller'])) {

@@ -3,7 +3,7 @@
 	$db = new Database();
 
 	if (isset($_GET['controller'])) {
-		require 'Router/admin/web.php'; /*xử lý các request trong Route/web.php*/
+		require 'Router/web.php'; /*xử lý các request trong Route/web.php*/
 	} else{
 		require('View/client/index.php'); /*giao diện trang chủ*/
 	}
