@@ -3,9 +3,10 @@ class AddMember {
 	public function __construct()
 	{
         
-        require('Model/admin/member.php');
+        require('../../Model/admin/member.php');
         $memberModel = new MemberModel(); 
-
+        // echo "<script>alert('Thêm chuyên mục thành công')</script>";
+        // die;
         if (isset($_POST['addMember'])) {
         $id = $_POST["id"];
         $tendn = $_POST["tendn"];
@@ -24,8 +25,8 @@ class AddMember {
         $memberModel->createMember($id,$tendn,$pass,$tendd,$quyen,$email,$dienthoai,$diachi,$ngaysinh,$gioitinh,$dantoc,$gioithieu);
         }
     }
-    require('View/admin/layouts/header.php');
-    require('View/admin/pages/member/create.php');
-    require('View/admin/layouts/footer.php');
+    // require('View/admin/layouts/h;eader.php')
+    require('../../View/admin/pages/member/create.php');
+    // require('View/admin/layouts/footer.php');
     }}
     

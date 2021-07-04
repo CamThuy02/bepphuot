@@ -89,6 +89,7 @@
                             <div class="collapse" id="collapse3" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="list-member.html">Danh Sách</a>
+                                    <a class="nav-link" href="?controller=addMember">Thêm</a>
                                 </nav>
                             </div>
                             
