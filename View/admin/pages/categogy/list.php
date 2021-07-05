@@ -4,8 +4,8 @@
                     <div class="container-fluid">
                         <h1 class="mt-4">Danh Sách Chuyên Mục</h1>
                         <ol class="breadcrumb mb-g4">
-                            <li class="breadcrumb-item active"><a href="index.html">Trang chủ</a></li>
-                            <li class="breadcrumb-item active"><a href="list-category.html">Chuyên mục</a></li>
+                            <li class="breadcrumb-item active"><a href="./">Trang chủ</a></li>
+                            <li class="breadcrumb-item active"><a href="">Chuyên mục</a></li>
                             <li class="breadcrumb-item">Danh sách</li>
                         </ol>
                         <div class="card mb-4">
@@ -29,9 +29,6 @@
                                         </thead>
                                         <tbody>
                                             <?php
-                                                $row = new CategoryModel();
-                                                $sql = "SELECT * FORM category";
-                                                $result = $row->listCategory();
                                                 foreach ($result as $rel){
                                             ?>
                                             <tr>

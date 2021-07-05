@@ -3,7 +3,7 @@ class EditMember {
 	public function __construct()
 	{
         
-        require('Model/admin/member.php');
+        require('../../Model/admin/member.php');
         $memberModel = new MemberModel(); 
 
         if (isset($_POST['editMember'])) {
@@ -24,8 +24,6 @@ class EditMember {
         $memberModel->editMember($id,$tendn,$pass,$tendd,$quyen,$email,$dienthoai,$diachi,$ngaysinh,$gioitinh,$dantoc,$gioithieu);
         }
     }
-    require('View/admin/layouts/header.php');
-    require('View/admin/pages/member/edit.php');
-    require('View/admin/layouts/footer.php');
+    require('../../View/admin/pages/member/edit.php');
     }}
     
