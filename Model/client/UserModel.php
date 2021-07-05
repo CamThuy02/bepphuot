@@ -67,4 +67,19 @@ class UserModel extends Database{
 		}
 		return $rows;
 	}
+	
+	public function postCategory()
+	{	
+		$sql = "SELECT * FROM posts";
+
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+		
+		while ($row = $result->fetch_assoc())
+		{
+			$rows[] = $row;
+		}
+		return $rows;
+	}
 }
