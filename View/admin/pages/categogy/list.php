@@ -1,12 +1,4 @@
 
-<script>
-function editCategoryAjax(rowId) {
-    var id = rowId;
-    var ckie = "CategoryId=" + id + "; expires= Mon, 27 Sep 2021 12:00:00 UTC; path=./edit-category.html";
-    document.cookie = ckie;
-    window.location.href = "http://localhost:81/doan/client/bepphuot/edit-category.html"
-}
-</script>
 <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
@@ -50,14 +42,14 @@ function editCategoryAjax(rowId) {
                                                 <td><?php echo $rel['CountPosts'] ?></td>
                                                 <td style="text-align: center;">
                                                     <span class="badge bg-primary">
-                                                        <a style="color:white" href="?controller=editCategory">Sửa
+                                                        <a style="color:white" href="?controller=editCategory&CategoryId=<?php echo $rel['CategoryId'] ?>">Sửa
                                                             <ion-icon name="create-outline"></ion-icon>
                                                         </a>
                                                     </span>
                                                 </td>
                                                 <td style="text-align: center;">
                                                     <span class="badge bg-danger">
-                                                        <a style="color:white" href="">Xóa
+                                                        <a style="color:white" href="?controller=deleteCategory&CategoryId=<?php echo $rel['CategoryId'] ?>">Xóa
                                                             <ion-icon name="trash-outline"></ion-icon>
                                                         </a>
                                                     </span>
@@ -65,27 +57,6 @@ function editCategoryAjax(rowId) {
                                             </tr>
                                             <?php } ?>
                                         </tbody>
-                                        <!-- <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>101</td>
-                                                <td>Công thức thức uống</td>
-                                                <td style="text-align: center;">
-                                                    <span class="badge bg-primary">
-                                                        <a style="color:white" href="?controller=editCategory">Sửa
-                                                            <ion-icon name="create-outline"></ion-icon>
-                                                        </a>
-                                                    </span>
-                                                </td>
-                                                <td style="text-align: center;">
-                                                    <span class="badge bg-danger">
-                                                        <a style="color:white" href="edit-category.html">Xóa
-                                                            <ion-icon name="trash-outline"></ion-icon>
-                                                        </a>
-                                                    </span>
-                                                </td>
-                                            </tr>
-                                        </tbody> -->
                                     </table>
                                 </div>
                             </div>

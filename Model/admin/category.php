@@ -34,21 +34,33 @@ class CategoryModel extends Database{
 		}
 		return $rows;
 	}
-
-	public function getById($id)
+	//phương thức lấy dữ liệu cần sửa
+	public function getDataId($id)
 	{
 		$sql = "SELECT * FROM category WHERE CategoryId = $id";
 		$result = $this->db->conn->query($sql);
-		$row = mysqli_fetch_assoc($result);
-		return $row;
+		$data = $result->fetch_array();
+
+		return $data;
 	}
 
 	public function editCategory($CategoryId, $CategoryName, $CategoryType, $ParentId, $CountPosts)
 	{	
-		// $this->db->conn->real_escape_string($name);
+		$CategoryName =  $this->db->conn->real_escape_string($CategoryName);
+		$CategoryType =  $this->db->conn->real_escape_string($CategoryType);
+		$ParentId =  $this->db->conn->real_escape_string($ParentId);
+		$CountPosts =  $this->db->conn->real_escape_string($CountPosts);
+
 		$sql = "UPDATE category SET  CategoryName = '$CategoryName', CategoryType = $CategoryType, ParentId = $ParentId, CountPosts = $CountPosts  
 				WHERE CategoryId = $CategoryId;";
-    	$this->db->conn->query($sql);
+    	$result = $this->db->conn->query($sql);
+	}
+
+	public function deleteCategory($id)
+	{
+		$sql = "DELETE FROM category WHERE CategoryId = $id";
+
+		return $this->db->conn->query($sql);
 	}
 
 }

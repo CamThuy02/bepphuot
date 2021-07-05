@@ -4,19 +4,28 @@ class EditCategory {
 	public function __construct()
 	{
 		require('../../Model/admin/category.php');
+		
 		$categoryModel = new CategoryModel();
 
-		if (isset($_POST['editCategory'])) {
-			if(isset($_POST['CategoryId']))
-			{
-				$Category = $_POST['CategoryId'];
+		if (isset($_GET['CategoryId'])) {
+			$CategoryId = $_GET['CategoryId'];
+			$categoryOld = $categoryModel->getDataId($CategoryId);
+
+			if (isset($_POST['editCategory'])) {
+
+				$CategoryName = $_POST["CategoryName"];
+				$CategoryType = $_POST["CategoryType"];
+				$ParentId = $_POST["ParentId"];
+				$CountPosts = $_POST["CountPosts"];
 				
-				$item = $this->category->getById($CategoryId);
+				$categoryModel->editCategory($CategoryId, $CategoryName, $CategoryType, $ParentId, $CountPosts);
+				
+				header('location: ?controller=listCategory');
 			}
-			$categoryModel->editCategory();
-			
+
+			require('../../View/admin/pages/categogy/edit.php');
 		}
 		require('../../View/admin/layouts/header.php');
-		require('../../View/admin/pages/categogy/edit.php');
 	}
 }
+?>
