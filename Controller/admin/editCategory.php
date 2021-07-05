@@ -25,7 +25,6 @@ class EditCategory {
 
 			require('../../View/admin/pages/categogy/edit.php');
 		}
-		require('../../View/admin/layouts/header.php');
 	}
 }
 ?>

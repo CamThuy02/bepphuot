@@ -25,8 +25,21 @@ class MemberModel extends Database{
   quyen = '$quyen', id ='$id' where id = $id";
 	}
 
-	public function deleteMember()
+	public function deleteMember($memberId)
 	{
+		$sql = "DELETE FROM users WHERE id = $memberId";
+		
+		return $this->db->conn->query($sql);
+	}
 
+	public function listClient()
+	{
+		$sql = "SELECT * FROM users where quyen = 0";
+		$result = $this->db->conn->query($sql);
+		$list = array();
+		while($data = $result->fetch_array()) {
+			$list[] = $data;
+		}
+		return $list;
 	}
 }

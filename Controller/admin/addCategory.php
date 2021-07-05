@@ -17,7 +17,6 @@ class AddCategory {
 				$categoryModel->addCategory($CategoryId, $CategoryName, $CategoryType, $ParentId, $CountPosts);
 			}
 		}
-		require('../../View/admin/layouts/header.php');
 		require('../../View/admin/pages/categogy/add.php');
 	}
 }

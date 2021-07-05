@@ -25,8 +25,6 @@ class AddMember {
         $memberModel->createMember($id,$tendn,$pass,$tendd,$quyen,$email,$dienthoai,$diachi,$ngaysinh,$gioitinh,$dantoc,$gioithieu);
         }
     }
-    // require('View/admin/layouts/h;eader.php')
     require('../../View/admin/pages/member/create.php');
-    // require('View/admin/layouts/footer.php');
     }}
     

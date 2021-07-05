@@ -10,7 +10,6 @@ class ListCategory {
 
 			$categoryModel->listCategory;
 		}
-		require('../../View/admin/layouts/header.php');
 		require('../../View/admin/pages/categogy/list.php');
 	}
 }
