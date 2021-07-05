@@ -10,7 +10,7 @@ class AddMember {
         if (isset($_POST['addMember'])) {
         $id = $_POST["id"];
         $tendn = $_POST["tendn"];
-        $pass = $_POST["pass"];
+        $pass = md5(md5($_POST["pass"]));
         $tendd = $_POST["tendd"];
         $quyen = $_POST["quyen"];
         $email = $_POST["email"];

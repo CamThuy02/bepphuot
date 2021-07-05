@@ -7,7 +7,7 @@
                         </ol>
                         <div class="row">
                             <div class="col-xl-3 col-md-6">
-                                <div class="card overview-item--c3 text-white mb-4">
+                                <div class="card overview-item--c4 text-white mb-4">
                                     <div class="card-body">CHUYÊN MỤC CHA</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="?controller=listParentCategory">Chi tiết</a>
@@ -46,7 +46,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-3 col-md-6">
-                                <div class="card overview-item--c4 text-white mb-4">
+                                <div class="card overview-item--c3 text-white mb-4">
                                     <div class="card-body">BÌNH LUẬN</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">Chi tiết</a>

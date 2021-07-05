@@ -5,11 +5,7 @@ class ListCategory {
 	{
 		require('../../Model/admin/category.php');
 		$categoryModel = new CategoryModel();
-
-		if (isset($_POST['listCategory'])) {
-
-			$categoryModel->listCategory;
-		}
+		$result = $categoryModel->listCategory();
 		require('../../View/admin/pages/categogy/list.php');
 	}
 }

@@ -1,11 +1,11 @@
 <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Danh Sách Thành Viên</h1>
+                        <h1 class="mt-4">Danh Sách Người Dùng</h1>
                         <ol class="breadcrumb mb-g4">
-                            <li class="breadcrumb-item active"><a href="index.html">Trang chủ</a></li>
-                            <li class="breadcrumb-item active"><a href="list-member.html">Thành viên</a></li>
-                            <li class="breadcrumb-item">Danh sách</li>
+                            <li class="breadcrumb-item active"><a href="./">Trang chủ</a></li>
+                            <li class="breadcrumb-item active"><a href="">Thành viên</a></li>
+                            <li class="breadcrumb-item">DS Người dùng</li>
                         </ol>
                         <div class="card mb-4">
                             <div class="card-header">

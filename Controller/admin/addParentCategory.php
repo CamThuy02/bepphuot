@@ -12,11 +12,8 @@ class AddParentCategory {
 
 			if ($ParentId) {
 				$parentCategoryModel->addParentCategory($ParentId, $ParentName);
-                header('location: ?controller=listParentCategory');
-
 			}
 		}
-		require('../../View/admin/layouts/header.php');
 		require('../../View/admin/pages/parentCategory/add.php');
 	}
 }

@@ -24,9 +24,6 @@
                                     </thead>
                                     <tbody>
                                             <?php
-                                                $row = new ParentCategoryModel();
-                                                $sql = "SELECT * FORM parentcategory";
-                                                $result = $row->listParentCategory();
                                                 foreach ($result as $rel){
                                             ?>
                                             <tr>
@@ -54,3 +51,4 @@
                         </div>
                     </div>
                 </div>
+                </main>
