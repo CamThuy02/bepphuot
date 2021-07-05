@@ -66,13 +66,8 @@
                         </a>
                         <div class="collapse" id="collapse1" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-<<<<<<< HEAD
                                 <a class="nav-link" href="?controller=listParentCategory">Danh Sách</a>
-                                <a class="nav-link" href="?controller=addParentCategory">Thêm</a>
-=======
-                                <a class="nav-link" href="">Danh Sách</a>
-                                <a class="nav-link" href="">Thêm</a>
->>>>>>> bd8e31bfd74f55b1234129ec7c96851b457171f4
+                                <a class="nav-link" href="?controller=addParentCategory">Thêm</a>                                
                             </nav>
                         </div>
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
