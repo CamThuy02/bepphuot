@@ -29,12 +29,9 @@
                                         </thead>
                                         <tbody>
                                             <?php
-<<<<<<< HEAD
                                                 $row = new CategoryModel();
                                                 $sql = "SELECT * FROM category";
                                                 $result = $row->listCategory();
-=======
->>>>>>> f8a8b73cc9ec7d1d3fe4971986b257242e22e988
                                                 foreach ($result as $rel){
                                             ?>
                                             <tr>
