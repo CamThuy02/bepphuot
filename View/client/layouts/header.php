@@ -119,7 +119,8 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-8 d-none d-lg-block position-static min-height-none">
+                            <?php @include ('menu.php')?>
+                            <!-- <div class="col-lg-8 d-none d-lg-block position-static min-height-none">
                                 <div class="ne-main-menu">
                                     <nav id="dropdown">
                                         <ul>
@@ -189,7 +190,7 @@
                                         </ul>
                                     </nav>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-lg-2 col-md-2 col-sm-2 text-right position-static">
                                 <div class="header-action-item on-mobile-fixed">
                                     <ul>
@@ -233,8 +234,8 @@
             </div>
         </header>
 
-         <!-- Modal for sign in Start-->
-         <div class="modal fade" id="myModal" role="dialog">
+        <!-- Modal for sign in Start-->
+        <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">

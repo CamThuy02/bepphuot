@@ -36,4 +36,35 @@ class UserModel extends Database{
 		
 		return $result;
 	}
+
+	///hiển thị menu
+	public function menu()
+	{	
+		// $this->db->conn->real_escape_string($name);
+		$sql = "SELECT * FROM parentcategory";
+
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+
+		while ($row = $result->fetch_assoc())
+		{
+			$rows[] = $row;
+		}
+		return $rows;
+	}
+	public function neMenu()
+	{	
+		$sql = "SELECT * FROM category";
+
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+		
+		while ($row = $result->fetch_assoc())
+		{
+			$rows[] = $row;
+		}
+		return $rows;
+	}
 }

@@ -30,7 +30,7 @@
                                         <tbody>
                                             <?php
                                                 $row = new CategoryModel();
-                                                $sql = "SELECT * FORM category";
+                                                $sql = "SELECT * FROM category";
                                                 $result = $row->listCategory();
                                                 foreach ($result as $rel){
                                             ?>

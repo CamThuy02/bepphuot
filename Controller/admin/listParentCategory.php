@@ -5,11 +5,8 @@ class ListParentCategory {
 	{
 		require('../../Model/admin/parentCategory.php');
 		$categoryModel = new ParentCategoryModel();
-
-		if (isset($_POST['listParentCategory'])) {
-
-			$parentCategoryModel->listParentCategory;
-		}
+		$parentCategoryModel->listParentCategory;
+		
 		require('../../View/admin/layouts/header.php');
 		require('../../View/admin/pages/parentCategory/list.php');
 	}
