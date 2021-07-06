@@ -9,4 +9,5 @@ class ListPost {
         require('../../View/admin/pages/post/list.php');
 	}
 }
+
 ?>

@@ -8,6 +8,7 @@ class PostModel extends Database{
 		$this->db = new Database();
 		$this->db->connect();
 	}
+
     public function listPost()
 	{
 		$sql = "SELECT * FROM posts";
@@ -19,9 +20,34 @@ class PostModel extends Database{
 
 		return $list;
 	}
+
     public function deletePost($postId)
 	{
 		$sql = "DELETE FROM posts WHERE PostId = $postId";
+		return $this->db->conn->query($sql);
+	}
+
+	public function getPost($postId)
+	{
+		$sql = "SELECT * FROM posts WHERE PostId = $postId";
+		$result = $this->db->conn->query($sql);
+		$data = $result->fetch_array();
+		return $data;
+    }
+
+    public function editPost($postId, $title, $summary, $content, $categoryId, $image)
+	{
+		$title = $this->db->conn->real_escape_string($title);
+		$summary = $this->db->conn->real_escape_string($summary);
+		$content = $this->db->conn->real_escape_string($content);
+		$sql = "UPDATE posts SET Title = '$title', 
+								 Summary = '$summary', 
+								 Content = '$content',
+								 Category_id = '$categoryId',
+								 Img = '$image'
+							 WHERE PostId = $postId
+								 ";
+
 		return $this->db->conn->query($sql);
 	}
 
