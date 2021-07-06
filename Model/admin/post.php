@@ -40,16 +40,10 @@ class PostModel extends Database{
 		$title = $this->db->conn->real_escape_string($title);
 		$summary = $this->db->conn->real_escape_string($summary);
 		$content = $this->db->conn->real_escape_string($content);
-		$sql = "UPDATE posts SET Title = '$title', 
-								 Summary = '$summary', 
-								 Content = '$content',
-								 Category_id = '$categoryId',
-								 Img = '$image'
-							 WHERE PostId = $postId
-								 ";
+		$sql = "UPDATE posts SET Title = '$title', Summary = '$summary', Content = '$content', CategoryId = $categoryId, Img = '$image'
+			    WHERE PostId = $postId;";
 
-		return $this->db->conn->query($sql);
+		$return = $this->db->conn->query($sql);
 	}
-
 }
 ?>
