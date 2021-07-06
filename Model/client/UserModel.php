@@ -110,4 +110,20 @@ class UserModel extends Database{
 		}
 		return $row;
 	}
+
+	
+	//right post Category
+	public function rightHome()
+	{	
+		$sql = "SELECT * FROM posts ORDER BY DatePost DESC limit 8 "; 
+
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+		while ($data = $result->fetch_assoc())
+		{
+			$row[] = $data;
+		}
+		return $row;
+	}
 }
