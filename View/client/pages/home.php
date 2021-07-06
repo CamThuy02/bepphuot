@@ -33,33 +33,43 @@
                 <div class="main-slider1 img-overlay-slider">
                     <div class="bend niceties preview-1">
                         <div id="ensign-nivoslider-3" class="slides">
-                            <img src="Public\client\img\banner\slide1.jpg" alt="slider" title="#slider-direction-1" />
-                            <img src="Public\client\img\banner\slide2.jpg" alt="slider" title="#slider-direction-2" />
-                            <img src="Public\client\img\banner\slide3.jpg" alt="slider" title="#slider-direction-3" />
+                            <?php 
+                                    $row= new UserModel();
+                                    $slideHome = $row->slideHome();
+                                    foreach ($slideHome as $sliderel){
+                                ?>
+                            <img src="<?php echo $sliderel['Img'] ?>" alt="slider" title="#slider-direction-1" />
+                            <?php }?>
                         </div>
+
                         <!-- direction 1 -->
+                        <?php 
+                                    $row= new UserModel();
+                                    $slideHome = $row->slideHome();
+                                    foreach ($slideHome as $sliderel){
+                                ?>
                         <div id="slider-direction-1" class="t-cn slider-direction">
                             <div class="slider-content s-tb slide-1">
                                 <div class="title-container s-tb-c">
                                     <div class="text-left pl-50 pl20-xs">
-                                        <div class="topic-box-sm color-cinnabar mb-20">PHỞ BÒ HÀ NỘI</div>
+                                        <!-- <div class="topic-box-sm color-cinnabar mb-20">ABC</div> -->
                                         <div class="post-date-light d-none d-sm-block">
                                             <ul>
                                                 <li>
                                                     <span>
                                                         <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                    </span>04 tháng 5, 2021
+                                                    </span><?php echo $sliderel['DatePost'] ?>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="slider-title">Một nét đặc sắc trong ẩm thực Hà thành chu du khắp thế
-                                            giới.</div>
+                                        <div class="slider-title"><?php echo $sliderel['Title'] ?></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <?php }?>
                         <!-- direction 2 -->
-                        <div id="slider-direction-2" class="t-cn slider-direction">
+                        <!-- <div id="slider-direction-2" class="t-cn slider-direction">
                             <div class="slider-content s-tb slide-2">
                                 <div class="title-container s-tb-c">
                                     <div class="text-left pl-50 pl20-xs">
@@ -78,28 +88,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- direction 3 -->
-                        <div id="slider-direction-3" class="t-cn slider-direction">
-                            <div class="slider-content s-tb slide-3">
-                                <div class="title-container s-tb-c">
-                                    <div class="text-left pl-50 pl20-xs">
-                                        <div class="topic-box-sm color-cinnabar mb-20">KHO QUẸT</div>
-                                        <div class="post-date-light d-none d-sm-block">
-                                            <ul>
-                                                <li>
-                                                    <span>
-                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                    </span>04 tháng 5, 2021
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="slider-title">Món ngon miền Tây gây thương nhớ cho những người con
-                                            xa quê.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -532,7 +523,7 @@
                 <div class="sidebar-box item-box-light-md-less30">
                     <div class="topic-border color-cinnabar mb-30">
                         <div class="topic-box-lg color-cinnabar" style:{color="black" }>Bài viết khác</div>
-                    </div>g
+                    </div>
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane fade active show" id="recent">
                             <div class="row">

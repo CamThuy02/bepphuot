@@ -127,10 +127,25 @@ class UserModel extends Database{
 	}
 
 	
-	//right post Category
+	//right post Home
 	public function rightHome()
 	{	
 		$sql = "SELECT * FROM posts ORDER BY DatePost DESC limit 8 "; 
+
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+		while ($data = $result->fetch_assoc())
+		{
+			$row[] = $data;
+		}
+		return $row;
+	}
+	
+	//Slie Home
+	public function slideHome()
+	{	
+		$sql = "SELECT * FROM posts WHERE CategoryId='101' ORDER BY ViewNumber DESC limit 3 "; 
 
 		$result = $this->db->conn->query($sql);
 
