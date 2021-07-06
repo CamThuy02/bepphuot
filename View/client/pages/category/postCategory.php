@@ -30,16 +30,20 @@
     style="background-image: url('https://s3.ap-south-1.amazonaws.com/booko-events/vendor/images/CocktailBanner_02.jpg');">
     <div class="container">
         <div class="breadcrumbs-content">
-            <h1>Công thức</h1>
+        <?php 
+        foreach ($tagPostCategory as $tagrel){
+        ?>
+            <h1><?php echo $tagrel['ParentName']?></h1>
             <ul>
                 <li>
                     <a href="bepphuot.html">Trang chủ</a> -
                 </li>
                 <li>
-                    <a href="#">Công thức</a> -
+                    <a href="#"><?php echo $tagrel['ParentName']?></a> -
                 </li>
-                <li>Thức uống</li>
+                <li><?php echo $tagrel['CategoryName']?></li>
             </ul>
+        <?php } ?>
         </div>
     </div>
 </section>
@@ -95,13 +99,13 @@
                 <div class="item-box-light-md-less30 ie-full-width scrollbar" id="scroll-style">
                     <div class="row">
                         <?php 
-                foreach ($postCategory as $rel){
+                foreach ($leftPostCategory as $leftrel){
             ?>
                         <div class="col-lg-12 col-md-6 col-sm-12">
                             <div class="media media-none--md mb-30">
                                 <div class="position-relative width-40">
                                     <a href="single.html" class="img-opacity-hover">
-                                        <img src="<?php echo $rel['Img'] ?>" alt="news" class="img-fluid">
+                                        <img src="<?php echo $leftrel['Img'] ?>" alt="news" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="media-body p-mb-none-child media-margin30">
@@ -110,14 +114,14 @@
                                             <li>
                                                 <span>
                                                     <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                </span><?php echo $rel['DatePost'] ?>
+                                                </span><?php echo $leftrel['DatePost'] ?>
                                             </li>
                                         </ul>
                                     </div>
                                     <h3 class="title-semibold-dark size-lg mb-15">
-                                        <a href="single.html"><?php echo $rel['Title'] ?></a>
+                                        <a href="single.html"><?php echo $leftrel['Title'] ?></a>
                                     </h3>
-                                    <p><?php echo $rel['Summary'] ?>
+                                    <p><?php echo $leftrel['Summary'] ?>
                                     </p>
                                 </div>
                             </div>
