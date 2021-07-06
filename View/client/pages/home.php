@@ -374,7 +374,7 @@
 <section class="section-space-bottom-less30">
     <div class="container">
         <div class="row">
-            <div class="col-xl-8 col-lg-12 mb-30">
+            <div class="col-xl-8 col-lg-12 mb-30 scrollbar" id="scroll-style">
                 <div class="item-box-light-md-less30 ie-full-width">
                     <div class="topic-border color-cinnabar mb-30">
                         <div class="topic-box-lg color-cinnabar">Quán ngon</div>
@@ -493,7 +493,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ne-sidebar sidebar-break-lg col-xl-4 col-lg-12">
+            <div class="ne-sidebar sidebar-break-lg col-xl-4 col-lg-12 scrollbar" id="scroll-style">
                 <div class="sidebar-box item-box-light-md">
                     <div class="topic-border color-cinnabar mb-30">
                         <div class="topic-box-lg color-cinnabar">Kết nối</div>
