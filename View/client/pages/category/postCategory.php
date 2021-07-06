@@ -26,7 +26,8 @@
 </section>
 <!-- end of news feed area  -->
 <!-- start of section bannere -->
-<section class="breadcrumbs-area" style="background-image: url('https://s3.ap-south-1.amazonaws.com/booko-events/vendor/images/CocktailBanner_02.jpg');">
+<section class="breadcrumbs-area"
+    style="background-image: url('https://s3.ap-south-1.amazonaws.com/booko-events/vendor/images/CocktailBanner_02.jpg');">
     <div class="container">
         <div class="breadcrumbs-content">
             <h1>Công thức</h1>
@@ -61,7 +62,7 @@
                     data-r-x-medium-dots="false" data-r-small="2" data-r-small-nav="true" data-r-small-dots="false"
                     data-r-medium="2" data-r-medium-nav="true" data-r-medium-dots="false" data-r-Large="3"
                     data-r-Large-nav="true" data-r-Large-dots="false">
-                   
+
                     <?php 
                     foreach ($topPostCategory as $toprel){
                     ?>
@@ -87,49 +88,49 @@
                             </h3>
                         </div>
                     </div>
-                    <?php } ?>      
+                    <?php } ?>
                 </div>
             </div>
             <div class="col-xl-8 col-lg-12 mb-30">
-    <div class="item-box-light-md-less30 ie-full-width scrollbar" id="scroll-style">
-        <div class="row">
-            <?php 
+                <div class="item-box-light-md-less30 ie-full-width scrollbar" id="scroll-style">
+                    <div class="row">
+                        <?php 
                 foreach ($postCategory as $rel){
             ?>
-            <div class="col-lg-12 col-md-6 col-sm-12">
-                <div class="media media-none--md mb-30">
-                    <div class="position-relative width-40">
-                        <a href="single.html" class="img-opacity-hover">
-                            <img src="<?php echo $rel['Img'] ?>" alt="news" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="media-body p-mb-none-child media-margin30">
-                        <div class="post-date-dark">
-                            <ul>
-                                <li>
-                                    <span>
-                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                    </span><?php echo $rel['DatePost'] ?>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="title-semibold-dark size-lg mb-15">
-                            <a href="single.html"><?php echo $rel['Title'] ?></a>
-                        </h3>
-                        <p><?php echo $rel['Summary'] ?>
-                        </p>
-                    </div>
-                </div>
+                        <div class="col-lg-12 col-md-6 col-sm-12">
+                            <div class="media media-none--md mb-30">
+                                <div class="position-relative width-40">
+                                    <a href="single.html" class="img-opacity-hover">
+                                        <img src="<?php echo $rel['Img'] ?>" alt="news" class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="media-body p-mb-none-child media-margin30">
+                                    <div class="post-date-dark">
+                                        <ul>
+                                            <li>
+                                                <span>
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                </span><?php echo $rel['DatePost'] ?>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h3 class="title-semibold-dark size-lg mb-15">
+                                        <a href="single.html"><?php echo $rel['Title'] ?></a>
+                                    </h3>
+                                    <p><?php echo $rel['Summary'] ?>
+                                    </p>
+                                </div>
+                            </div>
 
+                        </div>
+                        <?php } ?>
+                    </div>
+                    <!--seemore -->
+                    <center>
+                        <button id="btnSeeMore" class="btn btn-lg btn-danger">Xem thêm</button>
+                    </center>
+                </div>
             </div>
-            <?php } ?>
-        </div>
-        <!--seemore -->
-        <center>
-            <button id="btnSeeMore" class="btn btn-lg btn-danger">Xem thêm</button>
-        </center>
-    </div>
-</div>
             <div class="ne-sidebar sidebar-break-lg col-xl-4 col-lg-12 scrollbar" id="scroll-style">
                 <div class="sidebar-box item-box-light-md">
                     <div class="topic-border color-cinnabar mb-30">
@@ -174,183 +175,25 @@
                         <li class="nav-item">
                             <a href="#recent" data-toggle="tab" aria-expanded="true" class="active">Gần đây</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#popular" data-toggle="tab" aria-expanded="false">Nổi tiếng</a>
-                        </li>
                     </ul>
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane fade active show" id="recent">
                             <div class="row">
-                                <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                    <div class="position-relative">
-                                        <div class="topic-box-top-xs">
-                                            <div class="topic-box-sm color-cod-gray mb-20">Tráng miệng</div>
-                                        </div>
-                                        <a href="single.html" class="img-opacity-hover">
-                                            <img src="img/news/news14.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                        </a>
-                                        <h3 class="title-medium-dark size-sm mb-none">
-                                            <a href="single.html">Hướng dẫn làm rau câu trái cây.</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                    <div class="position-relative">
-                                        <div class="topic-box-top-xs">
-                                            <div class="topic-box-sm color-cod-gray mb-20">Đồ ăn vặt</div>
-                                        </div>
-                                        <a href="single.html" class="img-opacity-hover">
-                                            <img src="img/news/news15.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                        </a>
-                                        <h3 class="title-medium-dark size-sm mb-none">
-                                            <a href="single.html">Công thức làm Pizza đơn giản.</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                    <div class="position-relative">
-                                        <div class="topic-box-top-xs">
-                                            <div class="topic-box-sm color-cod-gray mb-20">Món mặn</div>
-                                        </div>
-                                        <a href="single.html" class="img-opacity-hover">
-                                            <img src="img/news/news16.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                        </a>
-                                        <h3 class="title-medium-dark size-sm mb-none">
-                                            <a href="single.html">Công thức làm bò xào lúc lắc.</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                    <div class="position-relative">
-                                        <div class="topic-box-top-xs">
-                                            <div class="topic-box-sm color-cod-gray mb-20">Thức uống</div>
-                                        </div>
-                                        <a href="single.html" class="img-opacity-hover">
-                                            <img src="img/news/news17.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                        </a>
-                                        <h3 class="title-medium-dark size-sm mb-none">
-                                            <a href="single.html">Sữa chua trái cây đơn giản dễ làm.</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                    <div class="position-relative">
-                                        <div class="topic-box-top-xs">
-                                            <div class="topic-box-sm color-cod-gray mb-20">Tráng miệng</div>
-                                        </div>
-                                        <a href="single.html" class="img-opacity-hover">
-                                            <img src="img/news/news18.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                        </a>
-                                        <h3 class="title-medium-dark size-sm mb-none">
-                                            <a href="single.html">Hướng dẫn làm bánh Macaroon ngon khó cưỡng.</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                    <div class="position-relative">
-                                        <div class="topic-box-top-xs">
-                                            <div class="topic-box-sm color-cod-gray mb-20">Thức uống</div>
-                                        </div>
-                                        <a href="single.html" class="img-opacity-hover">
-                                            <img src="img/news/news19.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                        </a>
-                                        <h3 class="title-medium-dark size-sm mb-none">
-                                            <a href="single.html">Nước cần tây giảm cân, đẹp da, detox cơ thể.</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                    <div class="position-relative">
-                                        <div class="topic-box-top-xs">
-                                            <div class="topic-box-sm color-cod-gray mb-20">Tráng miệng</div>
-                                        </div>
-                                        <a href="single.html" class="img-opacity-hover">
-                                            <img src="img/news/news18.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                        </a>
-                                        <h3 class="title-medium-dark size-sm mb-none">
-                                            <a href="single.html">Hướng dẫn làm bánh Macaroon ngon khó cưỡng.</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                    <div class="position-relative">
-                                        <div class="topic-box-top-xs">
-                                            <div class="topic-box-sm color-cod-gray mb-20">Thức uống</div>
-                                        </div>
-                                        <a href="single.html" class="img-opacity-hover">
-                                            <img src="img/news/news19.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                        </a>
-                                        <h3 class="title-medium-dark size-sm mb-none">
-                                            <a href="single.html">Nước cần tây giảm cân, đẹp da, detox cơ thể.</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="popular">
-                            <div class="row">
-                                <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                    <div class="position-relative">
-                                        <a href="single-news-1.html" class="img-opacity-hover">
-                                            <img src="img/news/news21.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                        </a>
-                                        <h3 class="title-medium-dark size-sm mb-none">
-                                            <a href="single.html">Gợi ý mâm cơm gia đình đơn giản nhưng đầy đủ chất dinh
-                                                dưỡng.</a>
-                                        </h3>
-                                    </div>
-                                </div>
+                                <?php 
+                                    foreach ($rightPostCategory as $rightrel){
+                                ?>
                                 <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
                                     <div class="position-relative">
                                         <a href="single.html" class="img-opacity-hover">
-                                            <img src="img/news/news22.jpg" alt="news" class="img-fluid width-100 mb-10">
+                                            <img src="<?php echo $rightrel['Img'] ?>" alt="news"
+                                                class="img-fluid width-100 mb-10">
                                         </a>
                                         <h3 class="title-medium-dark size-sm mb-none">
-                                            <a href="single.html">Hạ nhiệt ngày hè với những món chè lạ.</a>
+                                            <a href="single.html"><?php echo $rightrel['Title'] ?></a>
                                         </h3>
                                     </div>
                                 </div>
-                                <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                    <div class="position-relative">
-                                        <a href="single-news-1.html" class="img-opacity-hover">
-                                            <img src="img/news/news23.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                        </a>
-                                        <h3 class="title-medium-dark size-sm mb-none">
-                                            <a href="single.html">Phở một nét đặc sắc trong ẩm thực Hà thành chu du khắp
-                                                thế giới..</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                    <div class="position-relative">
-                                        <a href="single.html" class="img-opacity-hover">
-                                            <img src="img/news/news20.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                        </a>
-                                        <h3 class="title-medium-dark size-sm mb-none">
-                                            <a href="single.html">Tết đến ... nhớ nồi bánh Chưng</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                    <div class="position-relative">
-                                        <a href="single-news-1.html" class="img-opacity-hover">
-                                            <img src="img/news/news24.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                        </a>
-                                        <h3 class="title-medium-dark size-sm mb-none">
-                                            <a href="single.html">Những loại đồ uống có lợi cho sức khỏe.</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                    <div class="position-relative">
-                                        <a href="single.html" class="img-opacity-hover">
-                                            <img src="img/news/news9.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                        </a>
-                                        <h3 class="title-medium-dark size-sm mb-none">
-                                            <a href="single.html">Thịt kho trứng - món ngon ngày tết.</a>
-                                        </h3>
-                                    </div>
-                                </div>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>

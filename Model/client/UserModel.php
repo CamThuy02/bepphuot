@@ -69,7 +69,7 @@ class UserModel extends Database{
 	//Left post Category
 	public function postCategory($id)
 	{	
-		$sql = "SELECT * FROM posts WHERE CategoryId = $id order by DatePost DESC "; //giảm
+		$sql = "SELECT * FROM posts WHERE CategoryId = $id ORDER BY DatePost DESC "; //giảm
 
 		$result = $this->db->conn->query($sql);
 
@@ -84,7 +84,22 @@ class UserModel extends Database{
 	//Top post Category
 	public function topPostCategory($id)
 	{	
-		$sql = "SELECT * FROM posts WHERE CategoryId = $id order by ViewNumber DESC LIMIT 5 "; //giảm
+		$sql = "SELECT * FROM posts WHERE CategoryId = $id ORDER BY ViewNumber DESC LIMIT 5 "; //giảm
+
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+		while ($data = $result->fetch_assoc())
+		{
+			$row[] = $data;
+		}
+		return $row;
+	}
+
+	//right post Category
+	public function rightPostCategory($id)
+	{	
+		$sql = "SELECT * FROM posts WHERE CategoryId = $id ORDER BY DatePost DESC LIMIT 8 "; //giảm
 
 		$result = $this->db->conn->query($sql);
 

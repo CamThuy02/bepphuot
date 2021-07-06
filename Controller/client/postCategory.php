@@ -12,7 +12,8 @@ class PostCategory {
 			$CategoryId = $_GET['CategoryId'];
 
 			$postCategory = $userModel->postCategory($CategoryId);	
-			$topPostCategory = $userModel->topPostCategory($CategoryId);		
+			$topPostCategory = $userModel->topPostCategory($CategoryId);
+			$rightPostCategory = $userModel->rightPostCategory($CategoryId);		
 		}
 
 		require('View/client/pages/category/postCategory.php');
