@@ -52,7 +52,7 @@
                             <div class="slider-content s-tb slide-1">
                                 <div class="title-container s-tb-c">
                                     <div class="text-left pl-50 pl20-xs">
-                                        <!-- <div class="topic-box-sm color-cinnabar mb-20">ABC</div> -->
+                                        <div class="topic-box-sm color-cinnabar mb-20">Ẩm thực ba miền</div>
                                         <div class="post-date-light d-none d-sm-block">
                                             <ul>
                                                 <li>
@@ -97,9 +97,14 @@
             <div class="col-xl-4 col-lg-12">
                 <div class="item-box-light-md-less30 ie-full-width">
                     <div class="row">
+                    <?php 
+                                    $row= new UserModel();
+                                    $rightSlide = $row->rightSlide();
+                                    foreach ($rightSlide as $rightslrel){
+                                ?>
                         <div class="media mb-30 col-xl-12 col-lg-6 col-md-6 col-sm-12">
                             <a class="img-opacity-hover" href="single-news-1.html">
-                                <img src="Public\client\img\news\news1.jpg" alt="news" class="img-fluid">
+                                <img src="<?php echo $rightslrel['Img'] ?>" alt="news" class="img-fluid">
                             </a>
                             <div class="media-body media-padding5">
                                 <div class="post-date-dark">
@@ -107,72 +112,16 @@
                                         <li>
                                             <span>
                                                 <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>15 tháng 5, 2021
+                                            </span><?php echo $rightslrel['DatePost'] ?>
                                         </li>
                                     </ul>
                                 </div>
                                 <h3 class="title-medium-dark size-md mb-none">
-                                    <a href="single.html">22 mẹo vặt nhà bếp bạn cần biết. </a>
+                                    <a href="single.html"><?php echo $rightslrel['Title'] ?></a>
                                 </h3>
                             </div>
                         </div>
-                        <div class="media mb-30 col-xl-12 col-lg-6 col-md-6 col-sm-12">
-                            <a class="img-opacity-hover" href="single-news-1.html">
-                                <img src="Public\client\img\news\news2.jpg" alt="news" class="img-fluid">
-                            </a>
-                            <div class="media-body media-padding5">
-                                <div class="post-date-dark">
-                                    <ul>
-                                        <li>
-                                            <span>
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>05 tháng 5, 2021
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="title-medium-dark size-md mb-none">
-                                    <a href="single.html">Cách làm cơm chiên Dương Châu đơn giản. </a>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="media mb-30 col-xl-12 col-lg-6 col-md-6 col-sm-12">
-                            <a class="img-opacity-hover" href="single-news-1.html">
-                                <img src="Public\client\img\news\news3.jpg" alt="news" class="img-fluid">
-                            </a>
-                            <div class="media-body media-padding5">
-                                <div class="post-date-dark">
-                                    <ul>
-                                        <li>
-                                            <span>
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>11 tháng 5, 2021
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="title-medium-dark size-md mb-none">
-                                    <a href="single.html">Cách pha nước cam không đắng.</a>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="media mb-30 col-xl-12 col-lg-6 col-md-6 col-sm-12">
-                            <a class="img-opacity-hover" href="single-news-1.html">
-                                <img src="Public\client\img\news\news4.jpg" alt="news" class="img-fluid">
-                            </a>
-                            <div class="media-body media-padding5">
-                                <div class="post-date-dark">
-                                    <ul>
-                                        <li>
-                                            <span>
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>04 tháng 5, 2021
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="title-medium-dark size-md mb-none">
-                                    <a href="single.html">Bánh mì và cacao sữa, ngon không tưởng</a>
-                                </h3>
-                            </div>
-                        </div>
+                        <?php }?>                        
                     </div>
                 </div>
             </div>
@@ -232,14 +181,19 @@
             <div class="col-xl-8 col-lg-12 mb-30 scrollbar" id="scroll-style">
                 <div class="item-box-light-md-less30 ie-full-width">
                     <div class="topic-border color-cinnabar mb-30">
-                        <div class="topic-box-lg color-cinnabar">Quán ngon</div>
+                        <div class="topic-box-lg color-cinnabar">Cẩm nang nhà bếp</div>
                     </div>
                     <div class="row">
+                    <?php
+                    $row= new UserModel();
+                    $bookHome = $row->bookHome();
+                    foreach ($bookHome as $bokrel){
+                     ?>                        
                         <div class="col-lg-12 col-md-6 col-sm-12">
                             <div class="media media-none--md mb-30">
                                 <div class="position-relative width-40">
                                     <a href="single.html" class="img-opacity-hover">
-                                        <img src="Public\client\img\news\news10.jpg" alt="news" class="img-fluid">
+                                        <img src="<?php echo $bokrel['Img'] ?>" alt="news" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="media-body p-mb-none-child media-margin30">
@@ -248,141 +202,25 @@
                                             <li>
                                                 <span>
                                                     <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                </span>04 tháng 5, 2021
+                                                </span><?php echo $bokrel['DatePost'] ?>
                                             </li>
                                         </ul>
                                     </div>
                                     <h3 class="title-semibold-dark size-lg mb-15">
-                                        <a href="single.html">Top 10 quán ăn vặt ngon bổ rẻ ở Sài Gòn.</a>
+                                        <a href="single.html"><?php echo $bokrel['Title'] ?></a>
                                     </h3>
-                                    <p>
-                                        Quán ăn vặt tại Sài Gòn gần như đã trở thành nét đặc trưng của thành phố trẻ
-                                        năng động này. Những quán ăn vặt vỉa hè đem lại cảm giác thoải mái thú vị và đặc
-                                        biệt là mức giá rất phải chăng...
+                                    <p><?php echo $bokrel['Summary'] ?>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-12 col-md-6 col-sm-12">
-                            <div class="media media-none--md mb-30">
-                                <div class="position-relative width-40">
-                                    <a href="single.html" class="img-opacity-hover">
-                                        <img src="Public\client\img\news\news11.jpg" alt="news" class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="media-body p-mb-none-child media-margin30">
-                                    <div class="post-date-dark">
-                                        <ul>
-                                            <li>
-                                                <span>
-                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                </span>04 tháng 5, 2021
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="title-semibold-dark size-lg mb-15">
-                                        <a href="single.html">9 Quán Cafe “chất chơi” ở Sài Gòn nhất định phải ghé
-                                            thử.</a>
-                                    </h3>
-                                    <p>
-                                        Sài Gòn được xem là điểm đến vui chơi thả ga của nhiều du khách trong và ngoài
-                                        nước bởi ở đây có nhiều địa điểm du lịch đẹp,...
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-6 col-sm-12">
-                            <div class="media media-none--md mb-30">
-                                <div class="position-relative width-40">
-                                    <a href="single.html" class="img-opacity-hover">
-                                        <img src="Public\client\img\news\news12.jpg" alt="news" class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="media-body p-mb-none-child media-margin30">
-                                    <div class="post-date-dark">
-                                        <ul>
-                                            <li>
-                                                <span>
-                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                </span>04 tháng 5, 2021
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="title-semibold-dark size-lg mb-15">
-                                        <a href="single.html">8 quán chay thanh tịnh ở Bến Tre bạn nên thử.</a>
-                                    </h3>
-                                    <p>
-                                        Bạn đã từng ăn chay? Bạn cảm thấy những món chay không hề khó ăn, nhạt nhẽo trái
-                                        lại rất thơm ngon, nhiều màu sắc vừa tốt cho sức khỏe?...
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-6 col-sm-12">
-                            <div class="media media-none--md mb-30">
-                                <div class="position-relative width-40">
-                                    <a href="single.html" class="img-opacity-hover">
-                                        <img src="Public\client\img\news\news13.jpg" alt="news" class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="media-body p-mb-none-child media-margin30">
-                                    <div class="post-date-dark">
-                                        <ul>
-                                            <li>
-                                                <span>
-                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                </span>06 tháng 5, 2021
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="title-semibold-dark size-lg mb-15">
-                                        <a href="single.html">15 quán không thể bỏ qua khi ghé Hà Nội.</a>
-                                    </h3>
-                                    <p>
-                                        Nếu lần đầu tiên du lịch tới Thủ đô thì chắc hẳn bạn còn băn khoăn không biết ăn
-                                        gì ở Hà Nội cho ngon? Bài viết hôm nay xin được dành trọn cho ẩm thực Hà Nội...
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                       <?php } ?>
                     </div>
                 </div>
             </div>
             <div class="ne-sidebar sidebar-break-lg col-xl-4 col-lg-12 scrollbar" id="scroll-style">
                 <div class="sidebar-box item-box-light-md">
-                    <div class="topic-border color-cinnabar mb-30">
-                        <div class="topic-box-lg color-cinnabar">Kết nối</div>
-                    </div>
-                    <ul class="stay-connected-color overflow-hidden">
-                        <li class="facebook">
-                            <a href="#">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                                <div class="connection-quantity">50.2 k</div>
-                                <p>Thích</p>
-                            </a>
-                        </li>
-                        <li class="twitter">
-                            <a href="#">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                                <div class="connection-quantity">10.3 k</div>
-                                <p>Theo dõi</p>
-                            </a>
-                        </li>
-                        <li class="linkedin">
-                            <a href="#">
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                <div class="connection-quantity">25.4 k</div>
-                                <p>Thích</p>
-                            </a>
-                        </li>
-                        <li class="rss">
-                            <a href="#">
-                                <i class="fa fa-rss" aria-hidden="true"></i>
-                                <div class="connection-quantity">20.8 k</div>
-                                <p>Đăng ký</p>
-                            </a>
-                        </li>
-                    </ul>
+                <a href="/bepphuot" > <img src="Public/client/img/logo1.png"></a>
                 </div>
                 <div class="sidebar-box item-box-light-md-less30">
                     <div class="topic-border color-cinnabar mb-30">

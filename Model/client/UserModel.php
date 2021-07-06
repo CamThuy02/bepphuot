@@ -145,7 +145,7 @@ class UserModel extends Database{
 	//Slie Home
 	public function slideHome()
 	{	
-		$sql = "SELECT * FROM posts WHERE CategoryId='101' ORDER BY ViewNumber DESC limit 3 "; 
+		$sql = "SELECT * FROM posts WHERE CategoryId='201' ORDER BY ViewNumber DESC limit 3 "; 
 		$result = $this->db->conn->query($sql);
 
 		$row = array();
@@ -155,7 +155,6 @@ class UserModel extends Database{
 		}
 		return $row;
 	}
-
 
 
 	public function recipeHome()
@@ -174,6 +173,32 @@ class UserModel extends Database{
 	public function foodHome()
 	{	
 		$sql = "SELECT * FROM posts WHERE CategoryId LIKE '2%' ORDER BY DatePost DESC limit 6"; 
+
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+		while ($data = $result->fetch_assoc())
+		{
+			$row[] = $data;
+		}
+		return $row;
+	}
+	public function rightSlide()
+	{	
+		$sql = "SELECT * FROM posts WHERE CategoryId='201' ORDER BY PostId DESC limit 4"; 
+
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+		while ($data = $result->fetch_assoc())
+		{
+			$row[] = $data;
+		}
+		return $row;
+	}
+	public function bookHome()
+	{	
+		$sql = "SELECT * FROM posts WHERE CategoryId LIKE '3%' ORDER BY DatePost DESC limit 10"; 
 
 		$result = $this->db->conn->query($sql);
 

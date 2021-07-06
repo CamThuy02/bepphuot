@@ -11,12 +11,7 @@ class PostCategory {
 
 			$CategoryId = $_GET['CategoryId'];
 
-			$tagPostCategory = $userModel->tagPostCategory($CategoryId);
-			// $row = array();
-			// while ($data = $tagPostCategory->fetch_assoc())
-			// {
-			// 	$row[] = $data;
-			// }
+			$tagPostCategory = $userModel->tagPostCategory($CategoryId);			
 			$leftPostCategory = $userModel->leftPostCategory($CategoryId);	
 			$topPostCategory = $userModel->topPostCategory($CategoryId);
 			$rightPostCategory = $userModel->rightPostCategory($CategoryId);		

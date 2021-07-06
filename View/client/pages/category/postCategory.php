@@ -49,8 +49,6 @@
 </section>
 <!-- end of section banner -->
 <br>
-<!-- start of cong thuc-->
-<!-- end of cong thuc-->
 <!-- start of section chuyen muc top -->
 <section class="section-space-bottom-less30">
     <div class="container">
@@ -137,39 +135,7 @@
             </div>
             <div class="ne-sidebar sidebar-break-lg col-xl-4 col-lg-12 scrollbar" id="scroll-style">
                 <div class="sidebar-box item-box-light-md">
-                    <div class="topic-border color-cinnabar mb-30">
-                        <div class="topic-box-lg color-cinnabar">Kết nối</div>
-                    </div>
-                    <ul class="stay-connected-color overflow-hidden">
-                        <li class="facebook">
-                            <a href="#">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                                <div class="connection-quantity">50.2 k</div>
-                                <p>Thích</p>
-                            </a>
-                        </li>
-                        <li class="twitter">
-                            <a href="#">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                                <div class="connection-quantity">10.3 k</div>
-                                <p>Theo dõi</p>
-                            </a>
-                        </li>
-                        <li class="linkedin">
-                            <a href="#">
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                <div class="connection-quantity">25.4 k</div>
-                                <p>Thích</p>
-                            </a>
-                        </li>
-                        <li class="rss">
-                            <a href="#">
-                                <i class="fa fa-rss" aria-hidden="true"></i>
-                                <div class="connection-quantity">20.8 k</div>
-                                <p>Đăng ký</p>
-                            </a>
-                        </li>
-                    </ul>
+                    <a href="/bepphuot" > <img src="Public/client/img/logo1.png"></a>                    
                 </div>
                 <div class="sidebar-box item-box-light-md-less30">
                     <div class="topic-border color-cinnabar mb-30">

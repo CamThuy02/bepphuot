@@ -119,78 +119,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <?php @include ('menu.php')?>
-                            <!-- <div class="col-lg-8 d-none d-lg-block position-static min-height-none">
-                                <div class="ne-main-menu">
-                                    <nav id="dropdown">
-                                        <ul>
-                                            <li class="active">
-                                                <a href="bepphuot.html">Trang chủ</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">công thức</a>
-                                                <ul class="ne-dropdown-menu">
-                                                    <li>
-                                                        <a href="chuyenmuc.html">Thức uống</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="single.html">Khai vị</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="single.html">Món mặn</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="single.html">Tráng miệng</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="single.html">Đồ ăn vặt</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="single.html">Nước chấm</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#">Ẩm thực</a>
-                                                <ul class="ne-dropdown-menu">
-                                                    <li>
-                                                        <a href="single.html">Ẩm thực ba miền</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="single.html">Món ngon ngày tết</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="single.html">Mâm cơm gia đình</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="single.html">Tráng miệng</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="single.html">Thức uống</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#">cẩm nang nhà bếp</a>
-                                                <ul class="ne-dropdown-menu">
-                                                    <li>
-                                                        <a href="single.html">Khéo tay hay làm</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="single.html">Mẹo vặt nhà bếp</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="single.html">Sức khỏe gia đình</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="404.html">Quán ngon</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div> -->
+                            <?php @include ('menu.php')?>                            
                             <div class="col-lg-2 col-md-2 col-sm-2 text-right position-static">
                                 <div class="header-action-item on-mobile-fixed">
                                     <ul>
@@ -208,15 +137,7 @@
                                                         <button type="button" class="login-btn" data-toggle="modal" data-target="#Logout">
                                                             <i class="fa fa-user" aria-hidden="true"></i><?=$_SESSION['user']['tendn']?>
                                                         </button>
-                                                    </li>
-                                                    <!-- <li class="d-none d-sm-block d-md-block d-lg-inline-block">
-                                                        <button type="button" class="login-btn">
-                                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                                            <a href="?controller=logout" style="color: #e53935">
-                                                                Đăng xuất
-                                                            </a>
-                                                        </button>
-                                                    </li> -->
+                                                    </li>                                                   
                                                 <?php } else {?>
                                                     <li class="d-none d-sm-block d-md-block d-lg-inline-block">
                                                         <button type="button" class="login-btn" data-toggle="modal" data-target="#myModal">
