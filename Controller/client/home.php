@@ -8,7 +8,8 @@ class Home {
 		$userModel = new UserModel();
 
 		$userModel->rightHome();		
-		
+		$userModel->recipeHome();
+		$userModel->foodHome();
 		require('View/client/pages/home.php');
 
 		//require ('View/client/layouts/footer.php'); /*giao diện footer*/

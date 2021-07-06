@@ -141,4 +141,31 @@ class UserModel extends Database{
 		}
 		return $row;
 	}
+
+	public function recipeHome()
+	{	
+		$sql = "SELECT * FROM posts WHERE CategoryId LIKE '1%' ORDER BY DatePost DESC limit 6";
+
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+		while ($data = $result->fetch_assoc())
+		{
+			$row[] = $data;
+		}
+		return $row;
+	}
+	public function foodHome()
+	{	
+		$sql = "SELECT * FROM posts WHERE CategoryId LIKE '2%' ORDER BY DatePost DESC limit 6"; 
+
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+		while ($data = $result->fetch_assoc())
+		{
+			$row[] = $data;
+		}
+		return $row;
+	}
 }
