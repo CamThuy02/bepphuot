@@ -6,7 +6,6 @@ class ListParentCategory {
 		require('../../Model/admin/parentCategory.php');
 		$parentcategoryModel = new ParentCategoryModel();
 		$result = $parentcategoryModel->listParentCategory();
-		require('../../View/admin/layouts/header.php');
 		require('../../View/admin/pages/parentCategory/list.php');
 	}
 }

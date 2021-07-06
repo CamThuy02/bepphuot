@@ -187,28 +187,16 @@
             <div class="ne-isotope-all">
                 <div class="topic-border color-cinnabar mb-30">
                     <div class="topic-box-lg color-cinnabar">Công thức phổ biến</div>
-                    <div class="isotope-classes-tab isotop-btn">
-                        <a href="#" class="current">Tất cả</a>
-                        <a href="#">Thức uống</a>
-                        <a href="#">Khai vị</a>
-                        <a href="#">Món mặn</a>
-                        <a href="#">Tráng miệng</a>
-                        <a href="#">Đồ ăn vặt</a>
-                        <a href="#">Nước chấm</a>
-                    </div>
-                    <div class="more-info-link">
-                        <a href="">Thêm
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </a>
-                    </div>
                 </div>
                 <div class="row tab-space5 featuredContainer">
+                <?php
+                    $row= new UserModel();
+                    $recipeHome = $row->recipeHome();
+                    foreach ($recipeHome as $reciperel){
+                ?>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 ">
                         <div class="img-overlay-70 img-scale-animate mb-10">
-                            <img src="Public\client\img\page1-p.jpg" alt="news" class="img-fluid width-100">
-                            <div class="topic-box-top-sm">
-                                <div class="topic-box-sm color-cod-gray mb-20">Món mặn</div>
-                            </div>
+                            <img src="<?php echo $reciperel['Img'] ?>" alt="news" class="img-fluid width-100">
                             <div class="mask-content-xs">
                                 <div class="post-date-light d-none d-md-block">
                                     <ul>
@@ -218,142 +206,18 @@
                                         <li>
                                             <span>
                                                 <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>12 tháng 5, 2021
+                                            </span>
+                                            <?php echo $reciperel['DatePost'] ?>
                                         </li>
                                     </ul>
                                 </div>
                                 <h3 class="title-medium-light size-lg">
-                                    <a href="single.html">7 thực đơn bữa sáng nhanh gọn, healthy cho ngày cuối tuần</a>
+                                    <a href="single.html"><?php echo $reciperel['Title'] ?></a>
                                 </h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="img-overlay-70 img-scale-animate mb-10">
-                            <img src="Public\client\img\news\news5.jpg" alt="news" class="img-fluid width-100">
-                            <div class="topic-box-top-sm">
-                                <div class="topic-box-sm color-cod-gray mb-20">Tráng miệng</div>
-                            </div>
-                            <div class="mask-content-xs">
-                                <div class="post-date-light d-none d-md-block">
-                                    <ul>
-                                        <li>
-                                            <a href="single.html"></a>
-                                        </li>
-                                        <li>
-                                            <span>
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>04 tháng 5, 2021
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="title-medium-light size-lg">
-                                    <a href="single.html">Cách làm kem dâu tại nhà: ngon, dẻo mịn không kém ngoài hàng
-                                    </a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="img-overlay-70 img-scale-animate mb-10">
-                            <img src="Public\client\img\news\news6.jpg" alt="news" class="img-fluid width-100">
-                            <div class="topic-box-top-sm">
-                                <div class="topic-box-sm color-cod-gray mb-20">Thức uống</div>
-                            </div>
-                            <div class="mask-content-xs">
-                                <div class="post-date-light d-none d-md-block">
-                                    <ul>
-                                        <li>
-                                            <a href="single.html"></a>
-                                        </li>
-                                        <li>
-                                            <span>
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>04 tháng 5, 2021
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="title-medium-light size-lg">
-                                    <a href="single.html">Đồ uống từ dâu tây cho ngày hè sảng khoái</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="img-overlay-70 img-scale-animate mb-10">
-                            <img src="Public\client\img\news\news7.jpg" alt="news" class="img-fluid width-100">
-                            <div class="topic-box-top-sm">
-                                <div class="topic-box-sm color-cod-gray mb-20">Khai vị</div>
-                            </div>
-                            <div class="mask-content-xs">
-                                <div class="post-date-light d-none d-md-block">
-                                    <ul>
-                                        <li>
-                                            <a href="single.html"></a>
-                                        </li>
-                                        <li>
-                                            <span>
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>04 tháng 5, 2021
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="title-medium-light size-lg">
-                                    <a href="single.html">Hướng dẫn làm gỏi ngó sen, khai vị cho bữa tiệc gia đình.</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="img-overlay-70 img-scale-animate mb-10">
-                            <img src="Public\client\img\news\news8.jpg" alt="news" class="img-fluid width-100">
-                            <div class="topic-box-top-sm">
-                                <div class="topic-box-sm color-cod-gray mb-20">Đồ ăn vặt</div>
-                            </div>
-                            <div class="mask-content-xs">
-                                <div class="post-date-light d-none d-md-block">
-                                    <ul>
-                                        <li>
-                                            <a href="single.html"></a>
-                                        </li>
-                                        <li>
-                                            <span>
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>06 tháng 5, 2021
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="title-medium-light size-lg">
-                                    <a href="single.html">Cách làm bánh tráng trộn tại nhà ngon như quán.</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="img-overlay-70 img-scale-animate mb-10">
-                            <img src="Public\client\img\news\news9.jpg" alt="news" class="img-fluid width-100">
-                            <div class="topic-box-top-sm">
-                                <div class="topic-box-sm color-cod-gray mb-20">Món mặn</div>
-                            </div>
-                            <div class="mask-content-xs">
-                                <div class="post-date-light d-none d-md-block">
-                                    <ul>
-                                        <li>
-                                            <a href="single.html"></a>
-                                        </li>
-                                        <li>
-                                            <span>
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>04 tháng 5, 2021
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="title-medium-light size-lg">
-                                    <a href="single.html">Công thức thịt kho trứng dễ làm nhưng đưa cơm.</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
+                <?php } ?>   
                 </div>
             </div>
 
@@ -548,164 +412,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="sidebar-box item-box-light-md-less30">
-                            <ul class="btn-tab item-inline block-xs nav nav-tabs" role="tablist">
-                                <li class="nav-item">
-                                    <a href="#recent" data-toggle="tab" aria-expanded="true" class="active">Gần đây</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#popular" data-toggle="tab" aria-expanded="false">Nổi tiếng</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane fade active show" id="recent">
-                                    <div class="row">
-                                        <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                            <div class="position-relative">
-                                                <div class="topic-box-top-xs">
-                                                    <div class="topic-box-sm color-cod-gray mb-20">Tráng miệng</div>
-                                                </div>
-                                                <a href="single.html" class="img-opacity-hover">
-                                                    <img src="Public\client\img\news\news14.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                                </a>
-                                                <h3 class="title-medium-dark size-sm mb-none">
-                                                    <a href="single.html">Hướng dẫn làm rau câu trái cây.</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                            <div class="position-relative">
-                                                <div class="topic-box-top-xs">
-                                                    <div class="topic-box-sm color-cod-gray mb-20">Đồ ăn vặt</div>
-                                                </div>
-                                                <a href="single.html" class="img-opacity-hover">
-                                                    <img src="Public\client\img\news\news15.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                                </a>
-                                                <h3 class="title-medium-dark size-sm mb-none">
-                                                    <a href="single.html">Công thức làm Pizza đơn giản.</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                            <div class="position-relative">
-                                                <div class="topic-box-top-xs">
-                                                    <div class="topic-box-sm color-cod-gray mb-20">Món mặn</div>
-                                                </div>
-                                                <a href="single.html" class="img-opacity-hover">
-                                                    <img src="Public\client\img\news\news16.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                                </a>
-                                                <h3 class="title-medium-dark size-sm mb-none">
-                                                    <a href="single.html">Công thức làm bò xào lúc lắc.</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                            <div class="position-relative">
-                                                <div class="topic-box-top-xs">
-                                                    <div class="topic-box-sm color-cod-gray mb-20">Thức uống</div>
-                                                </div>
-                                                <a href="single.html" class="img-opacity-hover">
-                                                    <img src="Public\client\img\news\news17.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                                </a>
-                                                <h3 class="title-medium-dark size-sm mb-none">
-                                                    <a href="single.html">Sữa chua trái cây đơn giản dễ làm.</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                            <div class="position-relative">
-                                                <div class="topic-box-top-xs">
-                                                    <div class="topic-box-sm color-cod-gray mb-20">Tráng miệng</div>
-                                                </div>
-                                                <a href="single.html" class="img-opacity-hover">
-                                                    <img src="Public\client\img\news\news18.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                                </a>
-                                                <h3 class="title-medium-dark size-sm mb-none">
-                                                    <a href="single.html">Hướng dẫn làm bánh Macaroon ngon khó cưỡng.</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                            <div class="position-relative">
-                                                <div class="topic-box-top-xs">
-                                                    <div class="topic-box-sm color-cod-gray mb-20">Thức uống</div>
-                                                </div>
-                                                <a href="single.html" class="img-opacity-hover">
-                                                    <img src="Public\client\img\news\news19.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                                </a>
-                                                <h3 class="title-medium-dark size-sm mb-none">
-                                                    <a href="single.html">Nước cần tây giảm cân, đẹp da, detox cơ thể.</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div role="tabpanel" class="tab-pane fade" id="popular">
-                                    <div class="row">
-                                        <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                            <div class="position-relative">
-                                                <a href="single-news-1.html" class="img-opacity-hover">
-                                                    <img src="Public\client\img\news\news21.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                                </a>
-                                                <h3 class="title-medium-dark size-sm mb-none">
-                                                    <a href="single.html">Gợi ý mâm cơm gia đình đơn giản nhưng đầy đủ chất dinh dưỡng.</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                            <div class="position-relative">
-                                                <a href="single.html" class="img-opacity-hover">
-                                                    <img src="Public\client\img\news\news22.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                                </a>
-                                                <h3 class="title-medium-dark size-sm mb-none">
-                                                    <a href="single.html">Hạ nhiệt ngày hè với những món chè lạ.</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                            <div class="position-relative">
-                                                <a href="single-news-1.html" class="img-opacity-hover">
-                                                    <img src="img/news/news23.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                                </a>
-                                                <h3 class="title-medium-dark size-sm mb-none">
-                                                    <a href="single.html">Phở một nét đặc sắc trong ẩm thực Hà thành chu du khắp thế giới..</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                            <div class="position-relative">
-                                                <a href="single.html" class="img-opacity-hover">
-                                                    <img src="Public\client\img\news\news23.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                                </a>
-                                                <h3 class="title-medium-dark size-sm mb-none">
-                                                    <a href="single.html">Tết đến ... nhớ nồi bánh Chưng</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                            <div class="position-relative">
-                                                <a href="single-news-1.html" class="img-opacity-hover">
-                                                    <img src="Public\client\img\news\news24.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                                </a>
-                                                <h3 class="title-medium-dark size-sm mb-none">
-                                                    <a href="single.html">Những loại đồ uống có lợi cho sức khỏe.</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                            <div class="position-relative">
-                                                <a href="single.html" class="img-opacity-hover">
-                                                    <img src="Public\client\img\news\news9.jpg" alt="news" class="img-fluid width-100 mb-10">
-                                                </a>
-                                                <h3 class="title-medium-dark size-sm mb-none">
-                                                    <a href="single.html">Thịt kho trứng - món ngon ngày tết.</a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+                
             </div>
         </div>
     </div>
@@ -718,27 +425,16 @@
             <div class="ne-isotope-all">
                 <div class="topic-border color-cinnabar mb-30">
                     <div class="topic-box-lg color-cinnabar">Ẩm thực</div>
-                    <div class="isotope-classes-tab isotop-btn">
-                        <a href="#" data-filter="*" class="current">Tất cả</a>
-                        <a href="#">Ẩm thực ba miền</a>
-                        <a href="#">Món ăn ngày tết</a>
-                        <a href="#">Mâm cơm gia đình</a>
-                        <a href="#">Tráng miệng</a>
-                        <a href="#">Thức uống</a>
-                    </div>
-                    <div class="more-info-link">
-                        <a href="">Thêm
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </a>
-                    </div>
                 </div>
                 <div class="row tab-space5 featuredContainer">
+                <?php
+                    $row= new UserModel();
+                    $foodHome = $row->foodHome();
+                    foreach ($foodHome as $foodrel){
+                ?>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="img-overlay-70 img-scale-animate mb-10">
-                            <img src="Public\client\img\news\news23.jpg" alt="news" class="img-fluid width-100">
-                            <div class="topic-box-top-sm">
-                                <div class="topic-box-sm color-cod-gray mb-20">Ẩm thực ba miền</div>
-                            </div>
+                            <img src="<?php echo $foodrel['Img'] ?>" alt="news" class="img-fluid width-100">
                             <div class="mask-content-xs">
                                 <div class="post-date-light d-none d-md-block">
                                     <ul>
@@ -748,143 +444,18 @@
                                         <li>
                                             <span>
                                                 <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>04 tháng 5, 2021
+                                            </span>
+                                            <?php echo $foodrel['DatePost'] ?>
                                         </li>
                                     </ul>
                                 </div>
                                 <h3 class="title-medium-light size-lg">
-                                    <a href="single.html">Phở một nét đặc sắc trong ẩm thực Hà thành chu du khắp thế
-                                        giới.</a>
+                                    <a href="single.html"><?php echo $foodrel['Title'] ?></a>
                                 </h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="img-overlay-70 img-scale-animate mb-10">
-                            <img src="Public\client\img\news\news20.jpg" alt="news" class="img-fluid width-100">
-                            <div class="topic-box-top-sm">
-                                <div class="topic-box-sm color-cod-gray mb-20">Món ngon ngày Tết</div>
-                            </div>
-                            <div class="mask-content-xs">
-                                <div class="post-date-light d-none d-md-block">
-                                    <ul>
-                                        <li>
-                                            <a href="single.html"></a>
-                                        </li>
-                                        <li>
-                                            <span>
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>04 tháng 5, 2021
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="title-medium-light size-lg">
-                                    <a href="single.html">Tết đến ... nhớ nồi bánh Chưng.</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="img-overlay-70 img-scale-animate mb-10">
-                            <img src="Public\client\img\news\news21.jpg" alt="news" class="img-fluid width-100">
-                            <div class="topic-box-top-sm">
-                                <div class="topic-box-sm color-cod-gray mb-20">Mâm cơm gia đình</div>
-                            </div>
-                            <div class="mask-content-xs">
-                                <div class="post-date-light d-none d-md-block">
-                                    <ul>
-                                        <li>
-                                            <a href="single.html"></a>
-                                        </li>
-                                        <li>
-                                            <span>
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>04 tháng 5, 2021
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="title-medium-light size-lg">
-                                    <a href="single.html">Gợi ý mâm cơm gia đình đơn giản nhưng đầy đủ chất dinh
-                                        dưỡng.</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="img-overlay-70 img-scale-animate mb-10">
-                            <img src="Public\client\img\news\news22.jpg" alt="news" class="img-fluid width-100">
-                            <div class="topic-box-top-sm">
-                                <div class="topic-box-sm color-cod-gray mb-20">Tráng miệng</div>
-                            </div>
-                            <div class="mask-content-xs">
-                                <div class="post-date-light d-none d-md-block">
-                                    <ul>
-                                        <li>
-                                            <a href="single.html"></a>
-                                        </li>
-                                        <li>
-                                            <span>
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>04 tháng 5, 2021
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="title-medium-light size-lg">
-                                    <a href="single.html">Hạ nhiệt ngày hè với những món chè lạ.</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="img-overlay-70 img-scale-animate mb-10">
-                            <img src="Public\client\img\news\news24.jpg" alt="news" class="img-fluid width-100">
-                            <div class="topic-box-top-sm">
-                                <div class="topic-box-sm color-cod-gray mb-20">Thức uống</div>
-                            </div>
-                            <div class="mask-content-xs">
-                                <div class="post-date-light d-none d-md-block">
-                                    <ul>
-                                        <li>
-                                            <a href="single.html"></a>
-                                        </li>
-                                        <li>
-                                            <span>
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>06 tháng 5, 2021
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="title-medium-light size-lg">
-                                    <a href="single.html">Những loại đồ uống có lợi cho sức khỏe.</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="img-overlay-70 img-scale-animate mb-10">
-                            <img src="Public\client\img\news\news9.jpg" alt="news" class="img-fluid width-100">
-                            <div class="topic-box-top-sm">
-                                <div class="topic-box-sm color-cod-gray mb-20">Món ngon ngày Tết</div>
-                            </div>
-                            <div class="mask-content-xs">
-                                <div class="post-date-light d-none d-md-block">
-                                    <ul>
-                                        <li>
-                                            <a href="single.html"></a>
-                                        </li>
-                                        <li>
-                                            <span>
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
-                                            </span>04 tháng 5, 2021
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h3 class="title-medium-light size-lg">
-                                    <a href="single.html">Thịt kho trứng - món ngon ngày tết.</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
+                <?php } ?>
                 </div>
             </div>
         </div>
