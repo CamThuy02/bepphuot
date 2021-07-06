@@ -26,7 +26,7 @@
 </section>
 <!-- end of news feed area  -->
 <!-- start of section bannere -->
-<section class="breadcrumbs-area" style="background-image: url('img/banner/banthucuong1.jpg');">
+<section class="breadcrumbs-area" style="background-image: url('https://s3.ap-south-1.amazonaws.com/booko-events/vendor/images/CocktailBanner_02.jpg');">
     <div class="container">
         <div class="breadcrumbs-content">
             <h1>Công thức</h1>
@@ -50,10 +50,9 @@
 <section class="section-space-bottom-less30">
     <div class="container">
         <div class="row">
-
             <div class="container item-box-light-lg mb-30">
-                <div class="topic-border color-cod-gray mb-30 width-100">
-                    <div class="topic-box-lg color-cod-gray">Bài viết HOT</div>
+                <div class="topic-border color-cinnabar mb-30">
+                    <div class="topic-box-lg color-cinnabar">Bài viết HOT</div>
                 </div>
                 <div class="ne-carousel nav-control-top2 color-cod-gray" data-loop="true" data-items="3"
                     data-margin="15" data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="2000"
