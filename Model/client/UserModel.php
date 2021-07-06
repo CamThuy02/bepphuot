@@ -65,9 +65,24 @@ class UserModel extends Database{
 		}
 		return $row;
 	}
-	
+
+	//Tag post Category
+	public function tagPostCategory($id)
+	{	
+		$sql = "SELECT * FROM category, parentcategory WHERE category.ParentId = parentcategory.ParentId AND category.CategoryId = $id"; //giảm
+
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+		while ($data = $result->fetch_assoc())
+		{
+			$row[] = $data;
+		}
+		return $row;
+	}
+
 	//Left post Category
-	public function postCategory($id)
+	public function leftPostCategory($id)
 	{	
 		$sql = "SELECT * FROM posts WHERE CategoryId = $id ORDER BY DatePost DESC "; //giảm
 
