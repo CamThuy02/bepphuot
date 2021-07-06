@@ -532,12 +532,7 @@
                 <div class="sidebar-box item-box-light-md-less30">
                     <div class="topic-border color-cinnabar mb-30">
                         <div class="topic-box-lg color-cinnabar" style:{color="black" }>Bài viết khác</div>
-                    </div>
-                    <ul class="btn-tab item-inline block-xs nav nav-tabs" role="tablist">
-                        <li class="nav-item">
-                            <a href="#recent" data-toggle="tab" aria-expanded="true" class="active">Gần đây</a>
-                        </li>
-                    </ul>
+                    </div>g
                     <div class="tab-content">
                         <div role="tabpanel" class="tab-pane fade active show" id="recent">
                             <div class="row">
