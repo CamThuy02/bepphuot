@@ -3,7 +3,7 @@
                                     <nav id="dropdown">
                                         <ul>
                                             <li class="active">
-                                                <a href="bepphuot.html">Trang chủ</a>
+                                                <a href="/bepphuot">Trang chủ</a>
                                             </li>
                                             <?php
                                                 $row = new UserModel();
@@ -19,7 +19,7 @@
                                                     {
                                                         if ($item['ParentId'] == $itemc['ParentId'])
                                                         {
-                                                            echo "<li><a href=''>".$itemc['CategoryName']."</a></li>";
+                                                            echo "<li><a href='?controller=postCategory'>".$itemc['CategoryName']."</a></li>";
                                                            
                                                         }
                                                     }
