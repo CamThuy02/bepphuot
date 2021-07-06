@@ -14,7 +14,9 @@ class PostCategory {
 			$tagPostCategory = $userModel->tagPostCategory($CategoryId);			
 			$leftPostCategory = $userModel->leftPostCategory($CategoryId);	
 			$topPostCategory = $userModel->topPostCategory($CategoryId);
-			$rightPostCategory = $userModel->rightPostCategory($CategoryId);		
+			$rightPostCategory = $userModel->rightPostCategory($CategoryId);	
+			$slideTopCategory = $userModel->slideTopCategory($CategoryId);	
+
 		}
 
 		require('View/client/pages/category/postCategory.php');
