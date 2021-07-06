@@ -8,7 +8,16 @@ class PostModel extends Database{
 		$this->db = new Database();
 		$this->db->connect();
 	}
-
+	public function addPost($title, $image, $summary, $content, $categoryId, $userId, $DatePost)
+	{
+		$title = $this->db->conn->real_escape_string($title);
+		$summary = $this->db->conn->real_escape_string($summary);
+		$content = $this->db->conn->real_escape_string($content);
+		$sql = "INSERT INTO posts (Title, Img, Summary, Content, CategoryId, UserId, DatePost)
+							VALUES ('$title', '$image','$summary', '$content', '$categoryId', '$userId', '$DatePost')";
+		
+		return $this->db->conn->query($sql);
+	}
     public function listPost()
 	{
 		$sql = "SELECT * FROM posts";
