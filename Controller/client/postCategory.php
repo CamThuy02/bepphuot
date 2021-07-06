@@ -13,11 +13,26 @@ class PostCategory {
 
 			$postCategory = $userModel->postCategory($CategoryId);			
 		}
+		// require('View/client/pages/category/postCategory.php');
+
+		// require ('View/client/layouts/footer.php'); /*giao diện footer*/
+
+	// }
+
+	// public function topPostCategory() {
+	// 	require ('Model/client/UserModel.php');
+	// 	require('Controller/client/header.php'); /*giao diện header*/
+	// 	$userModel = new UserModel();
+
+		if (isset($_GET['CategoryId'])) {
+
+			$CategoryId = $_GET['CategoryId'];
+
+			$topPostCategory = $userModel->topPostCategory($CategoryId);			
+		}
 		require('View/client/pages/category/postCategory.php');
 
 		require ('View/client/layouts/footer.php'); /*giao diện footer*/
 
 	}
 }
-
-

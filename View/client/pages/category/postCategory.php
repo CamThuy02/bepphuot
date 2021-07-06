@@ -61,59 +61,16 @@
                     data-r-x-medium-dots="false" data-r-small="2" data-r-small-nav="true" data-r-small-dots="false"
                     data-r-medium="2" data-r-medium-nav="true" data-r-medium-dots="false" data-r-Large="3"
                     data-r-Large-nav="true" data-r-Large-dots="false">
+                   
+                    <?php 
+                    foreach ($topPostCategory as $toprel){
+                    ?>
                     <div class="position-relative">
                         <div class="img-scale-animate mb-20">
-                            <img src="https://cdn.dayphache.edu.vn/wp-content/uploads/2019/12/nuoc-ep-kiwi.jpg"
-                                alt="news" class="img-fluid width-100">
-                            <div class="topic-box-top-xs">
-                                <div class="topic-box-sm color-cod-gray mb-20">Món mặn</div>
-                            </div>
-                        </div>
-                        <div class="bg-body">
-                            <div class="post-date-dark">
-                                <ul>
-                                    <li>
-                                        <span>
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        </span>12 tháng 5, 2021
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="title-medium-dark size-sm mb-none">
-                                <a href="single.html">Cách Làm Nước Ép Kiwi Tốt Cho Cơ Thể</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="position-relative">
-                        <div class="img-scale-animate mb-20">
-                            <img src="https://cdn.dayphache.edu.vn/wp-content/uploads/2018/05/cong-thuc-lam-tra-tac.jpg"
-                                alt="news" class="img-fluid width-100">
-                            <div class="topic-box-top-xs">
-                                <div class="topic-box-sm color-cod-gray mb-20">Món mặn</div>
-                            </div>
-                        </div>
-                        <div class="bg-body">
-                            <div class="post-date-dark">
-                                <ul>
-                                    <li>
-                                        <span>
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        </span>12 tháng 5, 2021
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="title-medium-dark size-sm mb-none">
-                                <a href="single.html">Cách Làm Trà Tắc Siêu Tiết Kiệm Bằng Trà Lipton</a>
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="position-relative">
-                        <div class="img-scale-animate mb-20">
-                            <img src="https://cdn.dayphache.edu.vn/wp-content/uploads/2020/06/ly-tra-dao-cam-sa.jpg"
-                                alt="news" class="img-fluid width-100">
+                            <img src="<?php echo $toprel['Img'] ?>" alt="news" class="img-fluid width-100">
                             <!-- <div class="topic-box-top-xs">
-                                        <div class="topic-box-sm color-cod-gray mb-20">Sức khỏe</div>
-                                    </div> -->
+                                <div class="topic-box-sm color-cod-gray mb-20">Món mặn</div>
+                            </div> -->
                         </div>
                         <div class="bg-body">
                             <div class="post-date-dark">
@@ -121,39 +78,16 @@
                                     <li>
                                         <span>
                                             <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        </span>12 tháng 5, 2021
+                                        </span><?php echo $toprel['DatePost'] ?>
                                     </li>
                                 </ul>
                             </div>
                             <h3 class="title-medium-dark size-sm mb-none">
-                                <a href="single.html">Cách Làm Trà Đào Tươi Và Trà Đào Cam Sả Hút Khách Khi Kinh
-                                    Doanh</a>
+                                <a href="single.html"><?php echo $toprel['Title'] ?></a>
                             </h3>
                         </div>
                     </div>
-                    <div class="position-relative">
-                        <div class="img-scale-animate mb-20">
-                            <img src="https://cdn.dayphache.edu.vn/wp-content/uploads/2017/11/sua-chua-dua-hau.jpg"
-                                alt="news" class="img-fluid width-100">
-                            <!-- <div class="topic-box-top-xs">
-                                        <div class="topic-box-sm color-cod-gray mb-20">Món mặn</div>
-                                    </div> -->
-                        </div>
-                        <div class="bg-body">
-                            <div class="post-date-dark">
-                                <ul>
-                                    <li>
-                                        <span>
-                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        </span>12 tháng 5, 2021
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="title-medium-dark size-sm mb-none">
-                                <a href="single.html">Công thức làm sữa chua dưa hấu thanh mát</a>
-                            </h3>
-                        </div>
-                    </div>
+                    <?php } ?>      
                 </div>
             </div>
             <div class="col-xl-8 col-lg-12 mb-30">

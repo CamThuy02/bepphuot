@@ -66,9 +66,25 @@ class UserModel extends Database{
 		return $row;
 	}
 	
+	//Left post Category
 	public function postCategory($id)
 	{	
-		$sql = "SELECT * FROM posts WHERE CategoryId = $id order by DatePost DESC "; //tăng
+		$sql = "SELECT * FROM posts WHERE CategoryId = $id order by DatePost DESC "; //giảm
+
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+		while ($data = $result->fetch_assoc())
+		{
+			$row[] = $data;
+		}
+		return $row;
+	}
+
+	//Top post Category
+	public function topPostCategory($id)
+	{	
+		$sql = "SELECT * FROM posts WHERE CategoryId = $id order by ViewNumber DESC LIMIT 5 "; //giảm
 
 		$result = $this->db->conn->query($sql);
 
