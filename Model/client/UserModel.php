@@ -68,7 +68,7 @@ class UserModel extends Database{
 		return $rows;
 	}
 	
-	public function postCategory()
+	public function leftPostCate()
 	{	
 		$sql = "SELECT * FROM posts";
 

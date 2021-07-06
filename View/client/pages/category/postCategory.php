@@ -159,7 +159,9 @@
             <div class="col-xl-8 col-lg-12 mb-30">
                 <div class="item-box-light-md-less30 ie-full-width scrollbar" id="scroll-style">
                     <div class="row">
-                        <div class="col-lg-12 col-md-6 col-sm-12">
+                    <?php @include ('leftPostCate.php')?>
+
+                        <!-- <div class="col-lg-12 col-md-6 col-sm-12">
                             <div class="media media-none--md mb-30">
                                 <div class="position-relative width-40">
                                     <a href="single.html" class="img-opacity-hover">
@@ -346,7 +348,7 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <!--seemore -->
                     <center>

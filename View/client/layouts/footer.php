@@ -10,7 +10,7 @@
                             </a>
                             <ul class="footer-social">
                                 <li>
-                                    <a href="BepPhuot.html" title="Trang chủ">Trang chủ</a>
+                                    <a href="/bepphuot" title="Trang chủ">Trang chủ</a>
                                 </li>
                                 <li>
                                     <a href="#" title="Giới thiệu">Giới thiệu</a>

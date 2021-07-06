@@ -8,7 +8,7 @@ class PostCategory {
 
 		require('View/client/pages/category/postCategory.php');
 
-		require 'View/client/layouts/footer.php'; /*giao diện footer*/
+		require ('View/client/layouts/footer.php'); /*giao diện footer*/
 
 	}
 }
