@@ -68,7 +68,7 @@ class UserModel extends Database{
 	
 	public function postCategory($id)
 	{	
-		$sql = "SELECT * FROM posts WHERE CategoryId = $id";
+		$sql = "SELECT * FROM posts WHERE CategoryId = $id order by DatePost DESC "; //tăng
 
 		$result = $this->db->conn->query($sql);
 

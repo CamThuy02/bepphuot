@@ -175,15 +175,14 @@
                                 <li>
                                     <span>
                                         <i class="fa fa-calendar" aria-hidden="true"></i>
-                                    </span>04 tháng 5, 2021
+                                    </span><?php echo $rel['DatePost'] ?>
                                 </li>
                             </ul>
                         </div>
                         <h3 class="title-semibold-dark size-lg mb-15">
-                            <a href="single.html">Cách Làm Macchiato Thơm Ngon Béo Ngậy.</a>
+                            <a href="single.html"><?php echo $rel['Title'] ?></a>
                         </h3>
-                        <p>Dù đã xuất hiện khá lâu nhưng chúng ta có thể dễ dàng nhận thấy là các thức uống
-                            Macchiato vẫn chưa có dấu hiệu “hạ nhiệt” trên thị trường thức uống hiện nay..
+                        <p><?php echo $rel['Summary'] ?>
                         </p>
                     </div>
                 </div>
