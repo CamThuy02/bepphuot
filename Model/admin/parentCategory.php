@@ -28,11 +28,11 @@ class ParentCategoryModel extends Database{
 		}
 
 		$row = array();
-		while ($row = $result->fetch_assoc())
+		while ($data = $result->fetch_assoc())
 		{
-			$rows[] = $row;
+			$row[] = $data;
 		}
-		return $rows;
+		return $row;
 	}
 	//phương thức lấy dữ liệu cần sửa
 	public function getDataId($id)

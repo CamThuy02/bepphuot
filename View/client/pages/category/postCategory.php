@@ -157,205 +157,73 @@
                 </div>
             </div>
             <div class="col-xl-8 col-lg-12 mb-30">
-                <div class="item-box-light-md-less30 ie-full-width scrollbar" id="scroll-style">
-                    <div class="row">
-                    <?php @include ('leftPostCate.php')?>
-
-                        <!-- <div class="col-lg-12 col-md-6 col-sm-12">
-                            <div class="media media-none--md mb-30">
-                                <div class="position-relative width-40">
-                                    <a href="single.html" class="img-opacity-hover">
-                                        <img src="http://nguyenlieuphache.com.vn/upload/congthuc/thang%206-2020/hinh-anh-tra-lai-milk-foam-thumb-2.jpg"
-                                            alt="news" class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="media-body p-mb-none-child media-margin30">
-                                    <div class="post-date-dark">
-                                        <ul>
-                                            <li>
-                                                <span>
-                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                </span>04 tháng 5, 2021
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="title-semibold-dark size-lg mb-15">
-                                        <a href="single.html">Cách Làm Macchiato Thơm Ngon Béo Ngậy.</a>
-                                    </h3>
-                                    <p>Dù đã xuất hiện khá lâu nhưng chúng ta có thể dễ dàng nhận thấy là các thức uống
-                                        Macchiato vẫn chưa có dấu hiệu “hạ nhiệt” trên thị trường thức uống hiện nay..
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-6 col-sm-12">
-                            <div class="media media-none--md mb-30">
-                                <div class="position-relative width-40">
-                                    <a href="single.html" class="img-opacity-hover">
-                                        <img src="https://cdn.dayphache.edu.vn/wp-content/uploads/2020/07/cac-mon-do-uong-cho-be.jpg"
-                                            alt="news" class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="media-body p-mb-none-child media-margin30">
-                                    <div class="post-date-dark">
-                                        <ul>
-                                            <li>
-                                                <span>
-                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                </span>04 tháng 5, 2021
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="title-semibold-dark size-lg mb-15">
-                                        <a href="single.html">Cách Làm Mocktail Nổi Tiếng Dành Cho Trẻ Em.</a>
-                                    </h3>
-                                    <p>Lựa chọn đồ uống cho trẻ em thì không phải là một điều dễ dàng. Giờ bạn không
-                                        phải lo lắng, vì hôm nay chúng tôi sẽ giới thiệu một số mocktail cho trẻ em.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-6 col-sm-12">
-                            <div class="media media-none--md mb-30">
-                                <div class="position-relative width-40">
-                                    <a href="single.html" class="img-opacity-hover">
-                                        <img src="https://cdn.dayphache.edu.vn/wp-content/uploads/2020/02/mon-tra-sua-tran-chau.jpg"
-                                            alt="news" class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="media-body p-mb-none-child media-margin30">
-                                    <div class="post-date-dark">
-                                        <ul>
-                                            <li>
-                                                <span>
-                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                </span>04 tháng 5, 2021
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="title-semibold-dark size-lg mb-15">
-                                        <a href="single.html">Cách Làm Trà Sữa Trân Châu Truyền Thống Tại Nhà.</a>
-                                    </h3>
-                                    <p>Bạn tò mò cách làm trà sữa trân châu tại nhà như thế nào. Dưới đây, bạn sẽ được
-                                        hướng dẫn cách pha trà sữa trân châu rất đơn giản và chi tiết.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-6 col-sm-12">
-                            <div class="media media-none--md mb-30">
-                                <div class="position-relative width-40">
-                                    <a href="single.html" class="img-opacity-hover">
-                                        <img src="https://cdn.dayphache.edu.vn/wp-content/uploads/2018/05/mojito-blue.jpg"
-                                            alt="news" class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="media-body p-mb-none-child media-margin30">
-                                    <div class="post-date-dark">
-                                        <ul>
-                                            <li>
-                                                <span>
-                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                </span>04 tháng 5, 2021
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="title-semibold-dark size-lg mb-15">
-                                        <a href="single.html">Cách Làm Mojito Deep Blue Xanh Mát Màu Biển.</a>
-                                    </h3>
-                                    <p>
-                                        Cách làm Mojito Blue màu xanh biển vô cùng tươi mát, mới nhìn là đã thích ngay.
-                                        Ngoài ra, cách làm Mojito deep blue cũng khá đơn giản, hương vị lại ngon </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-6 col-sm-12">
-                            <div class="media media-none--md mb-30">
-                                <div class="position-relative width-40">
-                                    <a href="single.html" class="img-opacity-hover">
-                                        <img src="https://cdn.dayphache.edu.vn/wp-content/uploads/2017/10/cropped-ca-phe-sua-3-tang.jpg"
-                                            alt="news" class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="media-body p-mb-none-child media-margin30">
-                                    <div class="post-date-dark">
-                                        <ul>
-                                            <li>
-                                                <span>
-                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                </span>04 tháng 5, 2021
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="title-semibold-dark size-lg mb-15">
-                                        <a href="single.html"> Cách Pha Cafe Sữa 3 Tầng Đẹp Mắt Và Ngon Nhất.</a>
-                                    </h3>
-                                    <p>
-                                        Cách pha cà phê sữa 3 tầng đẹp mắt, ngon miệng chỉ cần một chút biến tấu công
-                                        thức đơn giản mang đến những trải nghiệm độc đáo cho người thưởng thức </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-6 col-sm-12">
-                            <div class="media media-none--md mb-30">
-                                <div class="position-relative width-40">
-                                    <a href="single.html" class="img-opacity-hover">
-                                        <img src="https://cdn.dayphache.edu.vn/wp-content/uploads/2016/08/cacao-cot-dua.jpg"
-                                            alt="news" class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="media-body p-mb-none-child media-margin30">
-                                    <div class="post-date-dark">
-                                        <ul>
-                                            <li>
-                                                <span>
-                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                </span>06 tháng 5, 2021
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="title-semibold-dark size-lg mb-15">
-                                        <a href="single.html">Cách Pha Cacao Cốt Dừa Và Cacao Sữa Đá Mát Lạnh.</a>
-                                    </h3>
-                                    <p>
-                                        Cách pha cacao cốt dừa mới lạ, chuẩn vị được chia sẻ trong bài viết dưới đây sẽ
-                                        giúp bạn làm phong phú thực đơn, thu hút khách hàng </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-6 col-sm-12">
-                            <div class="media media-none--md mb-30">
-                                <div class="position-relative width-40">
-                                    <a href="single.html" class="img-opacity-hover">
-                                        <img src="https://cdn.dayphache.edu.vn/wp-content/uploads/2019/05/thanh-pham-sinh-to-dau.jpg"
-                                            alt="news" class="img-fluid">
-                                    </a>
-                                </div>
-                                <div class="media-body p-mb-none-child media-margin30">
-                                    <div class="post-date-dark">
-                                        <ul>
-                                            <li>
-                                                <span>
-                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                </span>04 tháng 5, 2021
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="title-semibold-dark size-lg mb-15">
-                                        <a href="single.html">Cách Làm Sinh Tố Dâu Tây Màu Hồng Hấp Dẫn.</a>
-                                    </h3>
-                                    <p> Chia sẻ cách làm sinh tố dâu tây tươi ngon hấp dẫn kết hợp từ nguyên liệu chính
-                                        là dâu tươi và các loại trái cây bổ dưỡng. Bạn có thể thực hành ngay</p>
-                                    </p>
-                                </div>
-                            </div>
-                        </div> -->
+    <div class="item-box-light-md-less30 ie-full-width scrollbar" id="scroll-style">
+        <div class="row">
+            <?php 
+                foreach ($postCategory as $rel){
+            ?>
+            <div class="col-lg-12 col-md-6 col-sm-12">
+                <div class="media media-none--md mb-30">
+                    <div class="position-relative width-40">
+                        <a href="single.html" class="img-opacity-hover">
+                            <img src="<?php echo $rel['Img'] ?>" alt="news" class="img-fluid">
+                        </a>
                     </div>
-                    <!--seemore -->
-                    <center>
-                        <button id="btnSeeMore" class="btn btn-lg btn-danger">Xem thêm</button>
-                    </center>
+                    <div class="media-body p-mb-none-child media-margin30">
+                        <div class="post-date-dark">
+                            <ul>
+                                <li>
+                                    <span>
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </span>04 tháng 5, 2021
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="title-semibold-dark size-lg mb-15">
+                            <a href="single.html">Cách Làm Macchiato Thơm Ngon Béo Ngậy.</a>
+                        </h3>
+                        <p>Dù đã xuất hiện khá lâu nhưng chúng ta có thể dễ dàng nhận thấy là các thức uống
+                            Macchiato vẫn chưa có dấu hiệu “hạ nhiệt” trên thị trường thức uống hiện nay..
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <?php } ?>
+            <div class="col-lg-12 col-md-6 col-sm-12">
+                <div class="media media-none--md mb-30">
+                    <div class="position-relative width-40">
+                        <a href="single.html" class="img-opacity-hover">
+                            <img src="https://cdn.dayphache.edu.vn/wp-content/uploads/2020/07/cac-mon-do-uong-cho-be.jpg"
+                                alt="news" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="media-body p-mb-none-child media-margin30">
+                        <div class="post-date-dark">
+                            <ul>
+                                <li>
+                                    <span>
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </span>04 tháng 5, 2021
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="title-semibold-dark size-lg mb-15">
+                            <a href="single.html">Cách Làm Mocktail Nổi Tiếng Dành Cho Trẻ Em.</a>
+                        </h3>
+                        <p>Lựa chọn đồ uống cho trẻ em thì không phải là một điều dễ dàng. Giờ bạn không
+                            phải lo lắng, vì hôm nay chúng tôi sẽ giới thiệu một số mocktail cho trẻ em.
+                        </p>
+                    </div>
                 </div>
             </div>
+        </div>
+        <!--seemore -->
+        <center>
+            <button id="btnSeeMore" class="btn btn-lg btn-danger">Xem thêm</button>
+        </center>
+    </div>
+</div>
             <div class="ne-sidebar sidebar-break-lg col-xl-4 col-lg-12 scrollbar" id="scroll-style">
                 <div class="sidebar-box item-box-light-md">
                     <div class="topic-border color-cinnabar mb-30">

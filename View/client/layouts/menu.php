@@ -19,7 +19,7 @@
                                                     {
                                                         if ($item['ParentId'] == $itemc['ParentId'])
                                                         {
-                                                            echo "<li><a href='?controller=postCategory'>".$itemc['CategoryName']."</a></li>";
+                                                            echo "<li><a href='?controller=postCategory&CategoryId=". $itemc['CategoryId']."'>".$itemc['CategoryName']."</a></li>";
                                                            
                                                         }
                                                     }

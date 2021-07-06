@@ -46,12 +46,11 @@ class UserModel extends Database{
 		$result = $this->db->conn->query($sql);
 
 		$row = array();
-
-		while ($row = $result->fetch_assoc())
+		while ($data = $result->fetch_assoc())
 		{
-			$rows[] = $row;
+			$row[] = $data;
 		}
-		return $rows;
+		return $row;
 	}
 	public function neMenu()
 	{	
@@ -60,26 +59,24 @@ class UserModel extends Database{
 		$result = $this->db->conn->query($sql);
 
 		$row = array();
-		
-		while ($row = $result->fetch_assoc())
+		while ($data = $result->fetch_assoc())
 		{
-			$rows[] = $row;
+			$row[] = $data;
 		}
-		return $rows;
+		return $row;
 	}
 	
-	public function leftPostCate()
+	public function postCategory($id)
 	{	
-		$sql = "SELECT * FROM posts";
+		$sql = "SELECT * FROM posts WHERE CategoryId = $id";
 
 		$result = $this->db->conn->query($sql);
 
 		$row = array();
-		
-		while ($row = $result->fetch_assoc())
+		while ($data = $result->fetch_assoc())
 		{
-			$rows[] = $row;
+			$row[] = $data;
 		}
-		return $rows;
+		return $row;
 	}
 }
