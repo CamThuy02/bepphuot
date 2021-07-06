@@ -24,9 +24,9 @@
                                     </thead>
                                     <tbody>
                                             <?php
-                                                $row = new ParentCategoryModel();
-                                                $sql = "SELECT * FROM parentcategory";
-                                                $result = $row->listParentCategory();
+                                                // $row = new ParentCategoryModel();
+                                                // $sql = "SELECT * FROM parentcategory";
+                                                // $result = $row->listParentCategory();
                                                 foreach ($result as $rel){
                                             ?>
                                             <tr>

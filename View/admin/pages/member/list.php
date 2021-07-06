@@ -1,3 +1,4 @@
+
 <div id="layoutSidenav_content">
     <main>
         <div class="container-fluid">
@@ -40,7 +41,8 @@
                             <tbody>
                             <?php
                                 $stt = 0;
-                                foreach ($members as $member) {?>
+                            foreach ($members as $member) {
+                                    ?>
                                     <tr>
                                         <td><?=++$stt?></td>
                                         <td><?=$member['id']?></td>

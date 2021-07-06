@@ -1,11 +1,14 @@
 <?php
+
 class EditMember {
 	public function __construct()
 	{
-        
         require('../../Model/admin/member.php');
         $memberModel = new MemberModel(); 
-
+        
+			$id = $_GET['Id'];
+            $data = $memberModel->getData($id);
+        
         if (isset($_POST['editMember'])) {
         $id = $_POST["id"];
         $tendn = $_POST["tendn"];
@@ -19,11 +22,10 @@ class EditMember {
         $gioitinh = $_POST["gioitinh"];
         $dantoc = $_POST["dantoc"];
         $gioithieu = $_POST["gioithieu"];
-        if ($id)
-        {
+    
         $memberModel->editMember($id,$tendn,$pass,$tendd,$quyen,$email,$dienthoai,$diachi,$ngaysinh,$gioitinh,$dantoc,$gioithieu);
         }
-    }
+    
     require('../../View/admin/pages/member/edit.php');
     }}
     

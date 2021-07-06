@@ -21,12 +21,21 @@ class MemberModel extends Database{
 	}
 	public function editMember($id, $tendn, $pass, $tendd, $quyen, $email, $dienthoai, $diachi, $ngaysinh, $gioitinh, $dantoc, $gioithieu)
 	{
+
 		$sql = "UPDATE users SET id = '$id',tendn = '$tendn',pass = '$pass',tendd = '$tendd',quyen = '$quyen',
 		email = '$email',dienthoai = '$dienthoai',diachi = '$diachi',ngaysinh = '$diachi',gioitinh = '$gioitinh',
 		dantoc = '$dantoc',gioithieu = '$gioithieu';";
 		$this->db->conn->query($sql);
-	}
 
+	}
+	public function getData($id)
+	{
+		$sql = "SELECT * FROM users WHERE id = $id";
+		$result = $this->db->conn->query($sql);
+		$dat = $result->fetch_array();
+
+		return $dat;
+	}
 	public function deleteMember($memberId)
 	{
 		$sql = "DELETE FROM users WHERE id = $memberId";
