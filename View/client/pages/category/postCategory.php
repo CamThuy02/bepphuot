@@ -3,21 +3,19 @@
     <div class="bg-body-color ml-15 pr-15 mb-10 mt-10">
         <div class="row no-gutters d-flex align-items-center">
             <div class="col-lg-2 col-md-3 col-sm-4 col-5">
-                <div class="topic-box">Bài viết HOT</div>
+                <div class="topic-box">Bài viết Nổi bật</div>
             </div>
             <div class="col-lg-10 col-md-9 col-sm-8 col-7">
                 <div class="feeding-text-light2">
                     <ol id="sample" class="ticker">
+                        
+                    <?php 
+                    foreach ($slideTopCategory as $slrel){
+                    ?>
                         <li>
-                            <a href="single.html">3 công thức nước chanh mật ong thơm ngon và giúp giảm cân.</a>
+                            <a href="single.html"><?php echo $slrel['Title']?></a>
                         </li>
-                        <li>
-                            <a href="single.html">Hướng dẫn 10 cách pha chế trà sữa đơn giản nhất tại nhà.</a>
-                        </li>
-                        <li>
-                            <a href="single.html">Mùa hè nóng nực, Muôn vàn công thức nước uống tươi mát với trái
-                                tắc.</a>
-                        </li>
+                    <?php }?>
                     </ol>
                 </div>
             </div>

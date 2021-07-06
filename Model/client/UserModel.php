@@ -110,6 +110,19 @@ class UserModel extends Database{
 		}
 		return $row;
 	}
+	public function slideTopCategory($id)
+	{	
+		$sql = "SELECT * FROM posts WHERE CategoryId = $id ORDER BY ViewNumber, DatePost DESC LIMIT 3 "; //giảm
+
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+		while ($data = $result->fetch_assoc())
+		{
+			$row[] = $data;
+		}
+		return $row;
+	}
 
 	//right post Category
 	public function rightPostCategory($id)
@@ -155,7 +168,18 @@ class UserModel extends Database{
 		}
 		return $row;
 	}
+	public function slideTopHome()
+	{	
+		$sql = "SELECT * FROM posts ORDER BY ViewNumber DESC limit 3 "; 
+		$result = $this->db->conn->query($sql);
 
+		$row = array();
+		while ($data = $result->fetch_assoc())
+		{
+			$row[] = $data;
+		}
+		return $row;
+	}
 
 	public function recipeHome()
 	{	

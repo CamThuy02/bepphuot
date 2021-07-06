@@ -3,21 +3,20 @@
     <div class="bg-body-color ml-15 pr-15 mb-10 mt-10">
         <div class="row no-gutters d-flex align-items-center">
             <div class="col-lg-2 col-md-3 col-sm-4 col-5">
-                <div class="topic-box">Bài viết HOT</div>
+                <div class="topic-box">Bài viết Nổi bật</div>
             </div>
             <div class="col-lg-10 col-md-9 col-sm-8 col-7">
                 <div class="feeding-text-light2">
                     <ol id="sample" class="ticker">
+                    <?php 
+                        $row= new UserModel();
+                        $slideTopHome = $row->slideTopHome();
+                        foreach ($slideTopHome as $slidetoprel){
+                    ?>                        
                         <li>
-                            <a href="single.html">21 Gợi ý món ăn sáng ngon dễ làm tại nhà.</a>
-                        </li>
-                        <li>
-                            <a href="single.html">Thực đơn hàng ngày cho 1 tháng đầy đủ dinh dưỡng.</a>
-                        </li>
-                        <li>
-                            <a href="single.html">Tiết lộ bí quyết nấu ăn ngon cực hay của đầu bếp nhà hàng bạn
-                                nên biết.</a>
-                        </li>
+                            <a href="single.html"><?php echo $slidetoprel['Title'] ?></a>
+                        </li>   
+                        <?php }?>                    
                     </ol>
                 </div>
             </div>
