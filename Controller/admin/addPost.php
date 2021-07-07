@@ -15,7 +15,7 @@ class AddPost
 			// $slug = changeTitle($title);
 			$summary = $_POST['Summary'];
 			$content = $_POST['Content'];
-			$userId = $_SESSION['useradmin'];
+			$userId = $_SESSION['useradmin']['id'];
 			$categoryId = $_POST['categoryId'];
 			$DatePost = date('Y-m-d');
             // $sessionKey = 'post_' . $postId;
@@ -27,8 +27,7 @@ class AddPost
             $ext = pathinfo($_FILES['Img']['name'], PATHINFO_EXTENSION);
             $image = $title . '.' . $ext;
             move_uploaded_file($_FILES['Img']['tmp_name'], '../../Public/admin/assets/img/' . $image);
-                
-			$postModel->addPost($title, $image, $summary, $content, $categoryId, $userId, $DatePost);
+						$postModel->addPost($title, $image, $summary, $content, $categoryId, $userId, $DatePost);
             header('location: ?controller=listPost');
 		}
 		require('../../View/admin/pages/post/add.php');

@@ -23,7 +23,7 @@
                                     <th>Tên Đăng Nhập</th>
                                     <th>Tên Đầy Đủ</th>
                                     <th>SĐT</th>
-                                    <th>Sửa</th>
+                                    <!-- <th>Sửa</th> -->
                                     <th>Xóa</th>
                                 </tr>
                             </thead>
@@ -34,7 +34,7 @@
                                     <th>Tên Đăng Nhập</th>
                                     <th>Tên Đầy Đủ</th>
                                     <th>SĐT</th>
-                                    <th>Sửa</th>
+                                    <!-- <th>Sửa</th> -->
                                     <th>Xóa</th>
                                 </tr>   
                             </tfoot>
@@ -49,13 +49,13 @@
                                         <td><?=$member['tendn']?></td>
                                         <td><?=$member['tendd']?></td>
                                         <td><?=$member['dienthoai']?></td>
-                                        <td style="text-align: center;">
+                                        <!-- <td style="text-align: center;">
                                             <span class="badge bg-primary">
                                                 <a style="color:white" href="?controller=editMember&Id=<?php echo $member['id'] ?>">Sửa
                                                     <ion-icon name="create-outline"></ion-icon>
                                                 </a>
                                             </span>
-                                        </td>
+                                        </td> -->
                                         <td style="text-align: center;">
                                             <span class="badge bg-danger">
                                                 <a style="color:white" href="?controller=deleteAdmin&AdminId=<?=$member['id']?>">Xóa
