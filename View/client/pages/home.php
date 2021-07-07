@@ -208,7 +208,7 @@
                                     <h3 class="title-semibold-dark size-lg mb-15">
                                         <a href="single.html"><?php echo $bokrel['Title'] ?></a>
                                     </h3>
-                                    <p><?php echo $bokrel['Summary'] ?>
+                                    <p><?php echo $bokrel['Summary'] ?>...
                                     </p>
                                 </div>
                             </div>
