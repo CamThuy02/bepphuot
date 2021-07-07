@@ -117,7 +117,7 @@
                                     <h3 class="title-semibold-dark size-lg mb-15">
                                         <a href="single.html"><?php echo $leftrel['Title'] ?></a>
                                     </h3>
-                                    <p><?php echo $leftrel['Summary'] ?>
+                                    <p><?php echo $leftrel['Summary'] ?>...
                                     </p>
                                 </div>
                             </div>

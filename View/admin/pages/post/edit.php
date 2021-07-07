@@ -43,7 +43,7 @@
                                         <div class="form-group">
                                             <label>Tóm tắt</label>
                                             <textarea class="textarea" name="Summary" required="required" placeholder="Place some text here"
-                                            style="width: 100%; height: 500px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"><?=$postOld['Summary']?></textarea>
+                                            style="width: 100%; height: 100px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"><?=$postOld['Summary']?></textarea>
                                         </div>
                                         <div class="form-group">
                                             <label>Nội dung</label>
