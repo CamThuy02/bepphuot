@@ -101,7 +101,7 @@
                                     $rightSlide = $row->rightSlide();
                                     foreach ($rightSlide as $rightslrel){
                                 ?>
-                        <div class="media mb-30 col-xl-12 col-lg-6 col-md-6 col-sm-12">
+                        <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
                             <a class="img-opacity-hover" href="single-news-1.html">
                                 <img src="Public/admin/assets/img/<?php echo $rightslrel['Img'] ?>" alt="news" class="img-fluid">
                             </a>
