@@ -6,14 +6,12 @@ class DeleteAdmin {
         require('../../Model/admin/member.php');
         $memberModel = new MemberModel(); 
 
-        if (isset($_POST['deleteAdmin'])) {
-        $AdminId = $_POST["AdminId"];
-        
-        if ($AdminId)
-        {
+        if (isset($_GET['AdminId'])) {
+        $AdminId = $_GET["AdminId"];
         $memberModel->deleteMember($AdminId);
-        }
-    }
+        
+        header('Location: ?controller=listMember');
+    } 
     require('../../View\admin\pages\member\list.php');
     }}
         
