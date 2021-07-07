@@ -13,7 +13,7 @@
                     foreach ($slideTopCategory as $slrel){
                     ?>
                         <li>
-                            <a href="single.html"><?php echo $slrel['Title']?></a>
+                            <a href="?controller=singlePost&PostId=<?php echo $slrel['PostId']?>"><?php echo $slrel['Title']?></a>
                         </li>
                     <?php }?>
                     </ol>
@@ -34,7 +34,7 @@
             <h1><?php echo $tagrel['ParentName']?></h1>
             <ul>
                 <li>
-                    <a href="bepphuot.html">Trang chủ</a> -
+                    <a href="/bepphuot">Trang chủ</a> -
                 </li>
                 <li>
                     <a href="#"><?php echo $tagrel['ParentName']?></a> -
@@ -67,8 +67,8 @@
                     foreach ($topPostCategory as $toprel){
                     ?>
                     <div class="position-relative">
-                        <div class="img-scale-animate mb-20">
-                            <img src="Public/admin/assets/img/<?php echo $toprel['Img'] ?>" alt="news" class="img-fluid width-100">
+                        <div class="img-scale-animate mb-20">   
+                            <a href="?controller=singlePost&PostId=<?php echo $toprel['PostId']?>"><img src="Public/admin/assets/img/<?php echo $toprel['Img'] ?>" alt="news" class="img-fluid width-100"></a>
                             <!-- <div class="topic-box-top-xs">
                                 <div class="topic-box-sm color-cod-gray mb-20">Món mặn</div>
                             </div> -->
@@ -79,12 +79,12 @@
                                     <li>
                                         <span>
                                             <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        </span><?php echo $toprel['DatePost'] ?>
+                                        </span> <a href="?controller=singlePost&PostId=<?php echo $toprel['PostId']?>"><?php echo $toprel['DatePost']?></a>
                                     </li>
                                 </ul>
                             </div>
                             <h3 class="title-medium-dark size-sm mb-none">
-                                <a href="single.html"><?php echo $toprel['Title'] ?></a>
+                                <a href="?controller=singlePost&PostId=<?php echo $toprel['PostId']?>"><?php echo $toprel['Title'] ?></a>
                             </h3>
                         </div>
                     </div>
@@ -95,12 +95,12 @@
                 <div class="item-box-light-md-less30 ie-full-width scrollbar" id="scroll-style">
                     <div class="row">
                         <?php 
-                foreach ($leftPostCategory as $leftrel){
-            ?>
+                            foreach ($leftPostCategory as $leftrel){
+                        ?>
                         <div class="col-lg-12 col-md-6 col-sm-12">
                             <div class="media media-none--md mb-30">
                                 <div class="position-relative width-40">
-                                    <a href="single.html" class="img-opacity-hover">
+                                    <a href="?controller=singlePost&PostId=<?php echo $leftrel['PostId']?>" class="img-opacity-hover">
                                         <img src="Public/admin/assets/img/<?php echo $leftrel['Img'] ?>" alt="news" class="img-fluid">
                                     </a>
                                 </div>
@@ -110,15 +110,15 @@
                                             <li>
                                                 <span>
                                                     <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                </span><?php echo $leftrel['DatePost'] ?>
+                                                </span><a href="?controller=singlePost&PostId=<?php echo $leftrel['PostId']?>"><?php echo $leftrel['DatePost'] ?></a>
                                             </li>
                                         </ul>
                                     </div>
                                     <h3 class="title-semibold-dark size-lg mb-15">
-                                        <a href="single.html"><?php echo $leftrel['Title'] ?></a>
+                                        <a href="?controller=singlePost&PostId=<?php echo $leftrel['PostId']?>"><?php echo $leftrel['Title'] ?></a>
                                     </h3>
-                                    <p><?php echo $leftrel['Summary'] ?>...
-                                    </p>
+                                    <a href="?controller=singlePost&PostId=<?php echo $leftrel['PostId']?>"><p style="color:black"><?php echo $leftrel['Summary'] ?>...
+                                    </p></a>
                                 </div>
                             </div>
 
@@ -147,12 +147,12 @@
                                 ?>
                                 <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
                                     <div class="position-relative">
-                                        <a href="single.html" class="img-opacity-hover">
+                                        <a href="?controller=singlePost&PostId=<?php echo $rightrel['PostId']?>" class="img-opacity-hover">
                                             <img src="Public/admin/assets/img/<?php echo $rightrel['Img'] ?>" alt="news"
                                                 class="img-fluid width-100 mb-10">
                                         </a>
                                         <h3 class="title-medium-dark size-sm mb-none">
-                                            <a href="single.html"><?php echo $rightrel['Title'] ?></a>
+                                            <a href="?controller=singlePost&PostId=<?php echo $rightrel['PostId']?>"><?php echo $rightrel['Title'] ?></a>
                                         </h3>
                                     </div>
                                 </div>

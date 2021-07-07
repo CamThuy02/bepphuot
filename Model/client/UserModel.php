@@ -248,4 +248,5 @@ class UserModel extends Database{
 		}
 		return $row;
 	}
+	
 }
