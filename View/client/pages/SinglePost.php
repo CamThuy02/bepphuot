@@ -8,15 +8,15 @@
                     <div class="col-lg-10 col-md-9 col-sm-8 col-7">
                         <div class="feeding-text-light2">
                             <ol id="sample" class="ticker">
-                            <?php 
-                                $row= new UserModel();
-                                $slideTopHome = $row->slideTopHome();
-                                foreach ($slideTopHome as $slidetoprel){
-                            ?>                        
-                                <li>
-                                    <a href="?controller=singlePost"><?php echo $slidetoprel['Title'] ?></a>
-                                </li>   
-                                <?php }?>                    
+                                <?php 
+                                    $row= new UserModel();
+                                    $slideTopHome = $row->slideTopHome();
+                                    foreach ($slideTopHome as $slidetoprel){
+                                ?>                        
+                                    <li>
+                                        <a href="?controller=singlePost&PostId=<?php echo $slidetoprel['PostId']?>"><?php echo $slidetoprel['Title'] ?></a>
+                                    </li>   
+                                    <?php }?>                    
                             </ol>
                         </div>
                     </div>
@@ -25,23 +25,25 @@
         </section>
         <!-- News Feed Area End Here -->
         <!-- Breadcrumb Area Start Here -->
-        <section class="breadcrumbs-area" style="background-image: url('img/banner/breadcrumbs-banner.jpg');">
+        
+        <section class="breadcrumbs-area"
+          style="background-image: url('https://s3.ap-south-1.amazonaws.com/booko-events/vendor/images/CocktailBanner_02.jpg');">
             <div class="container">
                 <div class="breadcrumbs-content">
-                <!-- <?php 
-                    foreach ($tagPostCategory as $tagrel){
-                    ?>
-                        <h1><?php echo $tagrel['ParentName']?></h1>
-                        <ul>
-                            <li>
-                                <a href="bepphuot.html">Trang chủ</a> -
-                            </li>
-                            <li>
-                                <a href="#"><?php echo $tagrel['ParentName']?></a> -
-                            </li>
-                            <li><?php echo $tagrel['CategoryName']?></li>
-                        </ul>
-                    <?php } ?> -->
+                <?php 
+                foreach ($tagPostCategory as $tagrel){
+                ?>
+                    <h1><?php echo $tagrel['ParentName']?></h1>
+                    <ul>
+                        <li>
+                            <a href="bepphuot.html">Trang chủ</a> -
+                        </li>
+                        <li>
+                            <a href="#"><?php echo $tagrel['ParentName']?></a> -
+                        </li>
+                        <li><?php echo $tagrel['CategoryName']?></li>
+                    </ul>
+                <?php } ?>
                 </div>
             </div>
         </section>
@@ -53,7 +55,10 @@
                     <div class="row mb-50-r">
                         <div class="col-12">
                             <div class="position-relative img-overlay-70">
-                                <img src="Public/admin/assets/img/page1.jpg" alt="" class="img-fluid">
+                            <?php 
+                                foreach ($SinglePost as $singlepost){
+                            ?>
+                                <img src="Public/admin/assets/img/<?php echo $singlepost['Img'] ?>" alt="" class="img-fluid">
                                 <div class="topic-box-top-sm">
                                     <div class="topic-box-sm color-cinnabar mb-20">Món mặn</div>
                                 </div>
@@ -61,24 +66,29 @@
                                     <ul class="post-info-light mb-10">
                                         <li>
                                             <a href="#">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>18 tháng 5, 2021</a>
+                                                <i class="fa fa-calendar" aria-hidden="true"></i><?php echo $singlepost['DatePost']?></a>
                                         </li>
                                     </ul>
-                                    <h2 style="color: white" class="title-semibold-light size-c34 mb-40">7 thực đơn bữa sáng vừa nhanh gọn, vừa healthy cho ngày cuối tuần</h2>
+                                    <h2 style="color: white" class="title-semibold-light size-c34 mb-40"><?php echo $singlepost['Title']?></h2>
                                 </div>
+                            <?php }?>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="scrollbar col-xl-8 col-lg-7 col-md-12 mb-30" id="scroll-style">
                             <div class="item-box-light-lg mb-30">
+                            <?php 
+                                foreach ($SinglePost as $singlepost){
+                            ?>
                                 <p>
-                                <!-- summary -->
+                                <?php echo $singlepost['Summary']?>
                                 </p>
                                 <hr>
                                 <p>
-                                <!-- Content -->
+                                <?php echo $singlepost['Content']?>
                                 </p>
+                            <?php }?>
                                 <ul class="blog-tags item-inline">
                                     <li>Thẻ</li>
                                     <li>
