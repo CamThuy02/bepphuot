@@ -16,7 +16,7 @@ class SinglePost {
 
 		}
 
-		require('View/client/pages/category/SinglePost.php');
+		require('View/client/pages/singlePost.php');
 
 		require ('View/client/layouts/footer.php'); /*giao diện footer*/
 	}

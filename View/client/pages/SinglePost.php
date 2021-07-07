@@ -1,19 +1,22 @@
-        <section class="bg-accent border-bottom add-top-margin">
-            <div class="container">
+
+        <section class="container">
+            <div class="bg-body-color ml-15 pr-15 mb-10 mt-10">
                 <div class="row no-gutters d-flex align-items-center">
                     <div class="col-lg-2 col-md-3 col-sm-4 col-5">
-                        <div class="topic-box mt-4 mb-5">Bài viết HOT</div>
+                        <div class="topic-box">Bài viết Nổi bật</div>
                     </div>
                     <div class="col-lg-10 col-md-9 col-sm-8 col-7">
-                        <div class="feeding-text-dark">
+                        <div class="feeding-text-light2">
                             <ol id="sample" class="ticker">
                             <?php 
-                                foreach ($slideTopCategory as $slrel){
-                                ?>
-                                    <li>
-                                        <a href="#"><?php echo $slrel['Title']?></a>
-                                    </li>
-                                <?php }?>
+                                $row= new UserModel();
+                                $slideTopHome = $row->slideTopHome();
+                                foreach ($slideTopHome as $slidetoprel){
+                            ?>                        
+                                <li>
+                                    <a href="?controller=singlePost"><?php echo $slidetoprel['Title'] ?></a>
+                                </li>   
+                                <?php }?>                    
                             </ol>
                         </div>
                     </div>
@@ -25,7 +28,7 @@
         <section class="breadcrumbs-area" style="background-image: url('img/banner/breadcrumbs-banner.jpg');">
             <div class="container">
                 <div class="breadcrumbs-content">
-                <?php 
+                <!-- <?php 
                     foreach ($tagPostCategory as $tagrel){
                     ?>
                         <h1><?php echo $tagrel['ParentName']?></h1>
@@ -38,7 +41,7 @@
                             </li>
                             <li><?php echo $tagrel['CategoryName']?></li>
                         </ul>
-                    <?php } ?>
+                    <?php } ?> -->
                 </div>
             </div>
         </section>
@@ -50,7 +53,7 @@
                     <div class="row mb-50-r">
                         <div class="col-12">
                             <div class="position-relative img-overlay-70">
-                                <img src="img/page1.jpg" alt="" class="img-fluid">
+                                <img src="Public/admin/assets/img/page1.jpg" alt="" class="img-fluid">
                                 <div class="topic-box-top-sm">
                                     <div class="topic-box-sm color-cinnabar mb-20">Món mặn</div>
                                 </div>
