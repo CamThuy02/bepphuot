@@ -14,7 +14,7 @@
                         foreach ($slideTopHome as $slidetoprel){
                     ?>                        
                         <li>
-                            <a href="single.html"><?php echo $slidetoprel['Title'] ?></a>
+                            <a href="?controller=singlePost"><?php echo $slidetoprel['Title'] ?></a>
                         </li>   
                         <?php }?>                    
                     </ol>
