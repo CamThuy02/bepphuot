@@ -26,7 +26,7 @@
 <!-- end of news feed area  -->
 <!-- start of slider area  -->
 <section class="section-space-bottom">
-    <div class="container">
+    <div class="container ">
         <div class="row no-gutters">
             <div class="col-xl-8 col-lg-12">
                 <div class="main-slider1 img-overlay-slider">
@@ -40,7 +40,6 @@
                             <img src="Public/admin/assets/img/<?php echo $sliderel['Img'] ?>" alt="slider" title="#slider-direction-1" />
                             <?php }?>
                         </div>
-
                         <!-- direction 1 -->
                         <?php 
                                     $row= new UserModel();
@@ -93,16 +92,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-12">
-                <div class="item-box-light-md-less30 ie-full-width">
+            <div class="col-xl-4 col-lg-12 scrollbar-right" id="scroll-style">
+                <div class="item-box-light-md-less30 ie-full-width ">
                     <div class="row">
                     <?php 
                                     $row= new UserModel();
                                     $rightSlide = $row->rightSlide();
                                     foreach ($rightSlide as $rightslrel){
                                 ?>
-                        <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                            <a class="img-opacity-hover" href="single-news-1.html">
+                        <div class="media mb-30 col-xl-12 col-lg-6 col-md-6 col-sm-12">
+                            <a class="img-opacity-hover col-xl-7" href="single-news-1.html">
                                 <img src="Public/admin/assets/img/<?php echo $rightslrel['Img'] ?>" alt="news" class="img-fluid">
                             </a>
                             <div class="media-body media-padding5">
