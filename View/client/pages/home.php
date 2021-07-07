@@ -40,7 +40,6 @@
                             <img src="Public/admin/assets/img/<?php echo $sliderel['Img'] ?>" alt="slider" title="#slider-direction-1" />
                             <?php }?>
                         </div>
-
                         <!-- direction 1 -->
                         <?php 
                                     $row= new UserModel();
