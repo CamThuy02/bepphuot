@@ -158,7 +158,7 @@ class UserModel extends Database{
 	//Slie Home
 	public function slideHome()
 	{	
-		$sql = "SELECT * FROM posts WHERE CategoryId='201' ORDER BY ViewNumber DESC limit 3 "; 
+		$sql = "SELECT * FROM posts WHERE CategoryId='302' ORDER BY ViewNumber DESC limit 3 "; 
 		$result = $this->db->conn->query($sql);
 
 		$row = array();
@@ -168,6 +168,7 @@ class UserModel extends Database{
 		}
 		return $row;
 	}
+	
 	public function slideTopHome()
 	{	
 		$sql = "SELECT * FROM posts ORDER BY ViewNumber DESC limit 3 "; 

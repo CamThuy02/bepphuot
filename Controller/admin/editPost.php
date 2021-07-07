@@ -28,8 +28,7 @@ class EditPost {
 				if (isset($_FILES['Img']) && $_FILES['Img']['error'] > 0) {
 					$image = $_POST['ImgOld'];
 				} else {
-					$ext = pathinfo($_FILES['Img']['name'], PATHINFO_EXTENSION);
-					$image = $title . '.' . $ext;
+					$image = pathinfo($_FILES['Img']['name'], PATHINFO_BASENAME);
 					move_uploaded_file($_FILES['Img']['tmp_name'], '../../Public/admin/assets/img/' . $image);
 				}
 

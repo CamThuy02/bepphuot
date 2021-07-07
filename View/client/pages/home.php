@@ -37,7 +37,7 @@
                                     $slideHome = $row->slideHome();
                                     foreach ($slideHome as $sliderel){
                                 ?>
-                            <img src="<?php echo $sliderel['Img'] ?>" alt="slider" title="#slider-direction-1" />
+                            <img src="Public/admin/assets/img/<?php echo $sliderel['Img'] ?>" alt="slider" title="#slider-direction-1" />
                             <?php }?>
                         </div>
 
@@ -103,7 +103,7 @@
                                 ?>
                         <div class="media mb-30 col-xl-12 col-lg-6 col-md-6 col-sm-12">
                             <a class="img-opacity-hover" href="single-news-1.html">
-                                <img src="<?php echo $rightslrel['Img'] ?>" alt="news" class="img-fluid">
+                                <img src="Public/admin/assets/img/<?php echo $rightslrel['Img'] ?>" alt="news" class="img-fluid">
                             </a>
                             <div class="media-body media-padding5">
                                 <div class="post-date-dark">
@@ -144,7 +144,7 @@
                 ?>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 ">
                         <div class="img-overlay-70 img-scale-animate mb-10">
-                            <img src="<?php echo $reciperel['Img'] ?>" alt="news" class="img-fluid width-100">
+                            <img src="Public/admin/assets/img/<?php echo $reciperel['Img'] ?>" alt="news" class="img-fluid width-100">
                             <div class="mask-content-xs">
                                 <div class="post-date-light d-none d-md-block">
                                     <ul>
@@ -192,7 +192,7 @@
                             <div class="media media-none--md mb-30">
                                 <div class="position-relative width-40">
                                     <a href="single.html" class="img-opacity-hover">
-                                        <img src="<?php echo $bokrel['Img'] ?>" alt="news" class="img-fluid">
+                                        <img src="Public/admin/assets/img/<?php echo $bokrel['Img'] ?>" alt="news" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="media-body p-mb-none-child media-margin30">
@@ -236,7 +236,7 @@
                                 <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
                                     <div class="position-relative">
                                         <a href="single.html" class="img-opacity-hover">
-                                            <img src="<?php echo $rightrel['Img'] ?>" alt="news"
+                                            <img src="Public/admin/assets/img/<?php echo $rightrel['Img'] ?>" alt="news"
                                                 class="img-fluid width-100 mb-10">
                                         </a>
                                         <h3 class="title-medium-dark size-sm mb-none">
@@ -271,7 +271,7 @@
                 ?>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="img-overlay-70 img-scale-animate mb-10">
-                            <img src="<?php echo $foodrel['Img'] ?>" alt="news" class="img-fluid width-100">
+                            <img src="Public/admin/assets/img/<?php echo $foodrel['Img'] ?>" alt="news" class="img-fluid width-100">
                             <div class="mask-content-xs">
                                 <div class="post-date-light d-none d-md-block">
                                     <ul>
