@@ -68,7 +68,7 @@
                     ?>
                     <div class="position-relative">
                         <div class="img-scale-animate mb-20">
-                            <img src="<?php echo $toprel['Img'] ?>" alt="news" class="img-fluid width-100">
+                            <img src="Public/admin/assets/img/<?php echo $toprel['Img'] ?>" alt="news" class="img-fluid width-100">
                             <!-- <div class="topic-box-top-xs">
                                 <div class="topic-box-sm color-cod-gray mb-20">Món mặn</div>
                             </div> -->
@@ -101,7 +101,7 @@
                             <div class="media media-none--md mb-30">
                                 <div class="position-relative width-40">
                                     <a href="single.html" class="img-opacity-hover">
-                                        <img src="<?php echo $leftrel['Img'] ?>" alt="news" class="img-fluid">
+                                        <img src="Public/admin/assets/img/<?php echo $leftrel['Img'] ?>" alt="news" class="img-fluid">
                                     </a>
                                 </div>
                                 <div class="media-body p-mb-none-child media-margin30">
@@ -148,7 +148,7 @@
                                 <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
                                     <div class="position-relative">
                                         <a href="single.html" class="img-opacity-hover">
-                                            <img src="<?php echo $rightrel['Img'] ?>" alt="news"
+                                            <img src="Public/admin/assets/img/<?php echo $rightrel['Img'] ?>" alt="news"
                                                 class="img-fluid width-100 mb-10">
                                         </a>
                                         <h3 class="title-medium-dark size-sm mb-none">

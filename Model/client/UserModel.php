@@ -234,4 +234,18 @@ class UserModel extends Database{
 		}
 		return $row;
 	}
+
+	public function SinglePost($id)
+	{	
+		$sql = "SELECT * FROM posts WHERE PostId = $id"; 
+
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+		while ($data = $result->fetch_assoc())
+		{
+			$row[] = $data;
+		}
+		return $row;
+	}
 }
