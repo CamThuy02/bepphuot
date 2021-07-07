@@ -18,6 +18,7 @@
                             <thead>
                                 <tr>
                                     <th>STT</th>
+                                    <th>Id</th>
                                     <th>Ảnh</th>
                                     <th>Tiêu đề</th>
                                     <th>Chuyên mục</th>
@@ -34,6 +35,9 @@
                                 foreach ($posts as $post) {?>
                                     <tr>
                                         <td><?=++$stt?></td>
+                                        <td>
+                                            <?=$post['PostId']?>
+                                        </td>
                                         <td>
                                             <img width="100" src="../../Public/admin/assets/img/<?=$post['Img']?>">
                                         </td>
