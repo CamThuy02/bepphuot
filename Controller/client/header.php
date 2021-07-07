@@ -5,26 +5,27 @@ class Header {
 	public function __construct()
 	{
 		require_once('Model/client/UserModel.php');
-
 		$userModel = new UserModel();
-		$error = $this->signUp($userModel);
-		$errorLogin = $this->login($userModel);
-
+		$this->signUp($userModel);
+		$this->login($userModel);
 		require('View/client/layouts/header.php');
 	}
 
 	public function signUp($userModel) {
 		$username = $password = NULL;	
-		$error = array();
-		$error['username'] = $error['password'] = $error['username_exist'] = NULL;
 		if (isset($_POST['signup'])) {
 			if (empty($_POST['username'])) {
-				$error['username'] = '* Cần điền tên đăng nhập';
+				echo "<script>alert('Cần điền tên đăng nhập!')</script>";
 			} else {
 				$username = $_POST['username'];
 			}
+
 			if (empty($_POST['password'])) {
-				$error['password'] = '* Cần điền mật khẩu';
+				echo "<script>alert('Cần điền mật khẩu!')</script>";
+			} else if (empty($_POST['password2'])) {
+				echo "<script>alert('Chưa nhập lại mật khẩu!')</script>";
+			} else if ($_POST['password'] != $_POST['password2']) {
+				echo "<script>alert('Mật khẩu không khớp!')</script>";
 			} else {
 				$password = md5(md5($_POST['password']));
 			}
@@ -33,36 +34,31 @@ class Header {
 				$check = $userModel->checkExists($username);
 
 				if ($check->num_rows > 0) {
-					$error['username_exist'] = '* Tên đăng nhập đã bị trùng';
+					echo "<script>alert('Tên đăng nhập đã bị trùng!')</script>";
 				} else {
 					$result=$userModel->signup($username, $password);
-					echo "<script>alert('Đăng ký thành công')</script>";
+					echo "<script>alert('Đăng ký thành công!')</script>";
 				
 					$data=$result->fetch_array(MYSQLI_ASSOC);
 					$_SESSION['user'] = $data;
 					header('Location: ./');
 				}
 			}
-			
 		}
-
-		return $error;
 	}
 
 	public function login($userModel)
 	{
 		$username = $password = NULL;
-		$error = array();
-		$error['username'] = $error['password'] = NULL;
-
 		if (!empty($_POST['login'])) {
 			if (empty($_POST['username'])) {
-				$error['username'] = '* Cần điền tên đăng nhập';
+				echo "<script>alert('Cần điền tên đăng nhập!')</script>";
+				die;
 			} else {
 				$username = $_POST['username'];
 			}
 			if (empty($_POST['password'])) {
-				$error['password'] = '* Cần điền mật khẩu';
+				echo "<script>alert('Cần điền mật khẩu!')</script>";
 			} else {
 				$password = md5(md5($_POST['password']));
 			}
@@ -80,13 +76,10 @@ class Header {
 					$_SESSION['user'] = $data; /*lưu session*/
 					header('Location: ./');
 				} else {
-					echo "<script>alert('Sai mật khẩu hoặc tên đăng nhập')</script>";
-					
+					echo "<script>alert('Sai mật khẩu hoặc tên đăng nhập')</script>";				
 				}
 			}
 		}
-
-		return $error;
 	}
 }
 $header = new Header();

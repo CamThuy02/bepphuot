@@ -50,21 +50,7 @@
     <!-- start of content -->
     <!-- start of preloader -->
     <div id="preloader"></div>
-    <?php  
-            if (isset($error['username'])) {?>
-                <div class="alert alert-danger" style="top: 155px; position: absolute; z-index: 5; width: auto; right: 0px;" role="alert">
-                    <?php echo $error['username']?>
-                </div>
-            <?php } else if (isset($error['password'])) {?>
-                <div class="alert alert-danger" style="top: 155px; position: absolute; z-index: 5; width: auto; right: 0px;" role="alert">
-                    <?=$error['password']?>
-                </div>
-            <?php } else if (isset($error['username_exist'])) {?>
-                <div class="alert alert-danger" style="top: 155px; position: absolute; z-index: 5; width: auto; right: 0px;" role="alert">
-                    <?=$error['username_exist']?>
-                </div>
-            <?php }
-        ?>
+    
     <!-- end of preloader  -->
     <div id="wrapper">
         <!-- start of header area -->
@@ -205,8 +191,8 @@
                                 <input type="text" name="username" placeholder="Tên đăng nhập hoặc email" />
                                 <label>Mật khẩu *</label>
                                 <input type="password" name="password" placeholder="Mật khẩu" />
-                                <!-- <label>Nhập lại Mật khẩu *</label>
-                                <input type="password" name= "password2" placeholder="Mật khẩu" /> -->
+                                <label>Nhập lại Mật khẩu *</label>
+                                <input type="password" name= "password2" placeholder="Mật khẩu" />
                                 <div class="checkbox checkbox-primary">
                                     <input id="checkbox" type="checkbox" checked>
                                     <label for="checkbox">Nhớ tôi</label>

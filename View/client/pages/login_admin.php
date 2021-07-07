@@ -43,10 +43,7 @@
                                                                 <label class="custom-control-label" for="customCheck">Ghi nhớ đăng nhập</label>
                                                             </div>
                                                         </div>
-														<button type="submit" name="login_admin" value="Login">Đăng nhập</button>
-                                                        <a href="?controller" class="btn btn-login btn-block">
-                                                            Đăng nhập
-                                                        </a>
+														<button type="submit" class="btn btn-login btn-block" name="login_admin" value="Login">Đăng nhập</button>
                                                     </form>
                                                     <hr>
                                                     <div class="text-center">

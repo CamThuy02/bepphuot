@@ -6,6 +6,7 @@ class Login
 {
     public function __construct()
     {
+        
         /**
         * Nếu tồn tại $_SESSION['useradmin'] chuyển hướng vào trang admin
         * Ngược lại hiển thị giao diện đăng nhập
@@ -17,7 +18,7 @@ class Login
 
 			require_once('Model/client/UserModel.php');
             $userModel = new UserModel();
-            $error = $this->loginAdmin($userModel);
+            $this->loginAdmin($userModel);
 
             require('View/client/pages/login_admin.php');
         }
@@ -26,17 +27,15 @@ class Login
     public function loginAdmin($userModel)
     {
         $username = $password = NULL;
-        $error = array();
-        $error['username_admin'] = $error['password_admin'] = NULL;
 
         if (!empty($_POST['login_admin'])) {
             if (empty($_POST['username_admin'])) {
-                $error['username_admin'] = '* Cần điền tên đăng nhập';
+                echo "<script>alert('Cần điền tên đăng nhập!')</script>";
             } else {
                 $username = $_POST['username_admin'];
             }
             if (empty($_POST['password_admin'])) {
-                $error['password_admin'] = '* Cần điền mật khẩu';
+                echo "<script>alert('Cần điền mật khẩu!')</script>";
             } else {
                 $password = md5(md5($_POST['password_admin']));
             }
@@ -60,15 +59,12 @@ class Login
                         $_SESSION['useradmin'] = $data; /*lưu session*/
                         header('Location: View/admin');
                     } else {
-                        echo "<script>alert('Vui lòng đăng nhập lại')</script>";
-												
+                        echo "<script>alert('Quyền hạn tài khoản chưa đủ!')</script>";								
                     }
                 } else {
-                    echo "<script>alert('Sai mật khẩu hoặc tên đăng nhập')</script>";
+                    echo "<script>alert('Sai mật khẩu hoặc tên đăng nhập!')</script>";
                 }
             }
         }
-
-        return $error;
     }
 }
