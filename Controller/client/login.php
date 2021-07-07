@@ -58,6 +58,7 @@ class Login
                 */
                     if ($data['quyen'] == admin) {
                         $_SESSION['useradmin'] = $data; /*lưu session*/
+                        $_SESSION['tendn'] = $data['tendn'];
                         header('Location: View/admin');
                     } else {
                         echo "<script>alert('Vui lòng đăng nhập lại')</script>";

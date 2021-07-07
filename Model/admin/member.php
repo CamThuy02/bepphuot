@@ -19,12 +19,12 @@ class MemberModel extends Database{
 	$this->db->conn->query($sql);
 
 	}
-	public function editMember($id, $tendn, $pass, $tendd, $quyen, $email, $dienthoai, $diachi, $ngaysinh, $gioitinh, $dantoc, $gioithieu)
+	public function editMember($idold, $id, $tendn, $pass, $tendd, $quyen, $email, $dienthoai, $diachi, $ngaysinh, $gioitinh, $dantoc, $gioithieu)
 	{
-
+		
 		$sql = "UPDATE users SET id = '$id',tendn = '$tendn',pass = '$pass',tendd = '$tendd',quyen = '$quyen',
 		email = '$email',dienthoai = '$dienthoai',diachi = '$diachi',ngaysinh = '$diachi',gioitinh = '$gioitinh',
-		dantoc = '$dantoc',gioithieu = '$gioithieu';";
+		dantoc = '$dantoc',gioithieu = '$gioithieu' where id = $idold; ";
 		$this->db->conn->query($sql);
 
 	}
