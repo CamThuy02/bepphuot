@@ -31,7 +31,7 @@
             <div class="col-xl-8 col-lg-12">
                 <div class="main-slider1 img-overlay-slider">
                     <div class="bend niceties preview-1">
-                        <div id="ensign-nivoslider-3" class="slides slide-image">
+                        <div id="ensign-nivoslider-3" class="slides">
                             <?php 
                                     $row= new UserModel();
                                     $slideHome = $row->slideHome();

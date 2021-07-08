@@ -28,14 +28,13 @@
         <section class="breadcrumbs-area" style="background-image: url('https://s3.ap-south-1.amazonaws.com/booko-events/vendor/images/CocktailBanner_02.jpg');">
             <div class="container">
                 <div class="breadcrumbs-content">
-<<<<<<< HEAD:View/client/pages/SinglePost.php
                 <?php 
                 foreach ($tagPostCategory as $tagrel){
                 ?>
                     <h1><?php echo $tagrel['ParentName']?></h1>
                     <ul>
                         <li>
-                            <a href="bepphuot/">Trang chủ</a> -
+                            <a href="/bepphuot">Trang chủ</a> -
                         </li>
                         <li>
                             <a href="#"><?php echo $tagrel['ParentName']?></a> -
@@ -43,16 +42,6 @@
                         <li><?php echo $tagrel['CategoryName']?></li>
                     </ul>
                 <?php } ?>
-=======
-                    <?php 
-                    foreach ($tagPostCategory as $tagrel){
-                    ?>
-                        <h1><?php echo $tagrel['ParentName']?></h1>
-                        <ul><li><a href="/bepphuot">Trang chủ</a> - </li>
-                        <li><a href="#"><?php echo $tagrel['ParentName']?></a> - </li>
-                        <li><?php echo $tagrel['CategoryName']?></li></ul>
-                    <?php } ?>
->>>>>>> 745afa68a600e3cce14796868fca5598876345a9:View/client/pages/singlePost.php
                 </div>
             </div>
         </section>
