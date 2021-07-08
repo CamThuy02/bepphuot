@@ -3,8 +3,8 @@
                     <div class="container-fluid">
                         <h1 class="mt-4">Thêm Bài Viết</h1>
                         <ol class="breadcrumb mb-g4">
-                            <li class="breadcrumb-item active"><a href="index.html">Trang chủ</a></li>
-                            <li class="breadcrumb-item active"><a href="list-post.html">Bài Viết</a></li>
+                            <li class="breadcrumb-item active"><a href="./">Trang chủ</a></li>
+                            <li class="breadcrumb-item active"><a href="?controller=listPost">Bài Viết</a></li>
                             <li class="breadcrumb-item">Thêm</li>
                         </ol>
                         <section class="content">

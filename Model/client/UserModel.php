@@ -211,7 +211,7 @@ class UserModel extends Database{
 	}
 	public function rightSlide()
 	{	
-		$sql = "SELECT * FROM posts WHERE CategoryId='201' ORDER BY PostId DESC limit 4"; 
+		$sql = "SELECT * FROM posts WHERE CategoryId='201' ORDER BY PostId DESC limit 5"; 
 
 		$result = $this->db->conn->query($sql);
 
@@ -249,4 +249,5 @@ class UserModel extends Database{
 		}
 		return $row;
 	}
+	
 }

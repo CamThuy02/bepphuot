@@ -12,11 +12,11 @@ class SinglePost {
 			$id = $_GET['PostId'];
 
 			$SinglePost = $userModel->SinglePost($id);
-			$slideTopHome = $userModel->slideTopHome();
             $tagPostCategory = $userModel->tagPostCategory($id);					
 			$leftPostCategory = $userModel->leftPostCategory($id);	
 			$topPostCategory = $userModel->topPostCategory($id);
-			$rightPostCategory = $userModel->rightPostCategory($id);					
+			$rightPostCategory = $userModel->rightPostCategory($id);	
+			$slideTopHome = $userModel->slideTopHome();				
 
 		}
 

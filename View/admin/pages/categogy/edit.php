@@ -3,8 +3,8 @@
                 <div class="container-fluid">
                     <h1 class="mt-4">Sửa Chuyên Mục</h1>
                     <ol class="breadcrumb mb-g4">
-                        <li class="breadcrumb-item active"><a href="index.html">Trang chủ</a></li>
-                        <li class="breadcrumb-item active"><a href="list-category.html">Chuyên mục</a></li>
+                        <li class="breadcrumb-item active"><a href="./">Trang chủ</a></li>
+                        <li class="breadcrumb-item active"><a href="?controller=listCategory">Chuyên mục con</a></li>
                         <li class="breadcrumb-item">Sửa</li>
                     </ol>
                     <section class="content">
