@@ -36,7 +36,7 @@
                     <h1><?php echo $tagrel['ParentName']?></h1>
                     <ul>
                         <li>
-                            <a href="bepphuot.html">Trang chủ</a> -
+                            <a href="bepphuot/">Trang chủ</a> -
                         </li>
                         <li>
                             <a href="#"><?php echo $tagrel['ParentName']?></a> -

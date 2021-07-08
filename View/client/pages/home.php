@@ -31,7 +31,7 @@
             <div class="col-xl-8 col-lg-12">
                 <div class="main-slider1 img-overlay-slider">
                     <div class="bend niceties preview-1">
-                        <div id="ensign-nivoslider-3" class="slides">
+                        <div id="ensign-nivoslider-3" class="slides slide-image">
                             <?php 
                                     $row= new UserModel();
                                     $slideHome = $row->slideHome();
@@ -116,7 +116,7 @@
                                     </ul>
                                 </div>
                                 <h3 class="title-medium-dark size-md mb-none">
-                                    <a href="single.html"><?php echo $rightslrel['Title'] ?></a>
+                                    <a href="?controller=singlePost&PostId=<?php echo $rightslrel['PostId']?>"><?php echo $rightslrel['Title'] ?></a>
                                 </h3>
                             </div>
                         </div>
@@ -149,7 +149,7 @@
                                 <div class="post-date-light d-none d-md-block">
                                     <ul>
                                         <li>
-                                            <a href="single.html"></a>
+                                            <a href="?controller=singlePost&PostId=<?php echo $reciperel['PostId']?>"></a>
                                         </li>
                                         <li>
                                             <span>
@@ -160,7 +160,7 @@
                                     </ul>
                                 </div>
                                 <h3 class="title-medium-light size-lg">
-                                    <a href="single.html"><?php echo $reciperel['Title'] ?></a>
+                                    <a href="?controller=singlePost&PostId=<?php echo $reciperel['PostId']?>"><?php echo $reciperel['Title'] ?></a>
                                 </h3>
                             </div>
                         </div>
@@ -191,7 +191,7 @@
                         <div class="col-lg-12 col-md-6 col-sm-12">
                             <div class="media media-none--md mb-30">
                                 <div class="position-relative width-40">
-                                    <a href="single.html" class="img-opacity-hover">
+                                    <a href="?controller=singlePost&PostId=<?php echo $bokrel['PostId']?>" class="img-opacity-hover">
                                         <img src="Public/admin/assets/img/<?php echo $bokrel['Img'] ?>" alt="news" class="img-fluid">
                                     </a>
                                 </div>
@@ -206,7 +206,7 @@
                                         </ul>
                                     </div>
                                     <h3 class="title-semibold-dark size-lg mb-15">
-                                        <a href="single.html"><?php echo $bokrel['Title'] ?></a>
+                                        <a href="?controller=singlePost&PostId=<?php echo $bokrel['PostId']?>"><?php echo $bokrel['Title'] ?></a>
                                     </h3>
                                     <p><?php echo $bokrel['Summary'] ?>...
                                     </p>
@@ -235,12 +235,12 @@
                                 ?>
                                 <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
                                     <div class="position-relative">
-                                        <a href="single.html" class="img-opacity-hover">
+                                        <a href="?controller=singlePost&PostId=<?php echo $rightrel['PostId']?>" class="img-opacity-hover">
                                             <img src="Public/admin/assets/img/<?php echo $rightrel['Img'] ?>" alt="news"
                                                 class="img-fluid width-100 mb-10">
                                         </a>
                                         <h3 class="title-medium-dark size-sm mb-none">
-                                            <a href="single.html"><?php echo $rightrel['Title'] ?></a>
+                                            <a href="?controller=singlePost&PostId=<?php echo $rightrel['PostId']?>"><?php echo $rightrel['Title'] ?></a>
                                         </h3>
                                     </div>
                                 </div>
@@ -276,7 +276,7 @@
                                 <div class="post-date-light d-none d-md-block">
                                     <ul>
                                         <li>
-                                            <a href="single.html"></a>
+                                            <a href="?controller=singlePost&PostId=<?php echo $foodrel['PostId']?>"></a>
                                         </li>
                                         <li>
                                             <span>
@@ -287,7 +287,7 @@
                                     </ul>
                                 </div>
                                 <h3 class="title-medium-light size-lg">
-                                    <a href="single.html"><?php echo $foodrel['Title'] ?></a>
+                                    <a href="?controller=singlePost&PostId=<?php echo $foodrel['PostId']?>"><?php echo $foodrel['Title'] ?></a>
                                 </h3>
                             </div>
                         </div>

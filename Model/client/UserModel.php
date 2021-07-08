@@ -168,6 +168,7 @@ class UserModel extends Database{
 		}
 		return $row;
 	}
+
 	
 	public function slideTopHome()
 	{	
