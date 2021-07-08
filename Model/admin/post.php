@@ -32,7 +32,7 @@ class PostModel extends Database{
 
     public function deletePost($postId)
 	{
-		$sql = "DELETE FROM posts WHERE PostId = $postId";
+		$sql = "DELETE FROM posts WHERE PostId = $postId;";
 		return $this->db->conn->query($sql);
 	}
 

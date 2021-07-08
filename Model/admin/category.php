@@ -21,6 +21,8 @@ class CategoryModel extends Database{
 	{	
 		// $this->db->conn->real_escape_string($name);
 		$sql = "SELECT * FROM category";
+		$rsql = "UPDATE category SET CountPosts = (SELECT COUNT(*) FROM posts WHERE posts.CategoryId = category.CategoryId)";
+		$rresult = $this->db->conn->query($rsql);
 		$result = $this->db->conn->query($sql);
 		if($result == false)
 		{
