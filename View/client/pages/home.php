@@ -31,13 +31,13 @@
             <div class="col-xl-8 col-lg-12">
                 <div class="main-slider1 img-overlay-slider">
                     <div class="bend niceties preview-1">
-                        <div id="ensign-nivoslider-3" class="slides">
+                        <div id="ensign-nivoslider-3" class="slides" >
                             <?php 
                                     $row= new UserModel();
                                     $slideHome = $row->slideHome();
                                     foreach ($slideHome as $sliderel){
                                 ?>
-                            <img src="Public/admin/assets/img/<?php echo $sliderel['Img'] ?>" alt="slider" title="#slider-direction-1" />
+                            <img  src="Public/admin/assets/img/<?php echo $sliderel['Img'] ?>" alt="slider" title="#slider-direction-1" />
                             <?php }?>
                         </div>
                         <!-- direction 1 -->
@@ -46,21 +46,21 @@
                                     $slideHome = $row->slideHome();
                                     foreach ($slideHome as $sliderel){
                                 ?>
-                        <div id="slider-direction-1" class="t-cn slider-direction">
+                        <div id="slider-direction-1" class="t-cn slider-direction" >
                             <div class="slider-content s-tb slide-1">
                                 <div class="title-container s-tb-c">
                                     <div class="text-left pl-50 pl20-xs">
                                         <div class="topic-box-sm color-cinnabar mb-20">Ẩm thực ba miền</div>
                                         <div class="post-date-light d-none d-sm-block">
                                             <ul>
-                                                <li>
+                                                <li style="text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;">
                                                     <span>
                                                         <i class="fa fa-calendar" aria-hidden="true"></i>
                                                     </span><?php echo $sliderel['DatePost'] ?>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="slider-title"><?php echo $sliderel['Title'] ?></div>
+                                        <div class="slider-title" style="text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;"><b><?php echo $sliderel['Title'] ?></b></div>
                                     </div>
                                 </div>
                             </div>
