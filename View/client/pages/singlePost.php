@@ -29,17 +29,17 @@
             <div class="container">
                 <div class="breadcrumbs-content">
                 <?php 
-                foreach ($tagPostCategory as $tagrel){
+                foreach ($HeaderPost as $headerpost){
                 ?>
-                    <h1><?php echo $tagrel['ParentName']?></h1>
+                    <h1><?php echo $headerpost['ParentName']?></h1>
                     <ul>
                         <li>
                             <a href="/bepphuot">Trang chủ</a> -
                         </li>
                         <li>
-                            <a href="#"><?php echo $tagrel['ParentName']?></a> -
+                            <a href="#"><?php echo $headerpost['ParentName']?></a> -
                         </li>
-                        <li><?php echo $tagrel['CategoryName']?></li>
+                        <li><?php echo $headerpost['CategoryName']?></li>
                     </ul>
                 <?php } ?>
                 </div>
@@ -56,21 +56,25 @@
                             <?php 
                                 foreach ($SinglePost as $singlepost){
                             ?>
+                               <?php 
+                                  foreach ($HeaderPost as $headerpost){
+                                ?>
                                 <img src="Public/admin/assets/img/<?php echo $singlepost['Img'] ?>" alt="" class="img-fluid">
 
                                 <div class="topic-box-top-sm">
-                                    <div class="topic-box-sm color-cinnabar mb-20">Món mặn</div>
+                                    <div class="topic-box-sm color-cinnabar mb-20"><?php echo $headerpost['CategoryName'] ?></div>
                                 </div>
 
                                 <div class="mask-content-lg hidden-xs">
                                     <ul class="post-info-light mb-10">
                                         <li>
-                                            <a href="#">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i><?php echo $singlepost['DatePost']?></a>
+                                            <a href="#" class="title-semibold-light">
+                                                <i class="title-semibold-light fa fa-calendar" aria-hidden="true"></i><?php echo $singlepost['DatePost']?></a>
                                         </li>
                                     </ul>
                                     <h2 style="color: white" class="title-semibold-light size-c34 mb-40"><?php echo $singlepost['Title']?></h2>
                                 </div>
+                                <?php } ?>
                             <?php }?>
                             </div>
                         </div>
@@ -127,21 +131,47 @@
                                     </ul>
                                 </div>
                             </div>
+                           
                             <div class="row item-box-light-lg no-gutters divider">
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                                    <a href="single.html" class="prev-article">
+                                <?php 
+                                foreach ($SinglePost as $singlepost){
+                                ?> 
+                                <?php
+                                    $prevId= --$singlepost['PostId'];
+                                    if (empty($prevId)){
+                                       $prevId= $prevId--;
+                                    }
+                                    else{
+                                      $singlePost['PostId']=$prevId;
+                                    }
+                                ?>
+                                    <a style="font-size:20px; color:red;" href="?controller=singlePost&PostId=<?php echo $singlepost['PostId']?>" class="prev-article">
                                         <i class="fa fa-angle-left" aria-hidden="true"></i>Bài viết trước đó</a>
                                     <h3 class="title-medium-dark pr-50"><b>
-                                    <!-- pre post -->
                                     </b></h3>
+                                    <?php }?>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right">
-                                    <a href="single.html" class="next-article">Bài viết tiếp theo
+                                <?php 
+                                foreach ($SinglePost as $singlepost){
+                                ?> 
+                                <?php
+                                    $nextId= ++$singlepost['PostId'];
+                                    if (empty($nextId)){
+                                       $nextId= $nextId++;
+                                    }
+                                    else{
+                                      $singlePost['PostId']=$nextId;
+                                    }
+                                ?>
+                                    <a style="font-size:20px; color:red;" href="?controller=singlePost&PostId=<?php echo $singlepost['PostId']?>" class="next-article">Bài viết tiếp theo
                                             <i class="fa fa-angle-right" aria-hidden="true"></i>
                                         </a>
                                     <h3 class="title-medium-dark pl-50"><b>
                                     <!-- next post -->
                                     </b></h3>
+                                <?php }?>
                                 </div>
                             </div>
                         </div>
@@ -280,13 +310,16 @@
                             </div>
                             <div class="ne-carousel nav-control-top2 color-cod-gray" data-loop="true" data-items="3" data-margin="15" data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="2000" data-dots="false" data-nav="true" data-nav-speed="false" data-r-x-small="1"
                                 data-r-x-small-nav="true" data-r-x-small-dots="false" data-r-x-medium="2" data-r-x-medium-nav="true" data-r-x-medium-dots="false" data-r-small="2" data-r-small-nav="true" data-r-small-dots="false" data-r-medium="2" data-r-medium-nav="true"
-                                data-r-medium-dots="false" data-r-Large="3" data-r-Large-nav="true" data-r-Large-dots="false">                
+                                data-r-medium-dots="false" data-r-Large="3" data-r-Large-nav="true" data-r-Large-dots="false">    
+                                <?php 
+                                foreach ($BottomPost as $bottompost){
+                                ?>            
                                 <div class="position-relative">
                                     <div class="img-scale-animate mb-20">
-                                        <img src="img/news/news33.jpg" alt="news" class="img-fluid width-100">
-                                        <div class="topic-box-top-xs">
+                                        <img src="Public/admin/assets/img/<?php echo $bottompost['Img'] ?>" alt="news" class="img-fluid width-100">
+                                        <!-- <div class="topic-box-top-xs">
                                             <div class="topic-box-sm color-cod-gray mb-20">mẹo vặt</div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="bg-body">
                                         <div class="post-date-dark">
@@ -294,14 +327,16 @@
                                                 <li>
                                                     <span>
                                                         <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                        </span>12 tháng 5, 2021</li>
+                                                    </span><?php echo $bottompost['DatePost'] ?>
+                                                </li>
                                             </ul>
                                         </div>
                                         <h3 class="title-medium-dark size-sm mb-none">
-                                            <a href="single.html"> 5 công thức làm nước giải nhiệt</a>
+                                        <a href="?controller=singlePost&PostId=<?php echo $bottompost['PostId']?>"><?php echo $bottompost['Title'] ?></a>
                                         </h3>
                                     </div>
                                 </div>
+                                <?php }?>  
                             </div>
                         </div>
                     </div>

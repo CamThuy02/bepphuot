@@ -13,10 +13,7 @@
                                     <a href="/bepphuot" title="Trang chủ">Trang chủ</a>
                                 </li>
                                 <li>
-                                    <a href="#" title="Giới thiệu">Giới thiệu</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Liên hệ">Liên hệ</a>
+                                    <a href="?controller=contact" title="Giới thiệu & Liên hệ">Giới thiệu & Liên hệ</a>
                                 </li>
                                 <li>
                                     <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
