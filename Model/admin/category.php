@@ -53,7 +53,7 @@ class CategoryModel extends Database{
 		$ParentId =  $this->db->conn->real_escape_string($ParentId);
 		$CountPosts =  $this->db->conn->real_escape_string($CountPosts);
 
-		$sql = "UPDATE category SET  CategoryName = '$CategoryName', CategoryType = $CategoryType, ParentId = $ParentId, CountPosts = $CountPosts  
+		$sql = "UPDATE category SET CategoryName = '$CategoryName', CategoryType = $CategoryType, ParentId = $ParentId, CountPosts = $CountPosts  
 				WHERE CategoryId = $CategoryId;";
     	$result = $this->db->conn->query($sql);
 	}
