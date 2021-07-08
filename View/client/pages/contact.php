@@ -94,7 +94,8 @@
                         <div class="sidebar-box">
                             <div class="ne-banner-layout1 text-center">
                                 <a href="#">
-                                    <img src="Public/client/img/logo1.png" alt="ad" class="img-fluid">
+                                    <br><br><br>
+                                    <img src="Public/client/img/banner/banner.jpg" alt="ad" class="img-fluid">
                                 </a>
                             </div>
                         </div>
