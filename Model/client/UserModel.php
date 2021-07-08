@@ -172,7 +172,7 @@ class UserModel extends Database{
 	
 	public function slideTopHome()
 	{	
-		$sql = "SELECT * FROM posts ORDER BY ViewNumber DESC limit 3 "; 
+		$sql = "SELECT * FROM posts ORDER BY ViewNumber DESC limit 4 "; 
 		$result = $this->db->conn->query($sql);
 
 		$row = array();
@@ -240,6 +240,34 @@ class UserModel extends Database{
 	{	
 		$sql = "SELECT * FROM posts WHERE PostId = $id"; 
 
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+		while ($data = $result->fetch_assoc())
+		{
+			$row[] = $data;
+		}
+		return $row;
+	}
+
+	public function BottomPost($id)
+	{	
+		$sql = "SELECT * FROM posts WHERE CategoryId = ( SELECT CategoryId FROM posts WHERE PostId = $id)"; 
+ 
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+		while ($data = $result->fetch_assoc())
+		{
+			$row[] = $data;
+		}
+		return $row;
+	}
+
+	public function HeaderPost($id)
+	{	
+		$sql = "SELECT CategoryName, ParentName FROM posts INNER JOIN category ON posts.CategoryId=category.CategoryId INNER JOIN parentcategory ON category.ParentId=parentcategory.ParentId WHERE PostId=$id"; 
+ 
 		$result = $this->db->conn->query($sql);
 
 		$row = array();
