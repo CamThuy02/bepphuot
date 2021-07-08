@@ -95,7 +95,9 @@ a.star.vote-active {
 
 
 /* end of css rating star */
-
+.imgctpb {
+    height: 255px;
+}
 img {
     max-width: 100%;
     height: auto;
@@ -305,6 +307,10 @@ h3.title-medium-dark span {
 
 h3.title-semibold-dark {
     font-weight: 600;
+}
+
+.title-semibold-light{
+    text-shadow: 5px 2px 4px rgb(70, 70, 70);
 }
 
 h3.title-semibold-dark a {
@@ -3299,13 +3305,15 @@ div#wrapper.open>.offcanvas-mask {
     background-image: -o-linear-gradient(transparent, #111), -o-linear-gradient(transparent, #111);
     background-image: linear-gradient(transparent, #111), linear-gradient(transparent, #111);
     content: "";
-    height: 70%;
+    height: auto;
     bottom: 0;
     left: 0;
     right: 0;
     position: absolute;
     width: 100%;
     z-index: 6;
+    max-width: 740px;
+    max-height: 520px;
 }
 
 .slider-title {

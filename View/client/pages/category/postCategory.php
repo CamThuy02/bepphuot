@@ -126,9 +126,6 @@
                         <?php } ?>
                     </div>
                     <!--seemore -->
-                    <center>
-                        <button id="btnSeeMore" class="btn btn-lg btn-danger">Xem thêm</button>
-                    </center>
                 </div>
             </div>
             <div class="ne-sidebar sidebar-break-lg col-xl-4 col-lg-12 scrollbar" id="scroll-style">

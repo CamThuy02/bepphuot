@@ -31,7 +31,7 @@
             <div class="col-xl-8 col-lg-12">
                 <div class="main-slider1 img-overlay-slider">
                     <div class="bend niceties preview-1">
-                        <div id="ensign-nivoslider-3" class="slides slide-image">
+                        <div id="ensign-nivoslider-3" class="slides">
                             <?php 
                                     $row= new UserModel();
                                     $slideHome = $row->slideHome();
@@ -152,13 +152,13 @@
                                         </li>
                                         <li>
                                             <span>
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                <i class="title-semibold-light fa fa-calendar" aria-hidden="true"></i>
                                             </span>
                                             <?php echo $reciperel['DatePost'] ?>
                                         </li>
                                     </ul>
                                 </div>
-                                <h3 class="title-medium-light size-lg">
+                                <h3 class="title-semibold-light title-medium-light size-lg">
                                     <a href="?controller=singlePost&PostId=<?php echo $reciperel['PostId']?>"><?php echo $reciperel['Title'] ?></a>
                                 </h3>
                             </div>
@@ -279,13 +279,13 @@
                                         </li>
                                         <li>
                                             <span>
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                <i class="title-semibold-light fa fa-calendar" aria-hidden="true"></i>
                                             </span>
                                             <?php echo $foodrel['DatePost'] ?>
                                         </li>
                                     </ul>
                                 </div>
-                                <h3 class="title-medium-light size-lg">
+                                <h3 class="title-semibold-light title-medium-light size-lg">
                                     <a href="?controller=singlePost&PostId=<?php echo $foodrel['PostId']?>"><?php echo $foodrel['Title'] ?></a>
                                 </h3>
                             </div>
