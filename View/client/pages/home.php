@@ -60,7 +60,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="slider-title" style="text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;"><b><?php echo $sliderel['Title'] ?></b></div>
+                                        <div class="slider-title" style="text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;"><?php echo $sliderel['Title'] ?></div>
                                     </div>
                                 </div>
                             </div>
