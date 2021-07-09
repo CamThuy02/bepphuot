@@ -108,7 +108,7 @@
                                    <p>Chia sẻ bài viết với!</p>
                                    <ul class="social-default item-inline">
                                        <li>
-                                           <a href="http://www.facebook.com/sharer/sharer.php?url=http://localhost:81/bepphuot/?controller=singlePost&PostId=<?php echo $singlepost['PostId']?>"
+                                           <a href="http://www.facebook.com/sharer/sharer.php?u=http://localhost:81/bepphuot/?controller=singlePost&PostId=<?php echo $singlepost['PostId']?>"
                                                class="facebook">
                                                <i class="fa fa-facebook" aria-hidden="true"></i>
                                            </a>
