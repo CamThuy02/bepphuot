@@ -172,7 +172,7 @@ class UserModel extends Database{
 	
 	public function slideTopHome()
 	{	
-		$sql = "SELECT * FROM posts ORDER BY ViewNumber DESC limit 4 "; 
+		$sql = "SELECT * FROM posts ORDER BY ViewNumber DESC limit 6 "; 
 		$result = $this->db->conn->query($sql);
 
 		$row = array();

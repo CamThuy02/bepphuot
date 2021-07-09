@@ -50,41 +50,39 @@
         <section class="bg-accent section-space-less30">
             <div class="news-details-layout2">
                 <div class="container">
-                    <div class="row mb-50-r">
-                        <div class="col-12">
-                            <div class="position-relative img-overlay-70">
-                            <?php 
-                                foreach ($SinglePost as $singlepost){
-                            ?>
-                               <?php 
-                                  foreach ($HeaderPost as $headerpost){
-                                ?>
-                                <img src="Public/admin/assets/img/<?php echo $singlepost['Img'] ?>" alt="" class="img-fluid">
-
-                                <div class="topic-box-top-sm">
-                                    <div class="topic-box-sm color-cinnabar mb-20"><?php echo $headerpost['CategoryName'] ?></div>
-                                </div>
-
-                                <div class="mask-content-lg hidden-xs">
-                                    <ul class="post-info-light mb-10">
-                                        <li>
-                                            <a href="#" class="title-semibold-light">
-                                                <i class="title-semibold-light fa fa-calendar" aria-hidden="true"></i><?php echo $singlepost['DatePost']?></a>
-                                        </li>
-                                    </ul>
-                                    <h2 style="color: white" class="title-semibold-light size-c34 mb-40"><?php echo $singlepost['Title']?></h2>
-                                </div>
-                                <?php } ?>
-                            <?php }?>
-                            </div>
-                        </div>
-                    </div>
                     <div class="row">
-                        <div class="scrollbar col-xl-8 col-lg-7 col-md-12 mb-30" id="scroll-style">
+                        <div class="col-xl-8 col-lg-7 col-md-12 mb-30" >
+                            <div class="col-12" style="margin-bottom: 3rem;">
+                                <div class="position-relative img-overlay-70">
+                                    <?php 
+                                        foreach ($SinglePost as $singlepost){
+                                    ?>
+                                        <?php 
+                                        foreach ($HeaderPost as $headerpost){
+                                        ?>
+                                        <img src="Public/admin/assets/img/<?php echo $singlepost['Img'] ?>" alt="" style="width:700px;">
+
+                                        <div class="topic-box-top-sm">
+                                            <div class="topic-box-sm color-cinnabar mb-20"><?php echo $headerpost['CategoryName'] ?></div>
+                                        </div>
+
+                                        <div class="mask-content-lg hidden-xs">
+                                            <ul class="post-info-light mb-10">
+                                                <li>
+                                                    <a href="#" class="title-semibold-light">
+                                                        <i class="title-semibold-light fa fa-calendar" aria-hidden="true"></i><?php echo $singlepost['DatePost']?></a>
+                                                </li>
+                                            </ul>
+                                            <h2 style="color: white" class="title-semibold-light size-c34 mb-40"><?php echo $singlepost['Title']?></h2>
+                                        </div>
+                                        <?php } ?>
+                                    <?php }?>
+                                </div>
+                            </div>
                             <div class="item-box-light-lg mb-30">
-                            <?php 
-                                foreach ($SinglePost as $singlepost){
-                            ?>
+                              <?php 
+                                  foreach ($SinglePost as $singlepost){
+                              ?>
                                 <p><b>
                                 <?php echo $singlepost['Summary']?>
                                 </b></p>
@@ -92,7 +90,7 @@
                                 <p>
                                 <?php echo $singlepost['Content']?>
                                 </p>
-                            <?php }?>
+                              <?php }?>
                                 <ul class="blog-tags item-inline">
                                     <li>Thẻ</li>
                                     <li>
@@ -130,52 +128,52 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-                           
-                            <div class="row item-box-light-lg no-gutters divider">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-                                <?php 
-                                foreach ($SinglePost as $singlepost){
-                                ?> 
-                                <?php
-                                    $prevId= --$singlepost['PostId'];
-                                    if (empty($prevId)){
-                                       $prevId= $prevId--;
-                                    }
-                                    else{
-                                      $singlePost['PostId']=$prevId;
-                                    }
-                                ?>
-                                    <a style="font-size:20px; color:red;" href="?controller=singlePost&PostId=<?php echo $singlepost['PostId']?>" class="prev-article">
-                                        <i class="fa fa-angle-left" aria-hidden="true"></i>Bài viết trước đó</a>
-                                    <h3 class="title-medium-dark pr-50"><b>
-                                    </b></h3>
-                                    <?php }?>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right">
-                                <?php 
-                                foreach ($SinglePost as $singlepost){
-                                ?> 
-                                <?php
-                                    $nextId= ++$singlepost['PostId'];
-                                    if (empty($nextId)){
-                                       $nextId= $nextId++;
-                                    }
-                                    else{
-                                      $singlePost['PostId']=$nextId;
-                                    }
-                                ?>
-                                    <a style="font-size:20px; color:red;" href="?controller=singlePost&PostId=<?php echo $singlepost['PostId']?>" class="next-article">Bài viết tiếp theo
-                                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                        </a>
-                                    <h3 class="title-medium-dark pl-50"><b>
-                                    <!-- next post -->
-                                    </b></h3>
-                                <?php }?>
-                                </div>
-                            </div>
+                                <div class="row item-box-light-lg no-gutters divider">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <?php 
+                                        foreach ($SinglePost as $singlepost){
+                                        ?> 
+                                        <?php
+                                            $prevId= --$singlepost['PostId'];
+                                            if (empty($prevId)){
+                                            $prevId= $prevId--;
+                                            }
+                                            else{
+                                            $singlePost['PostId']=$prevId;
+                                            }
+                                        ?>
+                                        <a style="font-size:20px; color:red;" href="?controller=singlePost&PostId=<?php echo $singlepost['PostId']?>" class="prev-article">
+                                            <i class="fa fa-angle-left" aria-hidden="true"></i>Bài viết trước đó</a>
+                                        <h3 class="title-medium-dark pr-50"><b>
+                                        </b></h3>
+                                      <?php }?>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                                        <?php 
+                                        foreach ($SinglePost as $singlepost){
+                                        ?> 
+                                        <?php
+                                            $nextId= ++$singlepost['PostId'];
+                                            if (empty($nextId)){
+                                            $nextId= $nextId++;
+                                            }
+                                            else{
+                                            $singlePost['PostId']=$nextId;
+                                            }
+                                        ?>
+                                        <a style="font-size:20px; color:red;" href="?controller=singlePost&PostId=<?php echo $singlepost['PostId']?>" class="next-article">Bài viết tiếp theo
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                            </a>
+                                        <h3 class="title-medium-dark pl-50"><b>
+                                        <!-- next post -->
+                                        </b></h3>
+                                      <?php }?>
+                                    </div>
+                                </div>  
+                          </div>
                         </div>
-                        <div class="ne-sidebar scrollbar sidebar-break-md col-xl-4 col-lg-5 col-md-12" id="scroll-style">
+                        <div class="ne-sidebar sidebar-break-md col-xl-4 col-lg-5 col-md-12" >
                             <div class="sidebar-box">
                                 <div class="item-box-light-md">
                                     <div class="topic-border color-cinnabar mb-25">
@@ -317,9 +315,6 @@
                                 <div class="position-relative">
                                     <div class="img-scale-animate mb-20">
                                         <img src="Public/admin/assets/img/<?php echo $bottompost['Img'] ?>" alt="news" class="img-fluid width-100">
-                                        <!-- <div class="topic-box-top-xs">
-                                            <div class="topic-box-sm color-cod-gray mb-20">mẹo vặt</div>
-                                        </div> -->
                                     </div>
                                     <div class="bg-body">
                                         <div class="post-date-dark">
