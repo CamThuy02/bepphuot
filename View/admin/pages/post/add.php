@@ -36,12 +36,12 @@
                                         <br>
                                         <div class="form-group">
                                             <label>Tóm tắt</label>
-                                            <textarea class="textarea" name="Summary" required="required" id="txtSummary"  placeholder="Place some text here"
+                                            <textarea class="textarea" name="Summary" required="required" id="txtSummary"  placeholder="NHập nội dung tóm tắt"
                                               style="width: 100%; height: 100px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                                         </div>
                                         <div class="form-group">
                                             <label>Nội dung</label>
-                                            <textarea required="required" name="Content" class="textarea" id="txtContent" placeholder="Place some text here"
+                                            <textarea required="required" name="Content" class="textarea" id="txtContent" placeholder="Nhập nội dung bài viết"
                                               style="width: 100%; height: 500px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                                         </div>
                                         <button type="submit" name="addPost" class="btn btn-primary">Thêm</button>
