@@ -277,5 +277,33 @@ class UserModel extends Database{
 		}
 		return $row;
 	}
+
+	public function PrevPost($id)
+	{	
+		$sql = "SELECT * FROM posts WHERE PostId < $id ORDER BY PostId DESC LIMIT 1;"; 
+ 
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+		while ($data = $result->fetch_assoc())
+		{
+			$row[] = $data;
+		}
+		return $row;
+	}
+
+	public function NextPost($id)
+	{	
+		$sql = "SELECT * FROM posts WHERE PostId > $id ORDER BY PostId LIMIT 1;"; 
+ 
+		$result = $this->db->conn->query($sql);
+
+		$row = array();
+		while ($data = $result->fetch_assoc())
+		{
+			$row[] = $data;
+		}
+		return $row;
+	}
 	
 }

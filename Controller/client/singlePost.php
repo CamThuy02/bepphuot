@@ -14,7 +14,9 @@ class SinglePost {
 			$SinglePost = $userModel->SinglePost($id);
 			$BottomPost = $userModel->BottomPost($id);
 			$slideTopHome = $userModel->slideTopHome();	
-			$HeaderPost = $userModel->HeaderPost($id);		
+			$HeaderPost = $userModel->HeaderPost($id);	
+			$PrevPost = $userModel->PrevPost($id);	
+			$NextPost = $userModel->NextPost($id);	
 
 		}
 		require('View/client/pages/singlePost.php');

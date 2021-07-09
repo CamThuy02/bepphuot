@@ -134,42 +134,32 @@
                                    </ul>
                                </div>
                                 <div class="row item-box-light-lg no-gutters divider">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6" style="padding-right: 20px;">
                                         <?php 
-                                        foreach ($SinglePost as $singlepost){
+                                        foreach ($PrevPost as $prevpost){
                                         ?> 
-                                        <?php
-                                            $prevId= --$singlepost['PostId'];
-                                            if (empty($prevId)){
-                                            $prevId= $prevId--;
-                                            }
-                                            else{
-                                            $singlePost['PostId']=$prevId;
-                                            }
-                                        ?>
-                                        <a style="font-size:20px; color:red;" href="?controller=singlePost&PostId=<?php echo $singlepost['PostId']?>" class="prev-article">
+                                        <a style="font-size:17px; color:red;" href="?controller=singlePost&PostId=<?php echo $prevpost['PostId']?>" class="prev-article">
                                             <i class="fa fa-angle-left" aria-hidden="true"></i>Bài viết trước đó</a>
+                                            <br>
+                                            <br>
+                                        <a style="font-size:18px; color:black;" href="?controller=singlePost&PostId=<?php echo $prevpost['PostId']?>" class="prev-article">
+                                         <b><?php echo $prevpost['Title']?></b></a>
                                         <h3 class="title-medium-dark pr-50"><b>
                                         </b></h3>
                                       <?php }?>
                                     </div>
 
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right" style="padding-left: 20px;">
                                         <?php 
-                                        foreach ($SinglePost as $singlepost){
+                                        foreach ($NextPost as $nextpost){
                                         ?> 
-                                        <?php
-                                            $nextId= ++$singlepost['PostId'];
-                                            if (empty($nextId)){
-                                            $nextId= $nextId++;
-                                            }
-                                            else{
-                                            $singlePost['PostId']=$nextId;
-                                            }
-                                        ?>
-                                        <a style="font-size:20px; color:red;" href="?controller=singlePost&PostId=<?php echo $singlepost['PostId']?>" class="next-article">Bài viết tiếp theo
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <a style="font-size:17px; color:red;" href="?controller=singlePost&PostId=<?php echo $nextpost['PostId']?>" class="next-article">Bài viết tiếp theo
+                                          <i class="fa fa-angle-right" aria-hidden="true"></i>
                                             </a>
+                                            <br>
+                                            <br>
+                                        <a style="font-size:18px; color:black;" href="?controller=singlePost&PostId=<?php echo $nextpost['PostId']?>" class="prev-article">
+                                         <b><?php echo $nextpost['Title']?></b></a>
                                         <h3 class="title-medium-dark pl-50"><b>
                                         <!-- next post -->
                                         </b></h3>
@@ -332,11 +322,9 @@
                                 ?>
                                <div class="position-relative">
                                    <div class="img-scale-animate mb-20">
+                                   <a href="?controller=singlePost&PostId=<?php echo $slidetoprel['PostId']?>">
                                        <img src="Public/admin/assets/img/<?php echo $bottompost['Img'] ?>" alt="news"
-                                           class="img-fluid width-100">
-                                       <!-- <div class="topic-box-top-xs">
-                                            <div class="topic-box-sm color-cod-gray mb-20">mẹo vặt</div>
-                                        </div> -->
+                                           class="img-fluid width-100"></a>
                                    </div>
                                    <div class="bg-body">
                                        <div class="post-date-dark">
