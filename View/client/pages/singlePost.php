@@ -89,7 +89,7 @@
                                 <?php echo $singlepost['Summary']?>
                                 </b></p>
                                 <hr>
-                                <p>
+                                <p style="white-space: pre-line;">
                                 <?php echo $singlepost['Content']?>
                                 </p>
                               <?php }?>
