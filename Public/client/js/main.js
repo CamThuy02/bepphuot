@@ -14,7 +14,7 @@
         var t = e(this),
             n = t.parents(".menu-list-wrapper").find(".menu-list").find(".menu-item.hidden").slice(0, 3);
         return n.length ? (n.animate({ opacity: 0 }), n.promise().done(function() { n.removeClass("hidden"), n.show().animate({ opacity: 1 }, 1e3) })) : t.text("No more item to display"), !1
-    }), e("nav#dropdown").meanmenu({ siteLogo: "<div class='mobile-menu-nav-back'><a href='bepphuot.html' class='logo-mobile'><img src='Public\client\img\logo.png'/></a></div>" }), (new WOW).init(), e.scrollUp({ scrollText: '<i class="fa fa-angle-double-up"></i>', easingType: "linear", scrollSpeed: 900, animation: "fade" }), e("#wrapper").on("click", "#side-menu-trigger a.menu-bar", function(a) {
+    }), e("nav#dropdown").meanmenu({ siteLogo: "<div class='mobile-menu-nav-back'><a href='./' class='logo-mobile'><img src='Public/client/img/logo.png'/></a></div>" }), (new WOW).init(), e.scrollUp({ scrollText: '<i class="fa fa-angle-double-up"></i>', easingType: "linear", scrollSpeed: 900, animation: "fade" }), e("#wrapper").on("click", "#side-menu-trigger a.menu-bar", function(a) {
         a.preventDefault();
         var t = e(this),
             n = e(this).parents("body").find(">#wrapper"),
