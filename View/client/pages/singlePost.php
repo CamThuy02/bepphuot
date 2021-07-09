@@ -1,34 +1,36 @@
        <!-- start of news feed area -->
-        <section class="container">
-            <div class="bg-body-color ml-15 pr-15 mb-10 mt-10">
-                <div class="row no-gutters d-flex align-items-center">
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-5">
-                        <div class="topic-box">Bài viết Nổi bật</div>
-                    </div>
-                    <div class="col-lg-10 col-md-9 col-sm-8 col-7">
-                        <div class="feeding-text-light2">
-                            <ol id="sample" class="ticker">
-                                <?php 
+       <section class="container">
+           <div class="bg-body-color ml-15 pr-15 mb-10 mt-10">
+               <div class="row no-gutters d-flex align-items-center">
+                   <div class="col-lg-2 col-md-3 col-sm-4 col-5">
+                       <div class="topic-box">Bài viết Nổi bật</div>
+                   </div>
+                   <div class="col-lg-10 col-md-9 col-sm-8 col-7">
+                       <div class="feeding-text-light2">
+                           <ol id="sample" class="ticker">
+                               <?php 
                                     $row= new UserModel();
                                     $slideTopHome = $row->slideTopHome();
                                     foreach ($slideTopHome as $slidetoprel){
-                                ?>                        
-                                    <li>
-                                        <a href="?controller=singlePost&PostId=<?php echo $slidetoprel['PostId']?>"><?php echo $slidetoprel['Title'] ?></a>
-                                    </li>   
-                                <?php }?>                    
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- News Feed Area End Here -->
-        <!-- Breadcrumb Area Start Here -->
-        <section class="breadcrumbs-area" style="background-image: url('https://s3.ap-south-1.amazonaws.com/booko-events/vendor/images/CocktailBanner_02.jpg');">
-            <div class="container">
-                <div class="breadcrumbs-content">
-                <?php 
+                                ?>
+                               <li>
+                                   <a
+                                       href="?controller=singlePost&PostId=<?php echo $slidetoprel['PostId']?>"><?php echo $slidetoprel['Title'] ?></a>
+                               </li>
+                               <?php }?>
+                           </ol>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section>
+       <!-- News Feed Area End Here -->
+       <!-- Breadcrumb Area Start Here -->
+       <section class="breadcrumbs-area"
+           style="background-image: url('https://s3.ap-south-1.amazonaws.com/booko-events/vendor/images/CocktailBanner_02.jpg');">
+           <div class="container">
+               <div class="breadcrumbs-content">
+                   <?php 
                 foreach ($HeaderPost as $headerpost){
                 ?>
                     <h1><?php echo $headerpost['ParentName']?></h1>
@@ -104,30 +106,33 @@
                                     </li>
                                 </ul>
                                 <div class="post-share-area item-shadow-1">
-                                    <p>Chia sẻ bài viết với!</p>
-                                    <ul class="social-default item-inline">
-                                        <li>
-                                            <a href="#" class="facebook">
-                                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                   <p>Chia sẻ bài viết với!</p>
+                                   <ul class="social-default item-inline">
+                                       <li>
+                                           <a href="http://www.facebook.com/sharer/sharer.php?url=http://localhost:81/bepphuot/?controller=singlePost&PostId=<?php echo $singlepost['PostId']?>"
+                                               class="facebook">
+                                               <i class="fa fa-facebook" aria-hidden="true"></i>
+                                           </a>
+                                       </li>
+                                       <li>
+                                           <a class="button_share share twitter" href="https://twitter.com/intent/tweet?text=YOUR-TEXT&url=http://localhost:81/bepphuot/?controller=singlePost&PostId=<?php echo $singlepost['PostId']?>&via=TWITTER-HANDLER">
+                                           <i class="fa fa-twitter"></i>                                               
                                             </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="google">
-                                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="pinterest">
-                                                <i class="fa fa-pinterest" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="rss">
-                                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                       </li>
+                                       <li>
+                                           <a href="http://pinterest.com/pin/create/button/?url=http://localhost:81/bepphuot/?controller=singlePost&PostId=<?php echo $singlepost['PostId']?>&description=YOUR-DESCRIPTION&media=YOUR-IMAGE-SRC"
+                                               class="pinterest">
+                                               <i class="fa fa-pinterest" aria-hidden="true"></i>
+                                           </a>
+                                       </li>
+                                       <li>
+                                            <a class="button_share share linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=http://localhost:81/bepphuot/?controller=singlePost&PostId=<?php echo $singlepost['PostId']?>&title=YOUR-TITLE&source=YOUR-URL">
+                                                <i class="fa fa-linkedin">                                                    
+                                                </i> LinkedIn
+                                            </a>                                          
+                                       </li>
+                                   </ul>
+                               </div>
                                 <div class="row item-box-light-lg no-gutters divider">
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                                         <?php 
@@ -180,34 +185,34 @@
                                         <div class="topic-box-lg color-cinnabar">Kết nối</div>
                                     </div>
                                     <ul class="stay-connected-color overflow-hidden">
-                                        <li class="facebook">
-                                            <a href="#">
-                                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                                                <div class="connection-quantity">50.2 k</div>
-                                                <p>Thích</p>
-                                            </a>
-                                        </li>
-                                        <li class="twitter">
-                                            <a href="#">
-                                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                <div class="connection-quantity">10.3 k</div>
-                                                <p>Theo dõi</p>
-                                            </a>
-                                        </li>
-                                        <li class="linkedin">
-                                            <a href="#">
-                                                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                                <div class="connection-quantity">25.4 k</div>
-                                                <p>Thích</p>
-                                            </a>
-                                        </li>
-                                        <li class="rss">
-                                            <a href="#">
-                                                <i class="fa fa-rss" aria-hidden="true"></i>
-                                                <div class="connection-quantity">20.8 k</div>
-                                                <p>Đăng kí</p>
-                                            </a>
-                                        </li>
+                                       <li class="facebook">
+                                           <a href="#">
+                                               <i class="fa fa-facebook" aria-hidden="true"></i>
+                                               <div class="connection-quantity">50.2 k</div>
+                                               <p>Thích</p>
+                                           </a>
+                                       </li>
+                                       <li class="twitter">
+                                           <a href="#">
+                                               <i class="fa fa-twitter" aria-hidden="true"></i>
+                                               <div class="connection-quantity">10.3 k</div>
+                                               <p>Theo dõi</p>
+                                           </a>
+                                       </li>
+                                       <li class="linkedin">
+                                           <a href="#">
+                                               <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                               <div class="connection-quantity">25.4 k</div>
+                                               <p>Thích</p>
+                                           </a>
+                                       </li>
+                                       <li class="rss">
+                                           <a href="#">
+                                               <i class="fa fa-rss" aria-hidden="true"></i>
+                                               <div class="connection-quantity">20.8 k</div>
+                                               <p>Đăng kí</p>
+                                           </a>
+                                       </li>
                                     </ul>
                                 </div>
                             </div>
@@ -222,69 +227,71 @@
                                         $row= new UserModel();
                                         $slideTopHome = $row->slideTopHome();
                                         foreach ($slideTopHome as $slidetoprel){
-                                    ?>        
-                                        <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
-                                            <div class="position-relative">
-                                                <a href="?controller=singlePost&PostId=<?php echo $slidetoprel['PostId']?>" class="img-opacity-hover">
-                                                    <img src="Public/admin/assets/img/<?php echo $slidetoprel['Img'] ?>" alt="news"
-                                                        class="img-fluid width-100 mb-10">
-                                                </a>
-                                                <div class="media-body media-padding5">
-                                                    <div class="post-date-dark">
-                                                        <ul>
-                                                            <li>
-                                                                <span>
-                                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                                </span><?php echo $slidetoprel['DatePost'] ?>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <h3 class="title-medium-dark size-sm mb-none">
-                                                        <a href="?controller=singlePost&PostId=<?php echo $slidetoprel['PostId']?>"><?php echo $slidetoprel['Title'] ?></a>
-                                                    </h3>
-                                                </div>  
-                                            </div>
-                                        </div>
-                                        <?php } ?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="sidebar-box">
-                                <div class="item-box-light-md">
-                                    <div class="topic-border color-cinnabar mb-25">
-                                        <div class="topic-box-lg color-cinnabar">Thẻ</div>
-                                    </div>
-                                    <ul class="sidebar-tags2">
-                                        <li>
-                                            <a href="#">Sức khỏe</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Ẩm thực vùng miền</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Công thức</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Món ngon ngày tết</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Món mặn</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Thức uống</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Khai vị</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container item-box-light-lg mb-30">
-                            <h4>Đánh giá bài viết:</h4>
-                            <form action="" method="">
-                                <div id="cate-rating" class="cate-rating">
+                                    ?>
+                                           <div class="col-xl-6 col-lg-4 col-md-4 col-sm-6 col-6 mb-25">
+                                               <div class="position-relative">
+                                                   <a href="?controller=singlePost&PostId=<?php echo $slidetoprel['PostId']?>"
+                                                       class="img-opacity-hover">
+                                                       <img src="Public/admin/assets/img/<?php echo $slidetoprel['Img'] ?>"
+                                                           alt="news" class="img-fluid width-100 mb-10">
+                                                   </a>
+                                                   <div class="media-body media-padding5">
+                                                       <div class="post-date-dark">
+                                                           <ul>
+                                                               <li>
+                                                                   <span>
+                                                                       <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                                   </span><?php echo $slidetoprel['DatePost'] ?>
+                                                               </li>
+                                                           </ul>
+                                                       </div>
+                                                       <h3 class="title-medium-dark size-sm mb-none">
+                                                           <a
+                                                               href="?controller=singlePost&PostId=<?php echo $slidetoprel['PostId']?>"><?php echo $slidetoprel['Title'] ?></a>
+                                                       </h3>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <?php } ?>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="sidebar-box">
+                               <div class="item-box-light-md">
+                                   <div class="topic-border color-cinnabar mb-25">
+                                       <div class="topic-box-lg color-cinnabar">Thẻ</div>
+                                   </div>
+                                   <ul class="sidebar-tags2">
+                                       <li>
+                                           <a href="#">Sức khỏe</a>
+                                       </li>
+                                       <li>
+                                           <a href="#">Ẩm thực vùng miền</a>
+                                       </li>
+                                       <li>
+                                           <a href="#">Công thức</a>
+                                       </li>
+                                       <li>
+                                           <a href="#">Món ngon ngày tết</a>
+                                       </li>
+                                       <li>
+                                           <a href="#">Món mặn</a>
+                                       </li>
+                                       <li>
+                                           <a href="#">Thức uống</a>
+                                       </li>
+                                       <li>
+                                           <a href="#">Khai vị</a>
+                                       </li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="container item-box-light-lg mb-30">
+                           <h4>Đánh giá bài viết</h4>
+                           <form action="" method="">
+                               <!-- <div id="cate-rating" class="cate-rating">
                                     <div class="stars">
                                         <a id="star-1" class="star"><span class="glyphicon glyphicon-star"></span></a>
                                         <a id="star-2" class="star"><span class="glyphicon glyphicon-star"></span></a>
@@ -294,48 +301,62 @@
                                         <p id="vote-desc">Mời bạn cho điểm!</p>
                                     </div>
                                     <div class="clearfix"></div>
-                                </div>
-                                <input type="text" class="container item-box-light-lg mb-30" name="comment" placeholder="Nhập đánh giá của bạn tại đây...">
-                                <br>
-                                <button style="background-color:red;border:red;color:white" type="submit" value="">Gửi đi</button>
-                            </form>
-                        </div>
+                                </div> -->
+                               <input type="text" class="container item-box-light-lg mb-30" name="comment"
+                                   placeholder="Nhập đánh giá của bạn tại đây...">
+                               <br>
+                               <button style="background-color:red;border:red;color:white" type="submit" value="">Gửi
+                                   đi</button>
+                           </form>
+                       </div>
+                       <div class="container item-box-light-lg mb-30">
+                           <h4>Đánh giá gần đây</h4>
+
+                       </div>
 
 
-                        <div class="container item-box-light-lg mb-30">
-                            <div class="topic-border color-cinnabar mb-30 width-100">
-                                <div class="topic-box-lg color-cinnabar">Bài viết liên quan</div>
-                            </div>
-                            <div class="ne-carousel nav-control-top2 color-cod-gray" data-loop="true" data-items="3" data-margin="15" data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="2000" data-dots="false" data-nav="true" data-nav-speed="false" data-r-x-small="1"
-                                data-r-x-small-nav="true" data-r-x-small-dots="false" data-r-x-medium="2" data-r-x-medium-nav="true" data-r-x-medium-dots="false" data-r-small="2" data-r-small-nav="true" data-r-small-dots="false" data-r-medium="2" data-r-medium-nav="true"
-                                data-r-medium-dots="false" data-r-Large="3" data-r-Large-nav="true" data-r-Large-dots="false">    
-                                <?php 
+                       <div class="container item-box-light-lg mb-30">
+                           <div class="topic-border color-cinnabar mb-30 width-100">
+                               <div class="topic-box-lg color-cinnabar">Bài viết liên quan</div>
+                           </div>
+                           <div class="ne-carousel nav-control-top2 color-cod-gray" data-loop="true" data-items="3"
+                               data-margin="15" data-autoplay="true" data-autoplay-timeout="5000"
+                               data-smart-speed="2000" data-dots="false" data-nav="true" data-nav-speed="false"
+                               data-r-x-small="1" data-r-x-small-nav="true" data-r-x-small-dots="false"
+                               data-r-x-medium="2" data-r-x-medium-nav="true" data-r-x-medium-dots="false"
+                               data-r-small="2" data-r-small-nav="true" data-r-small-dots="false" data-r-medium="2"
+                               data-r-medium-nav="true" data-r-medium-dots="false" data-r-Large="3"
+                               data-r-Large-nav="true" data-r-Large-dots="false">
+                               <?php 
                                 foreach ($BottomPost as $bottompost){
-                                ?>            
-                                <div class="position-relative">
-                                    <div class="img-scale-animate mb-20">
-                                        <img src="Public/admin/assets/img/<?php echo $bottompost['Img'] ?>" alt="news" class="img-fluid width-100">
-                                    </div>
-                                    <div class="bg-body">
-                                        <div class="post-date-dark">
-                                            <ul>
-                                                <li>
-                                                    <span>
-                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                    </span><?php echo $bottompost['DatePost'] ?>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h3 class="title-medium-dark size-sm mb-none">
-                                        <a href="?controller=singlePost&PostId=<?php echo $bottompost['PostId']?>"><?php echo $bottompost['Title'] ?></a>
-                                        </h3>
-                                    </div>
-                                </div>
-                                <?php }?>  
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
+                                ?>
+                               <div class="position-relative">
+                                   <div class="img-scale-animate mb-20">
+                                       <img src="Public/admin/assets/img/<?php echo $bottompost['Img'] ?>" alt="news"
+                                           class="img-fluid width-100">
+                                       <!-- <div class="topic-box-top-xs">
+                                            <div class="topic-box-sm color-cod-gray mb-20">mẹo vặt</div>
+                                        </div> -->
+                                   </div>
+                                   <div class="bg-body">
+                                       <div class="post-date-dark">
+                                           <ul>
+                                               <li>
+                                                   <span>
+                                                       <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                   </span><?php echo $bottompost['DatePost'] ?>
+                                               </li>
+                                           </ul>
+                                       </div>
+                                       <h3 class="title-medium-dark size-sm mb-none">
+                                           <a
+                                               href="?controller=singlePost&PostId=<?php echo $bottompost['PostId']?>"><?php echo $bottompost['Title'] ?></a>
+                                       </h3>
+                                   </div>
+                               </div>
+                               <?php }?>
+                           </div>
+                       </div>
+               </div>
+           </div>
+       </section>
