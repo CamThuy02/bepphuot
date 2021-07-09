@@ -41,54 +41,7 @@
                             <?php }?>
                         </div>
                         <!-- direction 1 -->
-                        <?php 
-                                    $row= new UserModel();
-                                    $slideHome = $row->slideHome();
-                                    foreach ($slideHome as $sliderel){
-                                ?>
-                        <div id="slider-direction-1" class="t-cn slider-direction" >
-                            <div class="slider-content s-tb slide-1">
-                                <div class="title-container s-tb-c">
-                                    <div class="text-left pl-50 pl20-xs">
-                                        <div class="topic-box-sm color-cinnabar mb-20">Ẩm thực ba miền</div>
-                                        <div class="post-date-light d-none d-sm-block">
-                                            <ul>
-                                                <li style="text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;">
-                                                    <span>
-                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                    </span><?php echo $sliderel['DatePost'] ?>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="slider-title" style="text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;"><?php echo $sliderel['Title'] ?></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <?php }?>
-                        <!-- direction 2 -->
-                        <!-- <div id="slider-direction-2" class="t-cn slider-direction">
-                            <div class="slider-content s-tb slide-2">
-                                <div class="title-container s-tb-c">
-                                    <div class="text-left pl-50 pl20-xs">
-                                        <div class="topic-box-sm color-cinnabar mb-20">BÁNH XÈO MIỀN TRUNG</div>
-                                        <div class="post-date-light d-none d-sm-block">
-                                            <ul>
-                                                <li>
-                                                    <span>
-                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                    </span>04 tháng 5, 2021
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="slider-title">Món ăn bùng nổ vị giác với hương vị độc đáo. Ăn một
-                                            lần nhớ mãi không quên.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- direction 3 -->
-
+                       
                     </div>
                 </div>
             </div>
