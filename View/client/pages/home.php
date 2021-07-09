@@ -8,9 +8,7 @@
             <div class="col-lg-10 col-md-9 col-sm-8 col-7">
                 <div class="feeding-text-light2">
                     <ol id="sample" class="ticker">
-                    <?php 
-                        $row= new UserModel();
-                        $slideTopHome = $row->slideTopHome();
+                    <?php                 
                         foreach ($slideTopHome as $slidetoprel){
                     ?>                        
                         <li>
@@ -146,7 +144,7 @@
                             <div class="media media-none--md mb-30">
                                 <div class="position-relative width-40">
                                     <a href="?controller=singlePost&PostId=<?php echo $bokrel['PostId']?>" class="img-opacity-hover">
-                                        <img src="Public/admin/assets/img/<?php echo $bokrel['Img'] ?>" alt="news" class="img-fluid">
+                                        <img src="Public/admin/assets/img/<?php echo $bokrel['Img'] ?>" alt="news" style="width:100%" >
                                     </a>
                                 </div>
                                 <div class="media-body p-mb-none-child media-margin30">
