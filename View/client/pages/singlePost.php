@@ -91,6 +91,9 @@
                                 <p style="white-space: pre-line;">
                                 <?php echo $singlepost['Content']?>
                                 </p>
+                                <p>
+                                <b>Lượt xem:</b> <?php echo $singlepost['ViewNumber']?>
+                                </p>
                               <?php }?>
                                 <ul class="blog-tags item-inline">
                                     <li>Thẻ</li>

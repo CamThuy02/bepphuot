@@ -238,6 +238,7 @@ class UserModel extends Database{
 
 	public function SinglePost($id)
 	{	
+		mysqli_query($this->db->conn,"UPDATE posts SET ViewNumber = ViewNumber + 1 WHERE PostId = $id"); 
 		$sql = "SELECT * FROM posts WHERE PostId = $id"; 
 
 		$result = $this->db->conn->query($sql);
