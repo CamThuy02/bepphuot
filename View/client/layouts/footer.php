@@ -5,7 +5,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 text-center">
-                            <a href="bepphuot.html" class="footer-logo img-fluid">
+                            <a href="/bepphuot" class="footer-logo img-fluid">
                                 <img src="Public\client\img\logo1.png" alt="logo" class="img-fluid">
                             </a>
                             <ul class="footer-social">

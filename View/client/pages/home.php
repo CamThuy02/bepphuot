@@ -54,7 +54,7 @@
                                     foreach ($rightSlide as $rightslrel){
                                 ?>
                         <div class="media mb-30 col-xl-12 col-lg-6 col-md-6 col-sm-12">
-                            <a class="img-opacity-hover col-xl-7" href="single-news-1.html">
+                            <a class="img-opacity-hover col-xl-7" href="?controller=singlePost&PostId=<?php echo $rightslrel['PostId']?>">
                                 <img src="Public/admin/assets/img/<?php echo $rightslrel['Img'] ?>" alt="news" class="img-fluid">
                             </a>
                             <div class="media-body media-padding5">
@@ -96,7 +96,9 @@
                 ?>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 ">
                         <div class="img-overlay-70 img-scale-animate mb-10">
+                          <a href="?controller=singlePost&PostId=<?php echo $reciperel['PostId']?>">
                             <img src="Public/admin/assets/img/<?php echo $reciperel['Img'] ?>" alt="news" class="img-fluid width-100">
+                          </a>
                             <div class="mask-content-xs">
                                 <div class="post-date-light d-none d-md-block">
                                     <ul>
@@ -160,8 +162,9 @@
                                     <h3 class="title-semibold-dark size-lg mb-15">
                                         <a href="?controller=singlePost&PostId=<?php echo $bokrel['PostId']?>"><?php echo $bokrel['Title'] ?></a>
                                     </h3>
-                                    <p><?php echo $bokrel['Summary'] ?>...
-                                    </p>
+                                        <a href="?controller=singlePost&PostId=<?php echo $bokrel['PostId']?>">
+                                           <p style="color:black;"><?php echo $bokrel['Summary'] ?>...</p>
+                                        </a>
                                 </div>
                             </div>
                         </div>
@@ -223,7 +226,9 @@
                 ?>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="img-overlay-70 img-scale-animate mb-10">
+                          <a href="?controller=singlePost&PostId=<?php echo $foodrel['PostId']?>">
                             <img src="Public/admin/assets/img/<?php echo $foodrel['Img'] ?>" alt="news" class="img-fluid width-100">
+                          </a>
                             <div class="mask-content-xs">
                                 <div class="post-date-light d-none d-md-block">
                                     <ul>

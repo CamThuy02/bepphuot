@@ -9,8 +9,7 @@
                        <div class="feeding-text-light2">
                            <ol id="sample" class="ticker">
                                <?php 
-                                    $row= new UserModel();
-                                    $slideTopHome = $row->slideTopHome();
+                                   
                                     foreach ($slideTopHome as $slidetoprel){
                                 ?>
                                <li>
