@@ -15,7 +15,7 @@
     <body class="sb-nav-fixed">
         <!-- <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"> -->
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <a class="navbar-brand-logo" href="index.html"><img src="../../Public/admin/assets/img/logo bếp phượt.png" alt="Bếp Phượt" width="40" height="40"></a>
+            <a class="navbar-brand-logo" href="./"><img src="../../Public/admin/assets/img/logo bếp phượt.png" alt="Bếp Phượt" width="40" height="40"></a>
             <a class="navbar-brand" href="./">Bếp Phượt</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
