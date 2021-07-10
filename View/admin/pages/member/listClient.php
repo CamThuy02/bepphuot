@@ -20,6 +20,7 @@
                                                 <th>STT</th>
                                                 <th>Mã ID</th>
                                                 <th>Tên Đăng Nhập</th>
+                                                <th>Admin</th>
                                                 <th>Xóa</th>
                                             </tr>
                                         </thead>
@@ -28,6 +29,7 @@
                                                 <th>STT</th>
                                                 <th>Mã ID</th>
                                                 <th>Tên Đăng Nhập</th>
+                                                <th>Admin</th>
                                                 <th>Xóa</th>
                                             </tr>
                                         </tfoot>
@@ -40,12 +42,19 @@
                                                     <td><?=$member['id']?></td>
                                                     <td><?=$member['tendn']?></td>
                                                     <td style="text-align: center;">
+                                                    <span class="badge bg-primary">
+                                                        <a style="color:white" href="?controller=levelupMember&clientId=<?php echo $member['id'] ?>">Chọn
+                                                            <ion-icon name="create-outline"></ion-icon>
+                                                        </a>
+                                                    </span>
+                                                    </td>
+                                                    <td style="text-align: center;">
                                                     <span class="badge bg-danger">
                                                         <a style="color:white" href="?controller=deleteClient&clientId=<?=$member['id']?>">Xóa
                                                             <ion-icon name="trash-outline"></ion-icon>
                                                         </a>
                                                     </span>
-                                                </td>
+                                                    </td>
                                                 </tr>
                                             <?php }
                                         ?>
