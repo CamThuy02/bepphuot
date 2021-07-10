@@ -324,7 +324,7 @@
                                 ?>
                                <div class="position-relative">
                                    <div class="img-scale-animate mb-20">
-                                   <a href="?controller=singlePost&PostId=<?php echo $slidetoprel['PostId']?>">
+                                   <a href="?controller=singlePost&PostId=<?php echo $bottompost['PostId']?>">
                                        <img src="Public/admin/assets/img/<?php echo $bottompost['Img'] ?>" alt="news"
                                            class="img-fluid width-100"></a>
                                    </div>
