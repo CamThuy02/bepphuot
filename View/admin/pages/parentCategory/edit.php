@@ -1,7 +1,7 @@
 <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid">
-                    <h1 class="mt-4">Sửa Chuyên Mục</h1>
+                    <h1 class="mt-4">Sửa Chuyên Mục Cha</h1>
                     <ol class="breadcrumb mb-g4">
                         <li class="breadcrumb-item active"><a href="./">Trang chủ</a></li>
                         <li class="breadcrumb-item active"><a href="?controller=listParentCategory">Chuyên mục cha</a></li>

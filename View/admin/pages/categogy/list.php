@@ -2,7 +2,7 @@
 <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Danh Sách Chuyên Mục</h1>
+                        <h1 class="mt-4">Danh Sách Chuyên Mục Con</h1>
                         <ol class="breadcrumb mb-g4">
                             <li class="breadcrumb-item active"><a href="./">Trang chủ</a></li>
                             <li class="breadcrumb-item active"><a href="">Chuyên mục con</a></li>
@@ -11,7 +11,7 @@
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table mr-1"></i>
-                                Danh sách chuyên mục
+                                Danh sách chuyên mục con
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">

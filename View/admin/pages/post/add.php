@@ -36,7 +36,7 @@
                                         <br>
                                         <div class="form-group">
                                             <label>Tóm tắt</label>
-                                            <textarea class="textarea" name="Summary" required="required" id="txtSummary"  placeholder="NHập nội dung tóm tắt"
+                                            <textarea class="textarea" name="Summary" required="required" id="txtSummary"  placeholder="Nhập nội dung tóm tắt"
                                               style="width: 100%; height: 100px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                                         </div>
                                         <div class="form-group">
