@@ -32,7 +32,7 @@
                    <?php 
                 foreach ($HeaderPost as $headerpost){
                 ?>
-                    <h1><?php echo $headerpost['ParentName']?></h1>
+                    <h1><?php echo $headerpost['CategoryName']?></h1>
                     <ul>
                         <li>
                             <a href="/bepphuot">Trang chủ</a> -
@@ -141,7 +141,7 @@
                                         foreach ($PrevPost as $prevpost){
                                         ?> 
                                         <a style="font-size:17px; color:red;" href="?controller=singlePost&PostId=<?php echo $prevpost['PostId']?>" class="prev-article">
-                                            <i class="fa fa-angle-left" aria-hidden="true"></i>Bài viết trước đó</a>
+                                            <i class="fa fa-angle-left" aria-hidden="true"></i> Bài viết trước đó</a>
                                             <br>
                                             <br>
                                         <a style="font-size:18px; color:black;" href="?controller=singlePost&PostId=<?php echo $prevpost['PostId']?>" class="prev-article">

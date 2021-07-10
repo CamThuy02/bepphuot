@@ -28,12 +28,18 @@
                                         <div class="form-group>
                                             <label for="exampleInputFile">Chọn ảnh</label>
                                             <div class="input-group">
-                                              <div class="custom-file">
-                                                <input type="file" name="Img" class="custom-file-input" id="exampleInputFile">
-                                                <label class="custom-file-label" for="exampleInputFile">Chọn ảnh</label>
+                                                <div class="custom-file">
+                                                    <!-- <input type="file" name="Img" class="custom-file-input" id="exampleInputFile"> -->
+                                                    <input type="file" name="Img" id="exampleInputFile">
+                                                    <!-- <label class="custom-file-label" for="exampleInputFile"></label> -->
+                                                </div>
                                             </div>
                                         </div>
                                         <br>
+                                        <div class="form-group">
+                                            <label>Lượt xem</label>
+                                            <input readonly type="text" required="required" name="ViewNumber" class="form-control" id="txtViewNumber" value="0">
+                                        </div>
                                         <div class="form-group">
                                             <label>Tóm tắt</label>
                                             <textarea class="textarea" name="Summary" required="required" id="txtSummary"  placeholder="Nhập nội dung tóm tắt"

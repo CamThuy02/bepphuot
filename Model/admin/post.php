@@ -8,13 +8,14 @@ class PostModel extends Database{
 		$this->db = new Database();
 		$this->db->connect();
 	}
-	public function addPost($title, $image, $summary, $content, $categoryId, $userId, $DatePost)
+	public function addPost($title, $viewnumber, $image, $summary, $content, $categoryId, $userId, $DatePost)
 	{
 		$title = $this->db->conn->real_escape_string($title);
 		$summary = $this->db->conn->real_escape_string($summary);
 		$content = $this->db->conn->real_escape_string($content);
-		$sql = "INSERT INTO posts (Title, Img, Summary, Content, CategoryId, UserId, DatePost)
-							VALUES ('$title', '$image','$summary', '$content', '$categoryId', '$userId', '$DatePost')";
+		$viewnumber = $this->db->conn->real_escape_string($viewnumber);
+		$sql = "INSERT INTO posts (Title, ViewNumber, Img, Summary, Content, CategoryId, UserId, DatePost)
+							VALUES ('$title', '$viewnumber' , '$image','$summary', '$content', '$categoryId', '$userId', '$DatePost')";
 		
 		return $this->db->conn->query($sql);
 	}
@@ -44,12 +45,13 @@ class PostModel extends Database{
 		return $data;
     }
 
-    public function editPost($postId, $title, $summary, $content, $categoryId, $image)
+    public function editPost($postId, $title, $viewnumber, $summary, $content, $categoryId, $image)
 	{
 		$title = $this->db->conn->real_escape_string($title);
 		$summary = $this->db->conn->real_escape_string($summary);
 		$content = $this->db->conn->real_escape_string($content);
-		$sql = "UPDATE posts SET Title = '$title', Summary = '$summary', Content = '$content', CategoryId = $categoryId, Img = '$image'
+		$viewnumber = $this->db->conn->real_escape_string($viewnumber);
+		$sql = "UPDATE posts SET Title = '$title', ViewNumber = '$viewnumber' , Summary = '$summary', Content = '$content', CategoryId = $categoryId, Img = '$image'
 			    WHERE PostId = $postId;";
 
 		$return = $this->db->conn->query($sql);

@@ -32,13 +32,17 @@
                                             <img width="200px" src="../../Public/admin/assets/img/<?=$postOld['Img']?>">
                                             <input type="hidden" value="<?=$postOld['Img']?>" name="ImgOld">
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group>
                                             <label for="exampleInputFile">Chọn ảnh</label>
                                             <div class="input-group">
-                                              <div class="custom-file">
-                                                <input type="file" name="Img" class="custom-file-input" id="exampleInputFile">
-                                                <label class="custom-file-label" for="exampleInputFile">Chọn ảnh</label>
+                                                <div class="custom-file">
+                                                    <input type="file" name="Img" id="exampleInputFile">
+                                                </div>
                                             </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Lượt xem</label>
+                                            <input readonly value="<?=$postOld['ViewNumber']?>" type="text" required="required" name="ViewNumber" class="form-control" id="txtViewNumber">
                                         </div>
                                         <div class="form-group">
                                             <label>Tóm tắt</label>

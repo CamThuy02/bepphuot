@@ -16,6 +16,7 @@ class EditPost {
 
 			if (isset($_POST['editPost'])) {
 				$title = $_POST['Title'];
+				$viewnumber = $_POST['ViewNumber'];
 				$summary = $_POST['Summary'];
 				$content = $_POST['Content'];
 				$categoryId = $_POST['CategoryId'];
@@ -32,7 +33,7 @@ class EditPost {
 					move_uploaded_file($_FILES['Img']['tmp_name'], '../../Public/admin/assets/img/' . $image);
 				}
 
-				$postModel->editPost($postId, $title, $summary, $content, $categoryId, $image);
+				$postModel->editPost($postId, $title, $viewnumber, $summary, $content, $categoryId, $image);
 				header('location: ?controller=listPost');
 			}
 
