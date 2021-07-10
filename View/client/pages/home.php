@@ -8,13 +8,16 @@
             <div class="col-lg-10 col-md-9 col-sm-8 col-7">
                 <div class="feeding-text-light2">
                     <ol id="sample" class="ticker">
-                    <?php                 
-                        foreach ($slideTopHome as $slidetoprel){
-                    ?>                        
+                        
+                    <?php 
+                    $row = new UserModel();
+                    $slideTopHome = $row->slideTopHome();
+                    foreach ($slideTopHome as $slrel){
+                    ?>
                         <li>
-                            <a href="?controller=singlePost&PostId=<?php echo $slidetoprel['PostId']?>"><?php echo $slidetoprel['Title'] ?></a>
-                        </li>   
-                        <?php }?>                    
+                            <a href="?controller=singlePost&PostId=<?php echo $slrel['PostId']?>"><?php echo $slrel['Title']?></a>
+                        </li>
+                    <?php }?>
                     </ol>
                 </div>
             </div>

@@ -12,7 +12,6 @@ class Home {
 		$userModel->foodHome();
 		$userModel->bookHome();
 		$userModel->slideTopHome();
-    $slideTopHome = $userModel->slideTopHome();
 
 		require('View/client/pages/home.php');
 

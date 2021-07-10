@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="iPublic\client\img\logo_circle.png">
+    <link rel="shortcut icon" type="image/x-icon" href="Public\client\img\logo_circle.png">
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="Public\client\css\normalize.css">
     <!-- Main CSS -->
