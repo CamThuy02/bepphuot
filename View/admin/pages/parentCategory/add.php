@@ -17,7 +17,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="txtParentName">Tên chuyên mục cha</label>
-                                        <input type="text" name="ParentName" class="form-control" id="txtParentName" placeholder="Tên chuyên mục con">
+                                        <input type="text" name="ParentName" class="form-control" id="txtParentName" placeholder="Tên chuyên mục cha">
                                     </div>
                                     <button type="submit" name="addParentCategory" class="btn btn-primary">Thêm</button>
                                 </form> 
