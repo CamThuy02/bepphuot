@@ -64,4 +64,10 @@ class MemberModel extends Database{
 		}
 		return $list;
 	}
+
+	public function levelupMember($id)
+	{
+		$sql = "UPDATE users SET quyen = 1 where id = $id";
+		$this->db->conn->query($sql);
+	}
 }

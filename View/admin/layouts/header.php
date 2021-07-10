@@ -9,6 +9,7 @@
         <meta name="author" content="" />
         <title>Trang Chủ - SB Admin</title>
         <link rel="stylesheet" href="../../Public/admin/css/styles.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="../../Public\client\img\logo_circle.png">
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
