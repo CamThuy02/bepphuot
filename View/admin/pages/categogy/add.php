@@ -29,7 +29,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="txtCountPosts">Số bài viết</label>
-                                        <input type="text" name="CountPosts" class="form-control" id="txtCountPosts" placeholder="Số bài viết">
+                                        <input readonly type="text" required="required" name="CountPosts" class="form-control" id="txtCountPosts" value="0">
                                     </div>
                                     <button type="submit" name="addCategory" class="btn btn-primary">Thêm</button>
                                 </form>
