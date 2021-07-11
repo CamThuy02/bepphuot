@@ -13,10 +13,16 @@ Giảng viên phụ trách: Th.S Trình Trọng Tín.
 Nhóm: 14
 
 Thành viên nhóm:
+
 19520294	Nguyễn Thị Cẩm Thùy (Nhóm trưởng)
+
 19521198	Ngô Thị Tuyết Anh
+
 19521648	Lê Thị Như Huỳnh
+
 19522507	Hồ Thị Thanh Vân
+
 19521751	Hoàng Diệu Linh
+
 19520228	Nguyễn Thị Mỹ Phương
 
