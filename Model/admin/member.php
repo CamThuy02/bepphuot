@@ -23,7 +23,7 @@ class MemberModel extends Database{
 	{
 		
 		$sql = "UPDATE users SET id = '$id',tendn = '$tendn',pass = '$pass',tendd = '$tendd',quyen = '$quyen',
-		email = '$email',dienthoai = '$dienthoai',diachi = '$diachi',ngaysinh = '$diachi',gioitinh = '$gioitinh',
+		email = '$email',dienthoai = '$dienthoai',diachi = '$diachi',ngaysinh = '$ngaysinh' ,gioitinh = '$gioitinh',
 		dantoc = '$dantoc',gioithieu = '$gioithieu' where id = $idold; ";
 		$this->db->conn->query($sql);
 
