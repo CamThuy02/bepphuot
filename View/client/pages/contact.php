@@ -63,7 +63,7 @@
                             thức, hiểu biết và cảm nhận rõ hơn về văn hóa ẩm thực Việt.
                             <br><br>Qua Website Bếp Phượt, chúng tôi mong muốn được góp phần làm cho cuộc sống của chúng
                             ta thêm phần phong phú và nhiều màu sắc hơn.
-                            <br><br>Hy vọng với những thông tin này, "Bếp Phượt" sẽ
+                            <br><br>Hy vọng với những thông tin này, <b>"Bếp Phượt"</b> sẽ
                             là người bạn đồng hành của không chỉ các bà nội trợ mà còn là của những ai yêu mến ẩm thực,
                             món ngon của nhiều vùng miền trên tổ quốc.
 
