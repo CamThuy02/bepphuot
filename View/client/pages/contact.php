@@ -51,16 +51,22 @@
                         </div>
                         <h2 class="title-semibold-dark size-xl">Dịch vụ của chúng tôi!</h2>
                         <p class="size-lg mb-40">Trang Web cung cấp đầy đủ các thông tin bổ ích: cẩm nang, công thức,
-                            mẹo hay
-                            và các thông tin khác liên quan tới ẩm thực, gia đình nhằm cải thiện công việc bếp núc
-                            của chị em phụ nữ cũng như các nhà nội trợ.</p>
+                            mẹo hay và các thông tin khác liên quan tới ẩm thực, gia đình nhằm cải thiện công việc bếp
+                            núc của chị em phụ nữ cũng như các nhà nội trợ.
+                        </p>
 
                         <h2 class="title-semibold-dark size-xl">Bạn nên chọn chúng tôi!</h2>
-                        <p class="size-lg mb-40"> Nhận thấy rằng tất cả mọi người đều yêu thích món ăn ngon. Trên thực
-                            tế, chúng ta có thể thích đến mức thỉnh thoảng dành thời gian để đọc về nó trên mạng thay vì
-                            ăn.<br><br> Ngoài ra chúng ta cũng thường tìm kiếm các thủ thuật đơn giản nhất trong ẩm thực
-                            nói riêng
-                            và trong cuộc sống nói chung để có thể để sử dụng.
+                        <p class="size-lg mb-40"> Kênh Ẩm thực Bếp Phượt cung cấp tất cả những thông tin hữu ích và hấp
+                            dẫn liên quan tới ẩm thực của các vùng miền trên đất nước hình chữ S.
+                            <br><br>Ngoài ra, qua những bài viết hay, ấn tượng về văn hóa ẩm thực, sẽ là nhịp cầu nối giúp
+                            bạn đọc có thêm vốn tri
+                            thức, hiểu biết và cảm nhận rõ hơn về văn hóa ẩm thực Việt.
+                            <br><br>Qua Website Bếp Phượt, chúng tôi mong muốn được góp phần làm cho cuộc sống của chúng
+                            ta thêm phần phong phú và nhiều màu sắc hơn.
+                            <br><br>Hy vọng với những thông tin này, "Bếp Phượt" sẽ
+                            là người bạn đồng hành của không chỉ các bà nội trợ mà còn là của những ai yêu mến ẩm thực,
+                            món ngon của nhiều vùng miền trên tổ quốc.
+
                         </p>
                         <div class="google-map-area mb-50">
                             <div id="googleMap" style="width:100%; height:400px;"><iframe
