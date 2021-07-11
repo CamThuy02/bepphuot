@@ -15,6 +15,7 @@ class AddCategory {
 
 			if ($CategoryId) {
 				$categoryModel->addCategory($CategoryId, $CategoryName, $CategoryType, $ParentId, $CountPosts);
+				header('location: ?controller=listCategory');
 			}
 		}
 		require('../../View/admin/pages/categogy/add.php');
