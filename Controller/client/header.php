@@ -1,5 +1,6 @@
 <?php
 session_start();
+require 'Config\config.php';
 
 class Header {
 	public function __construct()
@@ -75,11 +76,18 @@ class Header {
 					$data = $result->fetch_array(MYSQLI_ASSOC); /*lấy dữ liệu tương ứng với username và password nhập*/
 					$_SESSION['user'] = $data; /*lưu session*/
 					header('Location: ./');
+					/*Nếu quyền bằng admin thì chuyển sang trang admin*/
+					echo $data['quyen'];
+					if ($data['quyen'] == admin) {
+						$_SESSION['useradmin'] = $data; /*lưu session*/
+						$_SESSION['tendn'] = $data['tendn'];
+						header('Location: View/admin');
+					}
 				} else {
 					echo "<script>alert('Sai mật khẩu hoặc tên đăng nhập')</script>";				
 				}
 			}
-		}
+		}		
 	}
 }
 $header = new Header();

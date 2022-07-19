@@ -15,10 +15,9 @@ class Login
         if (!empty($_SESSION['useradmin'])) {
             header('Location: View/admin');
         } else {
-
-			require_once('Model/client/UserModel.php');
+            require_once('Model/client/UserModel.php');
             $userModel = new UserModel();
-            $this->loginAdmin($userModel);
+            $error = $this->loginAdmin($userModel);
 
             require('View/client/pages/login_admin.php');
         }
